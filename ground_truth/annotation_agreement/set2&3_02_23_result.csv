@@ -1,0 +1,66 @@
+Unnamed: 0,data_broker,prompting_strategy,status,pattern_name,Y_classification_1,Y_explanation_1,C_classification_1,C_explanation_1,Y_classification_2,Y_explanation_2,C_classification_2,C_explanation_2
+0,spyfly.com,obstruction_regulator_role_few_shot_scenarios,not found,Adding Steps,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct
+1,spyfly.com,sneaking_regulator_role_few_shot_scenarios,not found,Information Without Context,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct
+2,spyfly.com,interface_interference_few_shot_regulator_role_with_CoT,not found,Visual Prominence,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct
+3,stackadapt.com,obstruction_baseline_zero_shot,found,Adding Steps,Incorrect,Unsure,Correct,Correct,Incorrect,Unsure,Correct,Correct
+4,stackadapt.com,sneaking_baseline_zero_shot,not found,Conflicting Information,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct
+5,stackadapt.com,sneaking_baseline_zero_shot,not found,Information Without Context,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct
+6,statara.com,obstruction_zero_shot_regulator_role,found,Creating Barriers,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect
+7,statara.com,obstruction_baseline_zero_shot,not found,Privacy Mazes,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct
+8,statara.com,interface_interference_baseline_zero_shot,not found,Visual Prominence,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct
+9,statsocial.com,sneaking_few_shot_regulator_role_with_CoT,not found,Conflicting Information,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect
+10,steppingblocks.com,obstruction_zero_shot_regulator_role,found,Adding Steps,Unsure,Unsure,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect
+11,steppingblocks.com,obstruction_zero_shot_regulator_role,found,Creating Barriers,Correct,Correct,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect
+12,steppingblocks.com,interface_interference_baseline_zero_shot,not found,Visual Prominence,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct
+13,sterling.ai,obstruction_baseline_zero_shot,found,Creating Barriers,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect
+14,sterling.ai,interface_interference_baseline_zero_shot,found,Feedforward Ambiguity,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct
+15,sterling.ai,interface_interference_baseline_zero_shot,not found,Hidden Information,Correct,Correct,Incorrect,Incorrect,Correct,Correct,Incorrect,Incorrect
+16,sterling.ai,interface_interference_baseline_zero_shot,found,Visual Prominence,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect
+17,stirista.com,obstruction_few_shot_regulator_role_with_CoT,not found,Adding Steps,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct
+18,stirista.com,obstruction_zero_shot_regulator_role,found,Creating Barriers,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect
+19,stirista.com,obstruction_baseline_zero_shot,not found,Creating Barriers,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct
+20,stirista.com,obstruction_few_shot_regulator_role_with_CoT,not found,Creating Barriers,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct
+21,stirista.com,interface_interference_zero_shot_regulator_role,found,Hidden Information,Correct,Incorrect,Correct,Incorrect,Correct,Incorrect,Correct,Incorrect
+22,stirista.com,interface_interference_few_shot_regulator_role_with_CoT,found,Hidden Information,Correct,Correct,Correct,Incorrect,Correct,Incorrect,Correct,Incorrect
+23,stirista.com,interface_interference_few_shot_regulator_role_with_CoT,found,Visual Prominence,Incorrect,Incorrect,Correct,Correct,Incorrect,Incorrect,Incorrect,Incorrect
+24,swoop.com,obstruction_zero_shot_regulator_role,found,Adding Steps,Incorrect,Incorrect,Incorrect,Unsure,Incorrect,Incorrect,Incorrect,Unsure
+25,swoop.com,obstruction_regulator_role_few_shot_scenarios,not found,Adding Steps,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct
+26,swoop.com,obstruction_baseline_zero_shot,not found,Creating Barriers,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct
+27,swoop.com,interface_interference_regulator_role_few_shot_scenarios,found,Hidden Information,Incorrect,Correct,Incorrect,Correct,Incorrect,Correct,Incorrect,Correct
+28,swoop.com,sneaking_regulator_role_few_shot_scenarios,not found,Information Without Context,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct
+29,swoop.com,interface_interference_baseline_zero_shot,found,Visual Prominence,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect
+30,t-mobile.com,obstruction_baseline_zero_shot,found,Adding Steps,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect
+31,unacast.com,interface_interference_baseline_zero_shot,not found,Feedforward Ambiguity,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct
+32,unacast.com,interface_interference_zero_shot_regulator_role,found,Visual Prominence,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect
+33,unearthcampaigns.com,obstruction_baseline_zero_shot,found,Adding Steps,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect
+34,unearthcampaigns.com,obstruction_few_shot_regulator_role_with_CoT,found,Creating Barriers,Correct,Correct,Incorrect,Incorrect,Correct,Correct,Incorrect,Incorrect
+35,unearthcampaigns.com,obstruction_zero_shot_regulator_role,found,Creating Barriers,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct
+36,unearthcampaigns.com,interface_interference_regulator_role_few_shot_scenarios_only2,not found,Hidden Information,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct
+37,uplead.com,obstruction_few_shot_regulator_role_with_CoT,not found,Creating Barriers,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct
+38,uplead.com,interface_interference_regulator_role_few_shot_scenarios,found,Hidden Information,Correct,Correct,Incorrect,Incorrect,Correct,Correct,Incorrect,Incorrect
+39,uplead.com,interface_interference_zero_shot_regulator_role,not found,Hidden Information,Incorrect,Incorrect,Correct,Correct,Incorrect,Incorrect,Correct,Correct
+40,upscapital.com,obstruction_zero_shot_regulator_role,not found,Creating Barriers,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect
+41,upscapital.com,interface_interference_regulator_role_few_shot_scenarios,not found,Feedforward Ambiguity,Incorrect,Incorrect,Correct,Correct,Incorrect,Incorrect,Correct,Correct
+42,upscapital.com,interface_interference_zero_shot_regulator_role,not found,Feedforward Ambiguity,Incorrect,Incorrect,Correct,Correct,Incorrect,Incorrect,Correct,Correct
+43,upscapital.com,interface_interference_regulator_role_few_shot_scenarios_only2,not found,Hidden Information,Incorrect,Incorrect,Correct,Correct,Incorrect,Incorrect,Correct,Correct
+44,upscapital.com,sneaking_baseline_zero_shot,not found,Information Without Context,Incorrect,Incorrect,Correct,Correct,Incorrect,Incorrect,Correct,Correct
+45,usadata.com,obstruction_baseline_zero_shot,not found,Adding Steps,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct
+46,usadata.com,obstruction_baseline_zero_shot,found,Creating Barriers,Correct,Correct,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect
+47,usdatacorporation.com,sneaking_regulator_role_few_shot_scenarios,found,Conflicting Information,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct
+48,usdatacorporation.com,sneaking_few_shot_regulator_role_with_CoT,found,Conflicting Information,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct
+49,usdatacorporation.com,obstruction_zero_shot_regulator_role,found,Creating Barriers,Incorrect,Incorrect,Incorrect,Unsure,Incorrect,Incorrect,Incorrect,Unsure
+50,usmarketinggrp.com,sneaking_baseline_zero_shot,found,Conflicting Information,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect
+51,usmarketinggrp.com,sneaking_few_shot_regulator_role_with_CoT,not found,Conflicting Information,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct
+52,veeva.com,sneaking_baseline_zero_shot,found,Information Without Context,Correct,Incorrect,Correct,Incorrect,Correct,Incorrect,Correct,Incorrect
+53,veeva.com,sneaking_regulator_role_few_shot_scenarios,found,Information Without Context,Correct,Incorrect,Correct,Partial,Correct,Incorrect,Correct,Partial
+54,vendelux.com,sneaking_zero_shot_regulator_role,found,Conflicting Information,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect
+55,vendelux.com,obstruction_baseline_zero_shot,not found,Creating Barriers,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct
+56,vendelux.com,interface_interference_baseline_zero_shot,not found,Feedforward Ambiguity,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect
+57,vendelux.com,sneaking_few_shot_regulator_role_with_CoT,found,Information Without Context,Incorrect,Incorrect,Correct,Correct,Correct,Correct,Correct,Correct
+58,vendelux.com,interface_interference_baseline_zero_shot,not found,Visual Prominence,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct
+59,ventiveiq.com,obstruction_few_shot_regulator_role_with_CoT,found,Adding Steps,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct
+60,ventiveiq.com,sneaking_few_shot_regulator_role_with_CoT,not found,Conflicting Information,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect,Incorrect
+61,ventiveiq.com,obstruction_zero_shot_regulator_role,found,Creating Barriers,Correct,Incorrect,Correct,Unsure,Correct,Incorrect,Correct,Unsure
+62,ventiveiq.com,obstruction_baseline_zero_shot,found,Creating Barriers,Correct,Correct,Correct,Unsure,Correct,Correct,Correct,Unsure
+63,veraset.com,obstruction_baseline_zero_shot,found,Adding Steps,Correct,Incorrect,Incorrect,Incorrect,Correct,Incorrect,Correct,Incorrect
+64,veraset.com,obstruction_regulator_role_few_shot_scenarios,found,Creating Barriers,Correct,Correct,Correct,Correct,Correct,Correct,Correct,Correct

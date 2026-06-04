@@ -1,0 +1,16 @@
+{
+    "taxonomy": [
+    {
+        "name": "Conflicting Information",
+        "definition": "Includes two or more sources of information that conflict with each other. As a result, the user is unsure what the consequences of their actions will be and will be more likely to accept default settings that may not be in their best interest."
+    },
+    {
+        "name": "Information Without Context",
+        "definition": "Alter the relevant information or user controls to limit discoverability. As a result, the user is unlikely to find the information or action possibility they are interested in."
+    },
+    {
+        "name": "Forced Registration",
+        "definition": "Subverts the user’s expectation that they can complete an action without registering or creating an account, instead tricking them into thinking that registration is required, often resulting in the sharing of unneeded personal data."
+    }
+    ]
+}

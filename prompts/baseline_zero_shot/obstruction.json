@@ -1,0 +1,20 @@
+{
+    "taxonomy": [
+        {
+            "name": "Dead Ends",
+            "definition": "Prevent users from finding information through inactive links or redirections that limit or completely prevent the display of relevant information. As a result, the user may seek to find relevant information or action possibilities but instead be left unable to achieve their goal."
+        },
+        {
+            "name": "Creating Barriers",
+            "definition": "Subverts the user’s expectation that relevant user tasks will be supported by the interface, instead preventing, abstracting, or otherwise complicating a user task to disincentive user action."
+        },
+        {
+            "name": "Adding Steps",
+            "definition": "Subverts the user’s expectation that a task will take as few steps as technologically needed, instead creating additional points of unnecessary but required user interaction to perform a task."
+        },
+        {
+            "name": "Privacy Mazes",
+            "definition": "Require a user to navigate through multiple pages or disconnected sections within the same page to obtain relevant information or control without a comprehensive and exhaustive overview. As a result, the user is prevented from easily discovering relevant information or action possibilities, leaving them unable to make informed decisions regarding their privacy."
+        }
+    ]
+}

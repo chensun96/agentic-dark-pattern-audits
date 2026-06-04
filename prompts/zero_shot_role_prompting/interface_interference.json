@@ -1,0 +1,32 @@
+{
+    "taxonomy": [
+    {
+        "name": "False Hierarchy",
+        "definition": "Give one or more options visual or interactive prominence over others, particularly where items should be in parallel rather than hierarchical. As a result, the user may misunderstand or be unable to accurately compare their options, making a selection based on a false or incomplete choice architecture."
+    },
+    {
+        "name" : "Visual Prominence",
+        "definition": "Place an element relevant to user goals in visual competition with a more distracting and prominent element. As a result, the user may forget about or be distracted from their original goal, even if that goal was their primary intent."
+    },
+    {  
+        "name": "Bad Defaults",
+        "definition": "Subverts the user’s expectation that default settings will be in their best interest, instead requiring users to take active steps to change settings that may cause harm or unintentional disclosure of information."
+    },
+    {
+        "name": "Choice Overload",
+        "definition": "Subverts the user’s expectation that the choices they make should be understandable and comparable, instead providing too many options to compare or encouraging users to overlook relevant information due to the volume of choices provided."
+    },
+    {
+        "name": "Hidden Information",
+        "definition": "Subverts the user’s expectation that relevant information will be made accessible and visible, instead disguising relevant information or framing it as irrelevant."
+    },
+    {
+        "name": "Complex Language",
+        "definition": "Make information difficult to understand by using obscure word choices and/or sentence structure. As a result, the user will not be able to comprehend relevant information about their interaction with the system and their ability to choose, leading to uninformed decisions."
+    },
+    {
+        "name": "Feedforward Ambiguity",
+        "definition": "Subverts the user’s expectation that their choice will likely result in an action they can predict, instead providing a discrepancy between information and actions available to users that results in an outcome that is different from what the user expects."
+    }
+    ]
+}

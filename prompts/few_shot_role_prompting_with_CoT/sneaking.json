@@ -1,0 +1,197 @@
+{
+    "taxonomy": [
+    {
+        "name": "Conflicting Information",
+        "definition": "Includes two or more sources of information that conflict with each other. As a result, the user is unsure what the consequences of their actions will be and will be more likely to accept default settings that may not be in their best interest. Conflicting Information does not apply when one source explicitly uses conditional terms (“may,” “can,” “for example”). These terms allow the company to ask for additional information later without contradicting the initial statement.",
+        "examples": [
+            {
+                "example_definition": "When attempting to submit a CCPA Right to Access request, the user is directed to a submission path described as supporting multiple CCPA rights, including the Right to Access. However, upon reaching the destination page, the webform explicitly supports only a limited subset of rights requests, such as opt-out requests, and does not provide any option to submit an access request. This creates a direct contradiction between the instructional description and the available interface options, leaving the user uncertain about how to exercise the access right.",
+                "evidence_with_reasoning": [
+                    {
+                        "evidence_type": "policy_text",
+                        "raw_snippet": "California residents may submit their requests to exercise their CCPA rights by following the methods described above for each specific right or generally by using one of the following methods: - Calling us at [phone number] - Emailing [email address] - Visiting [webform link]",
+                        "observed_ui_text": "The policy presents visiting the webform as a general method to exercise CCPA rights, which includes the Right to Know/Access.",
+                        "action_taken": "Reviewed the California Privacy Policy section describing general CCPA submission methods and clicked the provided webform link to exercise the Right to Know/Access.",
+                        "dynamic_outcome": "After navigating to the webform page, the form only supports opt-out requests and does not provide any option to select or submit a Right to Know/Access request.",
+                        "short_rationale": "The privacy policy instructs users to visit the webform as a general method to exercise CCPA rights, including the Right to Know/Access, but the destination page functions as an opt-out form and offers no Access option. This direct contradiction between the instruction and the interface creates uncertainty about how to exercise the access right."
+                    }
+                ]
+            },
+            {
+                "example_definition": "When a user clicks a link to exercise CCPA Right to Access, they are directed to a page titled/ or labeled as “Opt-Out” or “Do Not Sell”. Although the form may technically include options for accepting other rights, the prominent, contradictory title suggests the page is only for opting out. This creates a direct conflict between the user's intent and the page's framing, making the user unsure if they are in the correct place. If only the URL include opt-out but the page title is neutral, do NOT count it as this pattern.",
+                "evidence_with_reasoning": [
+                    {
+                        "evidence_type": "policy_text",
+                        "raw_snippet": "Residents of the USA may submit such requests via this [webform] or email to [email address].",
+                        "observed_ui_text": "Users are instructed to exercise their Right to Know/Access via a webform link provided under the 'Your Privacy Rights and Choices' section within the 'Right to Know' block. After following the link, the destination page is titled 'Opt-Out Request' while also presenting a radio option labeled 'Right to access' under 'Right you want to exercise'.",
+                        "action_taken": "Clicked the webform link provided in the privacy policy to exercise the Right to Know/Access, then scrolled and inspected the form header and available request-type options.",
+                        "dynamic_outcome": "The user is taken to a webform framed as an 'Opt-Out Request', yet the same form includes an option to submit a Right to Access request.",
+                        "short_rationale": "The policy directs users to a webform to exercise the Right to Know/Access. After following this instruction, the destination page is prominently titled as an opt-out request while simultaneously offering a 'Right to access' option. This contradiction between the page’s framing and its available actions creates uncertainty about whether proceeding will correctly submit an access request."
+                    }
+                ]
+            },
+            {
+                "example_definition": "When attempting to exercise the CCPA Right to Access, the user encounters conflicting instructions regarding how to submit the request. Specifically, multiple sources each present themselves as an CCPA designated submission method, yet one source indicates that requests can be submitted using a particular submission path or contact point, while another source provides a different or incompatible instruction for the same purpose, or states that certain listed submission paths are not valid. Because these sources give conflicting guidance, the user cannot determine which methods or submission paths are accepted.",
+                "evidence_with_reasoning": [
+                    {
+                        "evidence_type": "policy_text",
+                        "raw_snippet": "Privacy Policy: 'Phoning us at 888-678-6880' / Webform page: 'While this online request is the easiest way to exercise these rights, requests also can be completed by phone at 1-888-207-8743'",   
+                        "action_taken": "Opened the Privacy Policy and navigated to the 'Exercising Your Rights' section via the table of contents, identified the listed phone number and webform link as submission methods, then navigated to the consumer rights webform and reviewed the submission instructions.",
+                        "dynamic_outcome": "The user encounters two different phone numbers presented as valid methods for submitting the same CCPA request.",
+                        "short_rationale": "Multiple sources each present themselves as designated CCPA submission methods but provide different phone numbers for exercising the same rights. This conflicting guidance about which phone number is valid creates uncertainty about how to correctly submit the request via phone."
+                    },
+                    {
+                        "evidence_type": "policy_text",
+                        "raw_snippet": "Privacy Policy: 'If you have any questions about our privacy practices or wish to exercise your rights under the CCPA, please contact us at Compliance@TheDataGroup.com.' / Consumer Privacy Request Form: 'Privacy requests cannot be processed by email. To submit a verifiable privacy request under the CCPA or other state privacy laws, you must use our Consumer Privacy Request Form.'",
+                        "observed_ui_text": "The Privacy Policy instructs users to exercise their CCPA rights by contacting Compliance@TheDataGroup.com. However, after navigating to the Consumer Privacy Request Form, the page explicitly states that privacy requests cannot be processed by email and mandates use of the online webform.",
+                        "action_taken": "Reviewed the Privacy Policy and extracted the CCPA submission instructions, then navigated to the Consumer Privacy Request Form and read the introductory guidance regarding accepted submission methods.",
+                        "dynamic_outcome": "The user encounters contradictory instructions: email is presented as a valid method in the policy, but is explicitly rejected as an acceptable submission method on the form page.",
+                        "short_rationale": "Multiple sources each present themselves as designated CCPA submission methods, but provide contradictory instructions about which methods are accepted. The privacy policy directs users to submit requests by email, while the form page explicitly states that email requests cannot be processed and mandates the webform. This conflicting guidance creates uncertainty about which submission methods are accepted."
+                    }
+                ]
+            },
+            {
+                "example_definition": "When attempting to exercise the CCPA Right to Access, the user reviews the company’s privacy disclosures to understand what personal information is collected, shared, or sold about them. However, different sections of the disclosure provide contradictory statements without any explicit scoping or qualifying language that reconciles the two (e.g., ‘except for’, or ‘subject to’), such as one part indicating that the company collects a particular category of data and another stating that it does not. Because these disclosures conflict, the user cannot determine what personal information the company actually holds.",
+                "exclusions": "Do NOT label a case as Conflicting Information if one statement explicitly qualifies or limits another using reconciling language such as “except as described,” “subject to,” “as outlined above,” or clear section-specific scope indicators that logically reconcile the two statements.",
+                "evidence_with_reasoning": [
+                    {
+                        "evidence_type": "policy_text",
+                        "raw_snippet": "We have disclosed all of the above categories of personal information to data analytics providers in connection with targeted advertising. / We do NOT sell or share your personal information with third parties.",
+                        "observed_ui_text": "Earlier sections of the Privacy Policy acknowledge disclosure of personal information to data analytics providers for targeted advertising. However, a later section states that the company does not sell or share personal information with third parties.",
+                        "action_taken": "Reviewed the Privacy Policy sections describing data disclosure practices and scrolled to the 'Sharing and Sale of Personal Information' section.",
+                        "dynamic_outcome": "The policy presents contradictory statements about whether personal information is shared with third parties.",
+                        "short_rationale": "The policy provides conflicting information about data-sharing practices by stating that personal information is disclosed to third parties for targeted advertising, while elsewhere claiming that personal information is not sold or shared, without any qualifying language to reconcile the two statements. This contradiction can confuse users about whether and how their data is shared."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Information Without Context",
+        "definition": "Alter the relevant information or user controls to limit discoverability. As a result, the user is unlikely to find the information or action possibility they are interested in.",
+        "examples":[
+            {
+                "example_definition": "The privacy policy directs users to a single webform to exercise California privacy rights, including the Right to Access. However, the linked page does not actually allow users to submit an access request; instead, it supports only other rights (e.g., opt-out rights), is scoped to a different audience (e.g., B2B-only), or is otherwise unsuitable. Because the destination page does not match the scope implied by the instruction, users cannot use the webform to exercise their access rights, and must search for alternative methods, reducing the discoverability of the access pathway.",
+                "evidence_with_reasoning": [
+                    {
+                        "evidence_type": "policy_text",
+                        "raw_snippet": "How to Exercise Your California Privacy Rights. To exercise your California privacy rights, you may submit your request to us by contacting us at any of the following: Via Toll-Free Phone: [phone], Via Webform: [webform]",
+                        "observed_ui_text": "The privacy policy presents the webform as a general method to exercise California privacy rights, including the Right to Access. However, the linked webform page is labeled for opt-out purposes and does not provide any request-type options or fields that would allow submission of an access request.",
+                        "action_taken": "Reviewed the 'How to Exercise Your California Privacy Rights' section of the privacy policy and clicked the linked webform to inspect its scope and available submission options.",
+                        "dynamic_outcome": "Users attempting to exercise their Right to Access via the webform find themselves on an opt-out-specific page with no option to submit an access request. They must search for alternative submission methods outside the webform or abandon their request entirely.",
+                        "short_rationale": "The privacy policy directs users to a webform as a method for exercising 'California privacy rights' generally, which users would reasonably understand to include the Right to Access. However, the linked webform is scoped only for opt-out requests and provides no mechanism to submit access requests. Because the destination page does not match the scope implied by the instruction, users cannot use the webform to exercise their access rights and must search for alternative methods, significantly reducing the discoverability of the access pathway."
+                    },
+                    {
+                        "evidence_type": "policy_text",
+                        "raw_snippet": "California Privacy Rights Act page: 'If you're a resident of California, the California Privacy Rights Act (CPRA) gives you more control over your personal information. … CPRA Request Form' / Business-to-Business Request Form: 'This form is not for residents of California. If you are a resident of California, please refer to the Privacy Preference Center.'",
+                        "observed_ui_text": "The CPRA page presents a single 'CPRA Request Form' link as the mechanism for exercising California privacy rights. After following the link, the destination page indicates that the form is a Business-to-Business Request Form and explicitly states that it is not for residents of California and directs them to alternative methods (Privacy Preference Center) without providing direct links or access to those alternatives.",
+                        "action_taken": "Navigated to the California Privacy Rights Act page, identified the 'CPRA Request Form' as the presented method for exercising CPRA rights, then clicked the form link to access the submission interface.",
+                        "dynamic_outcome": "A California resident following the provided CPRA Request Form link is informed that the form does not apply to them and cannot submit an access request through the provided path.",
+                        "short_rationale": "The CPRA page directs California residents to a single request form to exercise their privacy rights, but the linked form is scoped to a different audience and explicitly excludes California residents. Because the destination page does not match the scope implied by the instruction (CPRA rights for CA residents vs. B2B-only form), users cannot use the provided webform to submit an access request and must search for alternative methods, reducing the discoverability of the access pathway."
+                    }
+                ]
+            },
+            {
+                "example_definition": "The privacy policy directs users to a single webform as the mechanism for exercising multiple California privacy rights, including the Right to Access. However, the linked page is titled or labeled as an opt-out request page (e.g., the page title “opt-out”), even though the page content technically supports access-related controls. Because the framing of the page does not match the expectations set by the policy, users may not recognize the page as relevant for exercising access rights, reducing discoverability. If only the URL include opt-out but the page title is neutral, do NOT count it as this pattern.",
+                "evidence_with_reasoning": [
+                    {
+                        "evidence_type": "ui_behavior",
+                        "raw_snippet": "Opt-Out",
+                        "observed_ui_text": "The webform page is titled 'Opt-Out', while the form includes a checkbox for requesting access to personal information, creating a mismatch between the page framing and its supported actions.",
+                        "action_taken": "Followed the privacy policy instructions to open the webform for exercising CCPA right to access and reviewed the available request-type checkboxes on the page",
+                        "dynamic_outcome": "Confirmed that access requests are supported, but only within a page labeled and framed as an opt-out request.",
+                        "short_rationale": "The privacy policy directs users to a webform as a method for exercising 'California privacy rights' generally. Although the webform supports access requests, the opt-out-centric labeling obscure the availability of access controls, making the Right of Access difficult to identify for users navigating by expected terminology."
+                    }
+                ]
+            },
+            {
+                "example_definition": "The privacy policy directs users to a webform to exercise California privacy rights, including Right to Access/Know. However, the form uses vague or non-standard request-type labels (e.g., “Right to Data Portability” or “Request Info”), while other rights may be labeled using clear legal terminology (e.g., “Right to Opt-out,” “Right to Erasure”). Because the request-type labels lack sufficient context to map to the user’s intended right, the availability of the access/know action becomes hard to discover.",
+                "evidence_with_reasoning": [
+                        {
+                            "evidence_type": "ui_behavior",
+                            "raw_snippet": "Select request type(s): Data Processing; Data Portability; Opt out; Update Data; Info Request; Data Deletion",
+                            "observed_ui_text": "The request-type options use vague or non-standard labels such as 'Data Processing' and 'Info Request' and do not include any option explicitly labeled 'Right to Access' or 'Right to Know', nor do they explain how these labels map to access requests.",
+                            "action_taken": "Opened the DSAR webform and reviewed the available request-type options presented to users.",
+                            "dynamic_outcome": "A user attempting to exercise the Right to Access/Know face ambiguity among multiple vague options and must guess which option corresponds to accessing their personal information or may abandon the form due to uncertainty.",
+                            "short_rationale": "The privacy policy directs users to a webform for exercising CCPA rights, including the Right to Access/Know, but the request-type options presented on the webform are non-standard and ambiguous. Labels such as 'Info Request', 'Data Processing', and 'Data Portability' could plausibly relate to accessing information, yet none clearly indicates that it will retrieve the user’s personal data. Because these options lack sufficient contextual explanation or differentiation, users cannot reliably map their access intent to a specific request type, reducing the discoverability of the access action."
+                        },
+                        {
+                            "evidence_type": "ui_behavior",
+                            "raw_snippet": "Request Type options: Right to Erasure; Right to Rectification; Right to Restrict Processing; Right to Data Portability; Right to Opt-out of Sales",
+                            "observed_ui_text": "The privacy policy directs users to a webform to exercise CCPA rights including the Right to Access/Know. However, the form's request-type dropdown lists various rights but does not include any option clearly labeled 'Right to Access', 'Right to Know', or similar. No explanation or tooltip is provided to help users map their intent to the available options.",
+                            "action_taken": "Opened the DSAR webform and reviewed the available request-type options presented in the dropdown menu.",
+                            "dynamic_outcome": "Users seeking to exercise their Right to Access/Know cannot find an option that clearly matches their intent. They must either guess that 'Right to Data Portability' might be related to access, select an incorrect option, or abandon the form entirely.",
+                            "short_rationale": "The privacy policy directs users to a webform for exercising CCPA rights, including the Right to Access/Know. However, the webform does not provide any request-type option explicitly labeled 'Right to Access' or 'Right to Know'. The only potentially related option, 'Right to Data Portability', is presented without any explanation or contextual mapping to access/know requests. Because the request-type labels lack sufficient context to help users identify which option corresponds to accessing their personal information, the availability of the access action becomes hard to discover."
+                        }
+                ]
+            },
+            {
+                "example_definition": "The privacy policy directs users to locate information about CCPA under one section label (e.g., “CCPA privacy notice”), but the relevant information is actually presented under a differently titled section (e.g., “CCPA Addendum”), without any link or explanation indicating that the two refer to the same content. Because the referenced label does not match the actual section title, users are unlikely to locate the correct information, reducing discoverability.",
+                "evidence_with_reasoning": [
+                    {
+                        "evidence_type": "policy_text",
+                        "raw_snippet": "To review the “Addendum” we have created specifically to address disclosures required under the California Consumer Privacy Act, please see our “CCPA PRIVACY NOTICE”",
+                        "observed_ui_text": "The policy instructs users to locate a section titled 'CCPA PRIVACY NOTICE' for CCPA-related disclosures. However, no section with that title appears on the page. The relevant CCPA content is instead presented under a differently titled section titled 'Addendum for California Residents', without any indication that it corresponds to the referenced label.",
+                        "action_taken": "Read the instruction directing users to the 'CCPA PRIVACY NOTICE' section, then searched the page to locate a section with that exact title. After finding no match, scrolled through the policy to identify sections related to CCPA or California disclosures.",
+                        "dynamic_outcome": "Users following the explicit instruction to find the 'CCPA PRIVACY NOTICE' section will fail to locate it because no section exists with that exact name. Without any link, cross-reference or explanation, users may not realize that the relevant CCPA information is located under a differently titled section.",
+                        "short_rationale": "The policy directs users to a section label that does not match the actual title of the section containing CCPA information and provides no explanation or linkage that these refer to the same content. This label mismatch places the relevant information out of context and reduces the discoverability of CCPA-related disclosures."
+                    }    
+                ]
+            },
+            {
+                "example_definition": "A privacy policy includes a section framed as the comprehensive guide for CCPA rights and how to exercise them (e.g., “California Privacy Rights”, “Your Rights and Choices”, “Privacy Rights and Controls” or similar). However, this section does not include or link to the mechanism for submitting a Right to Access request. The actual submission method (e.g., an online webform, email, or phone number for access requests) appears only in a differently framed section such as “Contact Us”, “General Inquiries”, or even an opt-out/marketing choices page, without any reference or link from the comprehensive rights section. As a result, users who rely on the “comprehensive” section are unlikely to discover the correct action path, because the actionable information is presented in a location whose framing does not signal relevance to exercising access rights.",
+                "evidence_with_reasoning": [
+                    {
+                        "evidence_type": "policy_text",
+                        "raw_snippet": "Section 8: iv. Your Rights And Choices: You have the following rights under applicable privacy laws ... \n\nSection 12. Contact Information: If you have any questions or comments about ...., or wish to exercise your rights under California law, please do not hesitate to contact us below",
+                        "observed_ui_text": "The section titled 'Your Rights And Choices' presents itself as a comprehensive overview of user privacy rights but only enumerates the rights and does not explain how to exercise them or reference where submission methods can be found. The actual submission methods appear only in the separate 'Contact Information' section, with no cross-reference or link between the two sections and not intuitively associated with exercising CCPA rights.",
+                        "action_taken": "Reviewed Section 8 'Your Rights And Choices' to understand available rights and locate submission instructions, then scrolled through the remainder of the policy to find where submission methods are described.",
+                        "dynamic_outcome": "A user relying on the 'Your Rights And Choices' section is likely to find only a list of rights. Without any contextual cue or reference pointing to Section 12, users must either guess to check 'Contact Information' or search through the entire policy to locate submission methods.",
+                        "short_rationale": "The section titled 'Your Rights And Choices' signals it will provide comprehensive information about CCPA rights and their exercise, but it only enumerates the rights without explaining how to submit requests or directing users to the relevant section. The submission methods are placed in 'Contact Information', a section that does not intuitively signal it contains CCPA exercise mechanisms. Because the comprehensive-sounding section omits critical actionable information and provides no reference to where it can be found, the placement is out of context with user expectations, reducing discoverability of the access pathway."
+                    },
+                    {
+                        "evidence_type": "policy_text",
+                        "raw_snippet": "Residents of California",
+                        "observed_ui_text": "The 'Residents of California' section appears to describe California privacy rights and related disclosures, but only presents CCPA metrics and informational statements. No text references how to exercise rights, submit a request, or where to find request mechanisms.",
+                        "action_taken": "Expanded the 'Residents of California' section and scanned its contents for access-related instructions. Searched within the section for terms such as 'exercise', 'submit', and 'request' to locate guidance for submitting a Right of Access request.",
+                        "dynamic_outcome": "No instructions or links for submitting a Right of Access request were found within the 'Residents of California' section. The actual submission mechanism was later identified under a separate 'Your Controls' section, which was not referenced or linked from the California-specific section.",
+                        "short_rationale": "The section 'Residents of California' framed as the primary location for California privacy rights omits actionable guidance and provides no contextual cues directing users to the section where access requests can be submitted, making the relevant action difficult to discover."
+                    }
+                ]
+            },
+            {
+                "example_definition": "A company presents a section that is framed as a comprehensive for understanding how to exercise the CCPA Right to Access (e.g., ”How to Exercise your Rights”, “California Privacy Rights”). This section provides incomplete or selectively scoped guidance, such as listing only certain submission methods (e.g., mail or email) or only certain steps, but omitting other valid methods or requirements. The omitted information (e.g., an online webform) appears only in a separate section with a different or unexpected focus (e.g., “Do Not Sell My Personal Information”) or on another page, without cross-reference. Because the placement of the omitted information is not intuitive for users to look for, and does not align with the expectations set by the comprehensive section, users are likely to rely on the partial guidance and overlook other available access pathways.",
+                "evidence_with_reasoning": [
+                    {
+                        "evidence_type": "policy_text",
+                        "raw_snippet": " Section 'Exercising Your CCPA Data Protection Rights': 'In order to exercise any of Your rights under the CCPA, You can contact us by email: [email]' / Section 'Do Not Sell or Share My Personal Information': 'You have the right to access, update, or delete your personal data in accordance with applicable laws. To exercise your rights, you may: email Us [email], or submit a form [webform] to submit your request.",
+                        "observed_ui_text": "The section titled 'Exercising Your CCPA Data Protection Rights' appears to provide comprehensive instructions for exercising CCPA rights but lists only email as a submission method. The more convenient webform option appears only in the separately-focused 'Do Not Sell or Share My Personal Information' section, which does not intuitively signal it contains general access request methods.",
+                        "action_taken": "Reviewed the 'Exercising Your CCPA Data Protection Rights' section to identify available submission methods, then navigated through other policy sections to determine if additional methods existed.",
+                        "dynamic_outcome": "A user reviewing the primary CCPA rights section is likely to observe only the email-based submission method and overlook the online DSAR webform, which is placed in a different, opt-out–focused section without cross-reference.",
+                        "short_rationale": "The policy presents a section that appears to provide complete instructions for exercising CCPA rights but lists only a partial submission method (email). A valid alternative access submission method (online DSAR form) is placed in a separately scoped 'Do Not Sell or Share My Personal Information' section without reference, which users would not intuitively associate with submitting general access requests. This contextual misplacement reduces the discoverability of the access webform and is likely to cause users to rely on the incomplete guidance."
+                    }
+                ]
+            }          
+        ]
+    },
+    {
+        "name": "Forced Registration",
+        "definition": "Subverts the user’s expectation that they can complete an action without registering or creating an account, instead tricking them into thinking that registration is required, often resulting in the sharing of unneeded personal data.",
+        "examples":[
+            {
+                "example_definition": "A user attempts to submit a CCPA Right to Access request without registering or creating an account. During the process, the interface requires account credentials or otherwise steers the user into an account-based flow. In some cases, the company presents a “guest request” option, but selecting it leads to a webform that still enforces or strongly encourages registration before the request can be submitted.",
+                "evidence_with_reasoning": [
+                    {
+                    "evidence_type": "ui_behavior",
+                    "raw_snippet": "Consumer Privacy Rights page: 'If you do not want to create a user account, you may submit your request as a guest.' / Guest webform multi-step indicator: 'We'll need the following information to get started. Step 1: Tell us about yourself / Step 2: Create your account / Step 3: Verify your identity'",                    
+                    "observed_ui_text": "The Consumer Privacy Rights page explicitly offers users the option to submit their CCPA request as a guest, suggesting that account creation is not required. However, upon selecting the guest submission option and opening the webform, the multi-step progress indicator reveals that Step 2 is labeled 'Create your account,' indicating that account registration is mandatory to complete the submission process.",
+                    "action_taken": "Selected the 'submit your request as a guest' option and inspected the multi-step progress indicator displayed on the submission form.",
+                    "dynamic_outcome": "Users who choose the guest option expecting to avoid account creation discover that the webform flow still requires them to create an account in Step 2. This contradicts the initial promise of guest submission and forces users to either register or abandon their CCPA request entirely.",
+                    "short_rationale": "The privacy page explicitly presents a 'guest' submission option, setting the expectation that users can exercise their Right to Access without creating an account. However, the guest webform's multi-step indicator reveals a mandatory 'Create your account' step, directly contradicting the guest framing. This subverts the user's expectation that they can complete the action without registering and tricks them into thinking registration is required despite selecting the guest option."
+                    }
+                ]
+            }
+        ]
+    }
+    ]
+}

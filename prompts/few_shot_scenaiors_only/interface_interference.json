@@ -1,0 +1,63 @@
+{
+    "taxonomy": [
+    {
+        "name": "False Hierarchy",
+        "definition": "Give one or more options visual or interactive prominence over others, particularly where items should be in parallel rather than hierarchical. As a result, the user may misunderstand or be unable to accurately compare their options, making a selection based on a false or incomplete choice architecture.",
+        "examples":[
+            "A user visits a privacy request page that offers two parallel options: submitting a request as a guest or creating an account. The page highlights the “Create an Account” option with a large, brightly colored button, while the guest submission option appears only as a small inline text link below. As a result, the user may reasonably believe account creation is the primary or required path, even though both options are meant to be equivalent."
+        ],
+        "exclusions": "Uneven coverage of different privacy rights (e.g., the opt-out right explained more clearly than the access right) should NOT be classified as False Hierarchy."
+    },
+    {
+        "name" : "Visual Prominence",
+        "definition": "Place an element relevant to user goals in visual competition with a more distracting and prominent element. As a result, the user may forget about or be distracted from their original goal, even if that goal was their primary intent.",
+        "examples": [
+            "A user arrives on a privacy request page intending to submit a request without creating an account. When reviewing the page, a large, brightly colored “Create an Account” button dominates the layout, visually competing with the user’s original goal, while the option to submit the request as a guest appears only as a small, low-contrast text link, increasing the likelihood that the user is distracted from their primary goal.",
+            "When a user scrolls a webpage to locate the Privacy Policy link or complete a privacy rights form, a floating UI widget remains fixed on the screen. The widget visually dominates the page and partially overlaps important elements, including footer links and page content. As a result, the user must close or work around the widget, increasing distraction and making it harder to stay focused on completing the privacy request. "
+        ],
+        "exclusions": "Cookie consent banners, visually prominent header call-to-action buttons, uneven coverage of different privacy rights (e.g., the opt-out right explained more clearly than the access right), or marketing or contact forms placed below privacy-related content should NOT be classified as Visual Prominence, as they do not compete with the Right-to-Access mechanism and do not distract users from completing their privacy request."
+    },
+    {  
+        "name": "Bad Defaults",
+        "definition": "Subverts the user’s expectation that default settings will be in their best interest, instead requiring users to take active steps to change settings that may cause harm or unintentional disclosure of information.",
+        "examples":[
+            "A company’s privacy policy instructs users to exercise CCPA rights, such as the Right to Access, through an online request form. When the form is opened, the request type field is pre-selected to a default option that does not align with the instructed right (e.g., “Do Not Sell My Information” is selected instead of an access request). As a result, users must actively change the default selection to submit the intended request, and may otherwise submit a different request type if they do not notice the default."
+        ]
+    },
+    {
+        "name": "Choice Overload",
+        "definition": "Subverts the user’s expectation that the choices they make should be understandable and comparable, instead providing too many options to compare or encouraging users to overlook relevant information due to the volume of choices provided.",
+        "examples": [
+            "When attempting to exercise the CCPA Right to Access, a user encounters a page or navigation section listing at least four privacy related links with similar names. Because the options appear parallel and none is clearly identified as the correct pathway for submitting an access request, the user must review or click through multiple documents to determine where to proceed. The volume of ambiguous choices overwhelms the user and delays completion of the rights exercise process."
+        ],
+        "exclusions": "Links that are not intended for exercising CCPA Right to Access, such as 'Terms of Service', 'Trust Center', general opt-out pages, 'Do Not Sell My Personal Information', 'DNSMPI', or 'Cookie Settings', 'Cookie Preferences' and 'Contact Us' should not be used when identifying Choice Overload"
+    },
+    {
+        "name": "Hidden Information",
+        "definition": "Subverts the user’s expectation that relevant information will be made accessible and visible, instead disguising relevant information or framing it as irrelevant.",
+        "examples": [
+            "When instructions for exercising privacy rights are provided, the actionable elements (e.g., webform links) are technically present but visually disguised as ordinary text. The links lack standard visual affordances, such as distinct color contrast, underlining, or bolding, making them indistinguishable from surrounding content during a normal scan. Because the actionable element does not appear interactive or clickable, users may overlook it and fail to discover where to submit a privacy rights request. Note: standard inline hyperlinks that follow common web conventions (e.g., blue and underlined text) should NOT be classified as Hidden Information.",
+            "A company references instructions for exercising privacy rights using cross-referential phrases such as “see”, “as provided in”, or “refer to”, but presents the reference only as non-clickable text pointing to a different section or page. Although the information is nominally disclosed, the lack of a direct navigational affordance forces users to manually search lengthy documents to locate the actionable resource. This design undermines the user’s expectation that rights-related mechanisms will be immediately accessible and operational, effectively reducing the visibility of relevant information despite formal disclosure.",
+            "A user scans a webpage to find information about how to exercise their privacy rights, but the relevant instructions are not visible in the main content area. Instead, they are hidden behind a 'Read More' link, within a collapsible section, or inside a tooltip that appears only on hover. Because the information is not shown by default, users must perform additional interactions to reveal it, making the right exercise pathway easy to overlook. This does not apply when all sections of a page are uniformly presented in a collapsible format, as such layouts function as a neutral design choice.",
+            "A company presents a section explicitly dedicated to explaining a user’s legal privacy rights (e.g., sections titled “California Privacy Rights” or “How to Exercise Your Rights”), which reasonably signals a complete and comprehensive explanation. However, the section omits important and applicable information, such as the full set of consumer rights or all available methods for exercising those rights. Although the omitted information may be disclosed elsewhere on the site, the section provides no clear cross-reference or linkage. This omission conceals relevant information at the point where users expect complete explanation, leading users to believe that only the listed rights or methods are available."        ]
+    },
+    {
+        "name": "Complex Language",
+        "definition": "Make information difficult to understand by using obscure word choices and/or sentence structure. As a result, the user will not be able to comprehend relevant information about their interaction with the system and their ability to choose, leading to uninformed decisions.",
+        "examples": [
+            "When attempting to complete a privacy rights request, a user is instructed to provide technical identifiers such as cookie IDs, IP addresses, or mobile advertising IDs. The instructions rely on specialized terminology and references to technical concepts, such as browser developer tools, cookie storage, “IDFA”, “Advertising Identifier” without explanation. As a result, the user may struggle to understand what information is being requested, how to retrieve it, or how it relates to exercising their privacy rights, impairing comprehension and informed decision making."
+        ]
+    },
+    {
+        "name": "Feedforward Ambiguity",
+        "definition": "Subverts the user’s expectation that their choice will likely result in an action they can predict, instead providing a discrepancy between information and actions available to users that results in an outcome that is different from what the user expects.",
+        "examples":[
+            "When a company provides instructions for exercising a privacy right, the information presented is misleading, inaccurate, vague, or incomplete. Users rely on this guidance to decide how to proceed, but the action they initiate leads to a different or unclear outcome than expected. This discrepancy between the information provided and the resulting action prevents users from predicting what their choice will accomplish.",
+            "When users attempt to exercise their privacy rights, the options or labels provided do not map clearly to standard legal rights. Instead, the company uses ambiguous or undefined terms, such as 'Data Processing', 'Info Request', or 'Request Access to Professional Information' without explaining how they correspond to legally defined rights. Because this terminology lacks clear mapping, users cannot predict which option will trigger the intended action or outcome.",
+            "The company uses a broad instruction suggesting a link or webform supports exercising all privacy rights (e.g., 'Click here to exercise your privacy rights'). However, following the instruction leads the user to a form that supports only a limited subset of rights, such as opt-out requests. Because the destination's capabilities are narrower than the link promised, users cannot predict whether their intended request, such as a Right to Access, can be fulfilled.",
+            "When a user clicks a link intended to submit a general or specific privacy request (such as a Right to Access), the destination page is titled or framed with a contradictory label (e.g., 'Do Not Sell' or 'Opt-Out'). Even if the form can technically process the intended request, the conflicting label causes users to question whether they are in the correct place, preventing them from predicting the outcome of their action. If only the URL include opt-out but the page title is neutral, do NOT count it as this pattern.",
+            "A user attempts to submit a right to access request. However, during the submission process, the user found that submitting the request will also automatically trigger other unexpected outcomes, such as an opt-out of data use or sale. Because no separate controls are provided, the user cannot complete the access request without simultaneously triggering this additional, unrequested action."
+        ]
+    }
+    ]
+}

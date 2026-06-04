@@ -1,0 +1,199 @@
+{
+    "taxonomy": [
+        {
+        "name": "Hidden Information",
+        "definition": "Subverts the user’s expectation that relevant information will be made accessible and visible, instead disguising relevant information or framing it as irrelevant.",
+        "examples": [
+            {
+                "example_definition": "When instructions for exercising privacy rights are provided, the actionable elements (e.g., webform links) are technically present but visually disguised as ordinary text. The links lack standard visual affordances, such as distinct color contrast, underlining, or bolding, making them indistinguishable from surrounding content during a normal scan. Because the actionable element does not appear interactive or clickable, users may overlook it and fail to discover where to submit a privacy rights request.",
+                "exclusions": "Standard inline hyperlinks that follow common web conventions (e.g., blue and underlined text) should NOT be classified as Hidden Information",               
+                "evidence_with_reasoning": [
+                    {
+                        "evidence_type": "policy_text",
+                        "raw_snippet": "You may exercise your privacy rights by visiting our privacy request page listed below. Privacy Rights Request",
+                        "observed_ui_text": "The text 'Privacy Rights Request' functions as a hyperlink, but appears as plain text with the same color, font, and styling as surrounding informational content, without visual indicators such as underlining, contrast, or button styling.",
+                        "action_taken": "Visually scanned the page for a clickable link or button to submit a privacy rights request.",
+                        "dynamic_outcome": "No clearly identifiable interactive element was apparent, as the privacy rights link blended into surrounding text and did not stand out as actionable.",
+                        "short_rationale": "Although the privacy rights link is present, it is visually disguised as non-interactive text. This framing conceals a relevant pathway for exercising rights, fitting the Hidden Information pattern."
+                    },
+                    {
+                        "evidence_type": "policy_text",
+                        "raw_snippet": "To submit a privacy rights request, please email [email] or complete the webform linked [webform].",
+                        "observed_ui_text": "The email address and webform link lack standard visual affordances. They are colored in a dark shade that nearly matches the black body text, and not underlined and not bolded. As a result, they are visually similar to surrounding body text.",
+                        "action_taken": "Scanned the page to locate clear instructions or links for submitting a privacy rights request.",
+                        "dynamic_outcome": "The actionable email and webform link did not immediately stand out from surrounding text and were easy to miss during a quick scan.",
+                        "short_rationale": "The actionable elements are effectively camouflaged by the absence of standard hyperlink cues (color contrast or underlining), reducing discoverability and making it difficult for users to recognize where to submit a privacy rights request."
+                    }
+                ]
+            },
+            {
+                "example_definition": "A company references instructions for exercising privacy rights using cross-referential phrases such as “see”, “as provided in”, or “refer to”, but presents the reference only as non-clickable text pointing to a different section or page. Although the information is nominally disclosed, the lack of a direct navigational affordance forces users to manually search lengthy documents to locate the actionable resource. This design undermines the user’s expectation that rights-related mechanisms will be immediately accessible and operational, effectively reducing the visibility of relevant information despite formal disclosure.",
+                "evidence_with_reasoning": [
+                    {
+                        "evidence_type": "policy_text",
+                        "raw_snippet": "Exercising Your Rights: Residents of U.S. states that provide these rights can exercise their rights as provided in our “Your Privacy Choices” form or by calling us at (800) 946-6710.",
+                        "observed_ui_text": "The policy references a specific 'Your Privacy Choices' form as the mechanism for submitting and appealing privacy requests, but presents the reference only as plain text without a clickable link or button.",
+                        "action_taken": "Reviewed the section describing how to exercise privacy rights and checked whether the referenced “Your Privacy Choices” form was directly accessible or clickable from this text.",
+                        "dynamic_outcome": "The referenced form is not directly accessible from the policy text, requiring the user to manually search or navigate elsewhere on the site to locate it.",
+                        "short_rationale": "The policy tells users that a specific “Your Privacy Choices” form is required to exercise their rights, but it does not provide a clickable link or button to access it. Users therefore cannot immediately act on the instruction and must search elsewhere on the site to find the form. This missing navigation affordance makes the rights exercise pathway less visible and harder to use."
+                    },
+                    {
+                        "evidence_type": "policy_text",
+                        "raw_snippet": "Instructions to submit opt-out requests, delete requests, and/or right to know requests through either our Website or our Toll-Free number may be referenced in Sections XVIII-XX of this Privacy Policy. You can find information on how to exercise your rights in sections XXIV-XXXI below.",
+                        "observed_ui_text": "The policy references specific sections containing privacy rights instructions using Roman numerals, but does not provide clickable links or anchors to those sections.",
+                        "action_taken": "Reviewed the policy text and attempted to navigate to the referenced sections from the instruction text.",
+                        "dynamic_outcome": "Users must manually scroll or search through the document to locate the referenced sections, as no direct navigation is provided.",
+                        "short_rationale": "The policy points users to specific sections of the document where privacy rights instructions are located, but those section references are not clickable or anchored. Users must manually scroll or search through the policy to locate the relevant content. This design adds friction and reduces the visibility of important rights-related information."
+                    }
+                ]
+            },
+            {
+                "example_definition": "A user scans a webpage to find information about how to exercise their privacy rights, but the relevant instructions are not visible in the main content area. Instead, they are hidden behind a 'Read More' link, within a collapsible section, or inside a tooltip that appears only on hover. Because the information is not shown by default, users must perform additional interactions to reveal it, making the right exercise pathway easy to overlook. This does not apply when all sections of a page are uniformly presented in a collapsible format, as such layouts function as a neutral design choice.",
+                "evidence_with_reasoning": [
+                    {
+                        "evidence_type": "ui_behavior",
+                        "raw_snippet": "Are there other ways to exercise your User Data rights?\nIn addition to following the above steps, you can exercise certain of your User Data privacy rights by calling us at (855) 921-3711 or emailing us at privacy@truthfinder.com",
+                        "observed_ui_text": "Alternative submission methods, including phone and email, are not visible in the main content area and appear only after expanding a collapsed FAQ item labeled 'Are there other ways to exercise your User Data rights?'.",
+                        "action_taken": "Clicked the 'View' toggle for the FAQ item to expand its content.",
+                        "dynamic_outcome": "Additional privacy rights submission methods became visible only after the user performed an explicit expansion action.",
+                        "short_rationale": "Key alternate access submission methods are hidden behind a collapsed interface element and are not visible by default. This design reduces discoverability and makes the rights exercise pathway easy to overlook."
+                    }
+                ]
+            },
+            {
+                "example_definition": "A company presents a section explicitly dedicated to explaining a user’s legal privacy rights (e.g., sections titled “California Privacy Rights” or “How to Exercise Your Rights”), which reasonably signals a complete and comprehensive explanation. However, the section omits important and applicable information, such as the full set of consumer rights or all available methods for exercising those rights. Although the omitted information may be disclosed elsewhere on the site, the section provides no clear cross-reference or linkage. This omission conceals relevant information at the point where users expect complete explanation, leading users to believe that only the listed rights or methods are available.",
+                "evidence_with_reasoning":[
+                    {   
+                        "evidence_type": "policy_text",
+                        "raw_snippet": "How to Exercise Your Rights: You may submit your request by calling us at [phone number] or emailing us at [email address].",
+                        "observed_ui_text": "The section titled 'How to Exercise Your Rights' lists only phone and email as submission methods and does not mention any online request form.",
+                        "action_taken": "Reviewed other parts of the page, including the header and footer, to determine whether additional submission methods were available.",
+                        "dynamic_outcome": "An online webform for submitting privacy requests exists elsewhere on the site, but it is not referenced or linked from the 'How to Exercise Your Rights' section.",
+                        "short_rationale": "Because the section title signals a complete explanation of how to exercise rights, omitting the webform conceals an applicable submission method at the point of relevance, leading users to believe that phone or email are the only available options."
+                    },
+                    {
+                        "evidence_type": "policy_text",
+                        "raw_snippet": "California Privacy Rights: California residents may request information about the sharing of their personal information for direct marketing purposes. To submit a request, please contact us by mail or email at the address listed under 'Contact Us' below.",
+                        "observed_ui_text": "The 'California Privacy Rights' section describes only a single, narrow right and directs users to the 'Contact Us' section for exercising rights.",
+                        "action_taken": "Navigated to the 'Contact Us' section and reviewed other sections of the privacy policy to identify how users can exercise broader CCPA rights.",
+                        "dynamic_outcome": "The 'Contact Us' section provides only a mailing address and email, while a webform supporting general CCPA rights requests exists elsewhere on the site without being referenced in this section.",
+                        "short_rationale": "By presenting a section dedicated to California privacy rights but omitting broader rights and an available webform, the design conceals relevant information at the point where users expect a complete explanation, causing users to believe that only the listed right and high-friction methods apply."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name" : "Visual Prominence",
+        "definition": "Place an element relevant to user goals in visual competition with a more distracting and prominent element. As a result, the user may forget about or be distracted from their original goal, even if that goal was their primary intent.",
+        "examples": [
+            {
+                "example_definition": "A user arrives on a privacy request page intending to submit a request without creating an account. When reviewing the page, a large, brightly colored “Create an Account” button dominates the layout, visually competing with the user’s original goal, while the option to submit the request as a guest appears only as a small, low-contrast text link, increasing the likelihood that the user is distracted from their primary goal.",
+                "evidence_with_reasoning": [
+                    {
+                    "evidence_type": "ui_behavior",
+                    "raw_snippet": "[Create an Account] ... Have an account? [Log in here] ... If you do not want to create a user account, you may [submit your request as a guest].",
+                    "observed_ui_text": "The 'Create an Account' option is presented as a large button accompanied by visually emphasized benefit bullet points, while the guest submission option appears as a small inline text link with no distinct styling.",
+                    "action_taken": "Reviewed the page layout and relative visual emphasis of elements presented during the request submission process.",
+                    "dynamic_outcome": "The visually dominant account creation elements compete for attention and may distract users from noticing or focusing on the guest submission option.",
+                    "short_rationale": "The interface places a highly prominent, attention grabbing element in visual competition with the user’s primary task. This visual dominance can distract users from noticing or focusing on the guest submission option, even though it remains available."
+                    }
+                ]
+            },
+            {
+                "example_definition": "When a user scrolls a webpage to locate the Privacy Policy link or complete a privacy rights form, a floating UI widget remains fixed on the screen. The widget visually dominates the page and partially overlaps important elements, including footer links and page content. As a result, the user must close or work around the widget, increasing distraction and making it harder to stay focused on completing the privacy request. ",
+                "exclusions": "Cookie consent banners, visually prominent header call-to-action buttons, uneven coverage of different privacy rights (e.g., the opt-out right explained more clearly than the access right), or marketing or contact forms placed below privacy-related content should NOT be classified as Visual Prominence, as they do not compete with the Right-to-Access mechanism and do not distract users from completing their privacy request.",
+                "evidence_with_reasoning": [
+                    {
+                    "evidence_type": "ui_behavior",
+                    "raw_snippet": "Warmly now has 'Warm Experiences', also know as Microsites... Request A Demo, & Unlock Warm Experiences.",
+                    "observed_ui_text": "A floating chat and video widget containing promotional text remains fixed in the lower-left portion of the viewport. And this widget partially overlaps privacy-related page content while the user reviews submission instructions.",
+                    "action_taken": "Scrolled through the 'Your Privacy Rights' section and observed the persistent chat overlay.",
+                    "dynamic_outcome": "The persistent widget continues to overlay page content during scrolling, requiring the user to close or visually work around it to maintain focus on the task.",
+                    "short_rationale": "The floating UI widget overlaps privacy-related content and has a persistent, visually dominant placement, causing it to compete with task relevant information. This visual interference distracts users from their primary goal of reviewing or exercising privacy rights."
+                    }
+                ]
+            }
+        ]
+    },  
+    {
+        "name": "Feedforward Ambiguity",
+        "definition": "Subverts the user’s expectation that their choice will likely result in an action they can predict, instead providing a discrepancy between information and actions available to users that results in an outcome that is different from what the user expects.",
+        "examples":[
+            {
+                "example_definition": "When a company provides instructions for exercising a privacy right, the information presented is misleading, inaccurate, vague, or incomplete. Users rely on this guidance to decide how to proceed, but the action they initiate leads to a different or unclear outcome than expected. This discrepancy between the information provided and the resulting action prevents users from predicting what their choice will accomplish.",
+                "evidence_with_reasoning": [ 
+                    {
+                        "evidence_type": "ui_behavior",
+                        "raw_snippet": "submit your request as a guest",
+                        "observed_ui_text": "A call-to-action labeled 'submit your request as a guest' appears under the section for obtaining a copy of personal data, implying that users can submit a privacy rights request without creating an account.",
+                        "action_taken": "Clicked the 'submit your request as a guest' call-to-action.",
+                        "dynamic_outcome": "The click leads to a page titled 'Create a Free User Profile' with multiple steps focused on account creation, rather than clearly initiating a one-time Right to Access request without creating an account.", 
+                        "short_rationale": "The label 'submit your request as a guest' signals that the action will allow a privacy request without account creation. Instead, the resulting flow initiates a profile creation process. This discrepancy between the information presented before the click and the action that follows makes it difficult for users to predict the outcome of their choice."
+                    },
+                    {
+                        "evidence_type": "ui_behavior",
+                        "raw_snippet": "CPRA Request Form",
+                        "observed_ui_text": "A link labeled 'CPRA Request Form' indicates that users can submit CPRA privacy requests directly through this form.",
+                        "action_taken": "Clicked the 'CPRA Request Form' link.",
+                        "dynamic_outcome": "The link opens an Adobe Sign form. Upon proceeding, the form displays a notice stating that California residents should instead use the Equifax Privacy Preference Center or call a separate phone number, rather than submitting the request through the form.",
+                        "short_rationale": "The link label and surrounding context lead users to expect that clicking 'CPRA Request Form' will allow them to submit a CPRA request through the form itself. However, after opening the form, it redirects California residents to a different portal or phone channel. This mismatch between the information presented before the click and the action that follows makes the outcome difficult to predict, fitting the Feedforward Ambiguity pattern."
+                    }
+                ]
+            },
+            {
+                "example_definition": "When users attempt to exercise their privacy rights, the options or labels provided do not map clearly to standard legal rights. Instead, the company uses ambiguous or undefined terms, such as 'Data Processing', 'Info Request', or 'Request Access to Professional Information' without explaining how they correspond to legally defined rights. Because this terminology lacks clear mapping, users cannot predict which option will trigger the intended action or outcome.",
+                "evidence_with_reasoning": [
+                    {
+                        "evidence_type": "ui_behavior",
+                        "raw_snippet": "Request Access to Professional Information",
+                        "observed_ui_text": "The request type is labeled 'Request Access to Professional Information' rather than using standard privacy rights terminology such as 'Right to Know' or 'Access Personal Information', with no explanation of how this label maps to legally defined access rights.",
+                        "action_taken": "Opened the request type dropdown and selected the access related option.",
+                        "dynamic_outcome": "After selection, no clarifying information appeared to indicate the scope of data covered or whether the request corresponds to a full CCPA Right to Access.",
+                        "short_rationale": "The company uses a non-standard label like 'Professional Information' without explaining its relationship to legally defined CCPA access rights. This creates uncertainty about what action will be taken and prevents users from predicting whether selecting this option will trigger the intended access request."
+                    }
+                ]
+            },
+            {
+                "example_definition": "The company uses a broad instruction suggesting a link or webform supports exercising all privacy rights (e.g., 'Click here to exercise your privacy rights'). However, following the instruction leads the user to a form that supports only a limited subset of rights, such as opt-out requests. Because the destination's capabilities are narrower than the link promised, users cannot predict whether their intended request, such as a Right to Access, can be fulfilled.",
+                "evidence_with_reasoning": [
+                    {
+                        "evidence_type": "policy_text",
+                        "raw_snippet": "California residents may submit their requests to exercise their CCPA rights using one of the following methods: [phone], [email], [webform].",
+                        "observed_ui_text": "The privacy policy lists a webform as a general method for submitting CCPA requests, implying that the linked form supports exercising multiple privacy rights, including Right to Know.",
+                        "action_taken": "Followed the policy instruction and opened the linked webform.",
+                        "dynamic_outcome": "The destination page is titled 'CCPA OPT OUT' and presents only an Right to Opt Out workflow, with no request type options or fields for submitting Right to Know requests.",
+                        "short_rationale": "The policy presents the webform as a general pathway for exercising CCPA rights, but the destination page supports only opt-out requests. This mismatch between the instruction and the form’s capabilities prevents users from predicting whether their intended access request can be completed."
+                    }
+                ]
+            },
+            {
+                "example_definition": "When a user clicks a link intended to submit a general or specific privacy request (such as a Right to Access), the destination page is titled or framed with a contradictory label (e.g., 'Do Not Sell' or 'Opt-Out'). Even if the form can technically process the intended request, the conflicting label causes users to question whether they are in the correct place, preventing them from predicting the outcome of their action. If only the URL include opt-out but the page title is neutral, do NOT count it as this pattern.",
+                "evidence_with_reasoning": [
+                    {
+                        "evidence_type": "ui_behavior",
+                        "raw_snippet": "To request to exercise the privacy rights listed above, please complete our webform available here: Your Privacy Rights.",
+                        "observed_ui_text": "The link labeled 'Your Privacy Rights' suggests a general portal for exercising multiple privacy rights. After clicking the link, the destination page opens with the title 'Do Not Sell/Share My Data', which frames the page as an opt-out interface rather than a comprehensive rights submission page.",
+                        "action_taken": "Clicked the 'Your Privacy Rights' link and observed the title and framing of the destination page.",
+                        "dynamic_outcome": "Although the form includes a dropdown allowing users to select different rights to exercise, the page title emphasizes opt-out, creating uncertainty about whether access requests are supported through this pathway.",
+                        "short_rationale": "The link promises a general privacy rights submission pathway, but the destination page is framed as a 'Do Not Sell/Share My Data' page. This contradictory labeling undermines users’ ability to predict whether clicking the link will lead to the intended access request."
+                    }
+                ]      
+            },
+            {
+                "example_definition": "A user attempts to submit a right to access request. However, during the submission process, the user found that submitting the request will also automatically trigger other unexpected outcomes, such as an opt-out of data use or sale. Because no separate controls are provided, the user cannot complete the access request without simultaneously triggering this additional, unrequested action.",
+                "evidence_with_reasoning": [
+                    {
+                        "evidence_type": "ui_behavior",
+                        "raw_snippet": "You will also be opted-out of our use and sale of your mobile location data.",
+                        "observed_ui_text": "Submitting a 'Right to Know' request automatically triggers an opt-out of data use and sale, an additional effect beyond the expected access request.",
+                        "action_taken": "Reviewed the explanatory text immediately above the Right to Know submission form.",
+                        "dynamic_outcome": "The UI design indicates that submitting an access request will also opt the user out, with no separate control to submit the access request alone.",
+                        "short_rationale": "The company bundles an opt-out action with a Right to Know request, creating an outcome broader than what the request label implies. Because the additional effect cannot be avoided or separately controlled, users cannot predict the full consequences of submitting the access request."
+                    }
+                ]
+            }
+        ]
+    }
+    ]
+}

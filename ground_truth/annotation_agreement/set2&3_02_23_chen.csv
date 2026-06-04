@@ -1,0 +1,938 @@
+annotation_id,annotator,comments,confidence,created_at,data_broker,evidence,explanation_accuracy_percent,explanation_verification,file_path,id,lead_time,model,pattern_name,problems,prompting_strategy,rationale,review_status,status,task_completion,time_stamp,updated_at,verification
+542,1,I agree with the rationale. ,0.86,2025-11-16T05:26:34.777010Z,stirista.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://unsubscribe.stirista.com/
+  • evidence_type: ui_behavior
+  • raw_snippet: Residents of Colorado, Connecticut, Delaware, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, Nevada, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee, Texas, Utah, Virginia
+have privacy rights under state-specific laws. If you are a resident of one of those states, you may use this webform to exercise your rights to delete personal information about you and/or opt out of certain processing.
+  • observed_ui_text: The webform explicitly scopes eligibility to a list of states that does not include California, thereby preventing California residents from using the form.
+  • action_taken: Reviewed the top explanatory text on the unsubscribe webform.
+  • dynamic_outcome: No Right of Access or California-specific option appeared; the form sections only support deletion, mobile opt-out, and selling/sharing opt-out.
+
+2. Evidence #2
+  • page_url: https://unsubscribe.stirista.com/
+  • evidence_type: ui_behavior
+  • raw_snippet: Data Inquiry/3rd-Party Selling or Sharing of PI
+To opt out of any future third-party selling or sharing of your personal information, please enter your email and inquiry description below, then click ""Submit"".
+  • observed_ui_text: No request-type selector or 'Right to Know/Access' option is provided, forcing users to guess if this section can be used for access requests.
+  • action_taken: Inspected all sections and labels of the webform.
+  • dynamic_outcome: Form does not reveal any access request options even after scanning; only opt-out related flows exist.",,Incorrect,../browser_history_output/stirista.com/obstruction_zero_shot_regulator_role/gpt-5/20251114-195308,917,43.246,gpt-5,Creating Barriers,,obstruction_zero_shot_regulator_role,California consumers cannot use the presented webform to exercise Right of Access and there is no request-type selection for access; this complicates and prevents the expected task.,,found,,20251114-195308,2025-11-16T05:26:34.777030Z,Incorrect
+537,1,"{""text"":[""Does evidence #1 (consent) count as dark pattern?"",""I don't think evidence #2 (need follow-up email) count as dark pattern.""]}",0.78,2025-11-16T04:53:30.217753Z,steppingblocks.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.steppingblocks.com/personal-information-inquiry
+  • evidence_type: ui_behavior
+  • raw_snippet: I have read and agree to the Terms of Use and Privacy Policy.
+  • observed_ui_text: Agreement to Terms of Use and Privacy Policy is bundled into a required certification checkbox to proceed with a statutory privacy request.
+  • action_taken: Reviewed visible certification statement and required checkbox on the webform.
+  • dynamic_outcome: Form cannot be submitted without checking the agreement checkbox.
+
+2. Evidence #2
+  • page_url: https://www.steppingblocks.com/personal-information-inquiry
+  • evidence_type: policy_text
+  • raw_snippet: In order to complete this process, we are required to verify your request. Please provide your name and email for verification. Additional instructions will be emailed to you.
+  • observed_ui_text: Instead of allowing the user to specify the Right to Know/Access within the form, the site requires an extra off-form email step.
+  • action_taken: Captured the instruction text at top of the Data Privacy Request form.
+  • dynamic_outcome: User must await emailed instructions to proceed with the request.",,Unsure,../browser_history_output/steppingblocks.com/obstruction_zero_shot_regulator_role/gpt-5/20251114-193405,921,470.154,gpt-5,Creating Barriers,,obstruction_zero_shot_regulator_role,Requiring agreement to Terms/Privacy to proceed and deferring the actual request to a later email exchange complicates the task and can discourage completion.,,found,Complete,20251114-193405,2025-11-28T07:08:46.248554Z,Incorrect
+740,1,I don't think a follow up email count as adding steps.,0.82,2025-11-17T00:12:15.249210Z,steppingblocks.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.steppingblocks.com/personal-information-inquiry
+  • evidence_type: policy_text
+  • raw_snippet: Additional instructions will be emailed to you.
+  • observed_ui_text: The form collects only basic identity data and pushes the substantive request to a separate, later email interaction.
+  • action_taken: Reviewed the instruction copy at top of the webform.
+  • dynamic_outcome: The user must perform additional steps via email rather than completing the request in one online flow.",,Incorrect,../browser_history_output/steppingblocks.com/obstruction_zero_shot_regulator_role/gpt-5/20251114-193405,922,35.08,gpt-5,Adding Steps,,obstruction_zero_shot_regulator_role,The interface introduces an unnecessary follow-up step via email instead of allowing users to complete the Right of Access request within the form.,,found,Complete,20251114-193405,2025-11-17T00:12:15.249232Z,Incorrect
+794,1,"1. Evidence #1: does 'expand an accordion', I don't think it count as dark pattern
+2. Evidence #2: Should classify as conflicting information. ",0.7,2025-11-17T04:16:12.090950Z,swoop.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://swoop.com/privacy-notice/
+  • evidence_type: ui_behavior
+  • raw_snippet: Your Privacy Rights and Choices
+  • observed_ui_text: Rights instructions are hidden behind an accordion that must be expanded to see submission methods.
+  • action_taken: Clicked the 'Your Privacy Rights and Choices' accordion to reveal content.
+  • dynamic_outcome: User must perform additional UI interactions to see basic submission options.
+
+2. Evidence #2
+  • page_url: https://swoop.com/privacy-notice/
+  • evidence_type: interaction_obstacle
+  • raw_snippet: Click
+here
+  • observed_ui_text: User follows a link purporting to handle rights, then must backtrack upon discovering it only handles opt-out.
+  • action_taken: Clicked 'here' then evaluated the destination; returned to policy for alternative methods.
+  • dynamic_outcome: Extra navigation steps are required to figure out the correct method for access.",,Unsure,../browser_history_output/swoop.com/obstruction_zero_shot_regulator_role/gpt-5/20251114-200529,942,525.585,gpt-5,Adding Steps,,obstruction_zero_shot_regulator_role,The need to expand an accordion for core instructions and the misleading link that requires additional navigation to identify the correct submission path add unnecessary steps to the access task.,,found,Complete,20251114-200529,2025-11-30T05:49:36.233131Z,Incorrect
+837,1,,0.82,2025-11-17T06:10:36.543326Z,unearthcampaigns.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.unearthcampaigns.com/right-to-know/
+  • evidence_type: ui_behavior
+  • raw_snippet: LinkedIn Profile (Required)
+  • observed_ui_text: The form requires a LinkedIn Profile field to submit a Right to Know request.
+  • action_taken: Selected 'Request to Know' and reviewed required field labels and HTML attributes.
+  • dynamic_outcome: Field is marked required in UI and via required attribute; form cannot be completed without it.
+
+2. Evidence #2
+  • page_url: https://www.unearthcampaigns.com/right-to-know/
+  • evidence_type: policy_text
+  • raw_snippet: All requests available on this form are subject to our ability to reasonably verify your identity. If we locate your information in our records, we will ask you to email us from the email account for which you are requesting information.
+  • observed_ui_text: Beyond submitting the form with numerous required fields, users are told they must later email from the same account for verification.
+  • action_taken: Read the instructional text at the top of the Right-to-Know form.
+  • dynamic_outcome: Indicates an added verification channel (email) after form completion.",,Correct,../browser_history_output/unearthcampaigns.com/obstruction_zero_shot_regulator_role/gpt-5/20251115-025457,945,15.931,gpt-5,Creating Barriers,,obstruction_zero_shot_regulator_role,"Requiring a LinkedIn Profile is not a standard or reasonably necessary identifier for verifying a consumer under CCPA and introduces unnecessary burden; additionally, conditioning completion on a later email from the same account further complicates access.",,found,Complete,20251115-025457,2025-11-17T06:10:36.543348Z,Correct
+841,1,,0.7,2025-11-17T06:12:24.481454Z,upscapital.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://privacyportal.onetrust.com/webform/cff9470e-ab7d-4e8a-8a45-14391b299f19/f3f16aeb-9070-4a81-816c-7b20e5ebd65a
+  • evidence_type: ui_behavior
+  • raw_snippet: * Country
+* State
+* I am a (an)
+* First Name
+* Last Name
+* Email
+Select request type
+Retype the CAPTCHA code from the image
+  • observed_ui_text: Form fields and labels are plainly presented; core required fields are marked with asterisks and request type options include 'Right to Access'.
+  • action_taken: Reviewed the visible fields and labels on the webform.
+  • dynamic_outcome: No unnecessary blockers beyond standard fields; form appears usable without requiring account numbers or tracking numbers.",,Incorrect,../browser_history_output/upscapital.com/obstruction_zero_shot_regulator_role/gpt-5/20251115-033833,969,19.635,gpt-5,Creating Barriers,,obstruction_zero_shot_regulator_role,The interface supports the user task with clear fields and labels; no behaviors were observed that prevented or complicated the task beyond standard identity and request details.,,not found,Complete,20251115-033833,2025-11-17T06:13:14.267803Z,Incorrect
+845,1,Should classify as conflicting information. Classification inaccurate.,0.69,2025-11-17T06:16:35.489262Z,usdatacorporation.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.usdatacorporation.com/do-not-sell-my-info/
+  • evidence_type: policy_text
+  • raw_snippet: California residents may exercise their rights under CCPA by contacting us through any of these methods:
+1. By calling our toll-free number: (888) 578-3282
+2. By visiting our website: https://www.usdatacorporation.com/opt-out
+  • observed_ui_text: The entry point for exercising all CCPA rights, including access, directs users to a page labeled ""Opt-Out,"" which semantically suggests a different right (sale/sharing) rather than Right of Access.
+  • action_taken: Reviewed the Do Not Sell page heading and submission instructions.
+  • dynamic_outcome: User is routed to a page titled ""Opt-Out"" to submit an access request.
+
+2. Evidence #2
+  • page_url: https://www.usdatacorporation.com/opt-out
+  • evidence_type: ui_behavior
+  • raw_snippet: None
+  • observed_ui_text: On the Opt-Out page, the embedded form includes a radio option labeled along the lines of ""I request data access to all my personal information that US Data Corporation has on file,"" despite the page being titled ""Opt-Out.""
+  • action_taken: Opened the /opt-out page and inspected the form within the iframe.
+  • dynamic_outcome: Access request is placed under an ""Opt-Out"" page rather than a clearly labeled ""Access/Right to Know"" page.",,Unsure,../browser_history_output/usdatacorporation.com/obstruction_zero_shot_regulator_role/gpt-5/20251115-041457,989,82.151,gpt-5,Creating Barriers,,obstruction_zero_shot_regulator_role,"Routing Right of Access requests through a page labeled ""Opt-Out"" can confuse users and complicate the expected task flow for access requests, thereby subverting expectations and creating friction in exercising the right.",,found,Complete,20251115-041457,2025-11-28T08:13:55.554669Z,Incorrect
+521,1,"Evidence #4 is correct. Even i'm not counting as 'creating barriers', but okay for this case.",0.78,2025-11-16T04:06:35.020090Z,statara.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://statara.com/consumerdeletion/#gf_16
+  • evidence_type: policy_text
+  • raw_snippet: Information required for Consumer Right Fulfillment — THIS INFORMATION IS REQUIRED TO FACILITATE YOUR REQUEST
+  • observed_ui_text: The page asserts that all information is required to proceed, signaling broad mandatory data collection.
+  • action_taken: Reviewed the instructions above the form on Step 1.
+  • dynamic_outcome: User must provide extensive personal information before proceeding.
+
+2. Evidence #2
+  • page_url: https://statara.com/consumerdeletion/#gf_16
+  • evidence_type: policy_text
+  • raw_snippet: Statara needs all the personal information requested in the form below to process your request. ... Not completing the form or not providing any requested information may delay your request or make it impossible for you to be identified in our systems.
+  • observed_ui_text: Statement pressures the user to provide all fields (including full postal address and phone) even for an access request.
+  • action_taken: Read Step 1 explanatory text.
+  • dynamic_outcome: Numerous fields presented with required UI cues (name, address, email, phone, consent).
+
+3. Evidence #3
+  • page_url: https://statara.com/privacy-policy/
+  • evidence_type: policy_text
+  • raw_snippet: STATARA ONLY ACCEPTS REQUESTS FOR ACTION ON CONSUMER PRIVACY INFORMATION VIA THE PROCESS DESCRIBED IN THE STATARA PRIVACY CENTER (HTTPS://STATARA.COM/STATARA-PRIVACY-CENTER/) OR VIA PHONE AT 888-678-6880. STATARA DOES NOT ACCEPT ANY PRIVACY RIGHTS REQUESTS VIA ANY E-MAIL SUBMISSION.
+  • observed_ui_text: Explicit refusal to accept requests via email removes a typically low-friction method, potentially increasing burden.
+  • action_taken: Reviewed the Exercising Your Rights section of the Privacy Policy.
+  • dynamic_outcome: User must use webform or phone only.
+
+4. Evidence #4
+  • page_url: https://statara.com/privacy-policy/
+  • evidence_type: policy_text
+  • raw_snippet: Phoning us at 888-678-6880.
+  • observed_ui_text: Privacy Policy lists a phone number that differs from the phone number shown on the form page (1-888-207-8743), creating inconsistency.
+  • action_taken: Compared phone numbers listed across pages.
+  • dynamic_outcome: Conflicting contact numbers may cause confusion about the correct submission line.",,Incorrect,../browser_history_output/statara.com/obstruction_zero_shot_regulator_role/gpt-5/20251114-184907,1005,194.386,gpt-5,Creating Barriers,,obstruction_zero_shot_regulator_role,"The process requires extensive personal data and consent before even selecting request type, restricts request channels to only webform/phone, and shows inconsistent phone numbers across pages—collectively increasing friction and confusion for exercising the access right.",,found,,20251114-184907,2025-11-16T04:06:35.020114Z,Incorrect
+859,1,The rationale should classify as feedforward ambiguity. ,0.82,2025-11-17T06:36:42.755813Z,ventiveiq.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://privacyportal.privacypillar.com/dsar/form?orgid=0c31c814-ea86-461f-8ccb-294f05bc74c3&propid=cc95835d-7719-4336-b0c4-18146e5d000a&formid=4348f332-6917-4566-8c56-6fc9eb57097f&status=publish
+  • evidence_type: ui_behavior
+  • raw_snippet: Field: ""Select request type(s)"" [required]. Options observed include: ""Data Processing"", ""Data Portability"", ""Opt out"", ""Update Data"", ""Info Request"", ""Data Deletion"". No explicit ""Right to Know"" or ""Access Data"" option.
+  • observed_ui_text: Required request-type selection lacks an explicit CCPA Right of Access/Right to Know choice, forcing consumers to guess (e.g., select ""Info Request"").
+  • action_taken: Opened DSAR form and enumerated request-type options.
+  • dynamic_outcome: User cannot directly select the Right of Access; must infer which option applies.
+
+2. Evidence #2
+  • page_url: https://ventiveiq.com/website-privacy-policy/
+  • evidence_type: policy_text
+  • raw_snippet: Exact quoted sentences mentioning California / CCPA / CPRA / Right to Know / Right of Access: ""No mentions found on this page.""
+  • observed_ui_text: Website Privacy Policy omits any Right of Access guidance while discussing contact methods, creating ambiguity about how to exercise that right from this page.
+  • action_taken: Reviewed Website Privacy Policy for rights language.
+  • dynamic_outcome: User must navigate elsewhere to identify the correct right and method.",,Unsure,../browser_history_output/ventiveiq.com/obstruction_zero_shot_regulator_role/gpt-5/20251115-061816,1021,442.001,gpt-5,Creating Barriers,,obstruction_zero_shot_regulator_role,"The DSAR form’s required request-type control does not provide a clear Right of Access choice, complicating a core task; additionally, the Website Privacy Policy page omits Right of Access guidance, adding ambiguity.",,found,Complete,20251115-061816,2025-11-28T08:37:50.463178Z,Correct
+650,1,,0.9,2025-11-16T20:02:25.127643Z,stackadapt.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.stackadapt.com/legal-document-centre/consumer-rights-web-form
+  • evidence_type: ui_behavior
+  • raw_snippet: Cookies contain a unique ID which is a string of characters that’s assigned to your browser. Right click in your browser window and select “Inspect”. Go to the Application tab, select Cookies, and click on ‘sa-user-id’ in the list. The Cookie Value is your unique ID.
+  • observed_ui_text: The process requires multiple extra steps to extract a Cookie ID unrelated to the core of an access request.
+  • action_taken: Reviewed the Cookie ID instructions on the webform
+  • dynamic_outcome: Cookie ID input is required to submit the request",,Correct,../browser_history_output/stackadapt.com/obstruction_baseline_zero_shot/gpt-5/20251114-221535,1042,24.472,gpt-5,Adding Steps,,obstruction_baseline_zero_shot,The mandatory Cookie ID requirement adds unnecessary steps beyond what is technologically needed to verify identity for a CCPA access request.,,found,Complete,20251114-221535,2025-11-16T20:02:25.127665Z,Correct
+866,1,I don't think 'post-submission email' is a dark pattern.,0.72,2025-11-17T06:50:11.413029Z,unearthcampaigns.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.unearthcampaigns.com/privacy-policy/
+  • evidence_type: policy_text
+  • raw_snippet: If we locate your information in our records, we will ask you to email us from the email account for which you are requesting information.
+  • observed_ui_text: After submitting the form, the user must perform an additional email step.
+  • action_taken: Reviewed instructions in the California section.
+  • dynamic_outcome: Introduces a subsequent email exchange as an extra required interaction.
+
+2. Evidence #2
+  • page_url: https://www.unearthcampaigns.com/right-to-know/
+  • evidence_type: ui_behavior
+  • raw_snippet: LinkedIn Profile (Required)
+Cell Phone (Required)
+  • observed_ui_text: The number of mandatory fields increases the number of interactions needed to complete the request.
+  • action_taken: Inspected the form's required fields.
+  • dynamic_outcome: User must fill many fields even before any verification step.",,Incorrect,../browser_history_output/unearthcampaigns.com/obstruction_baseline_zero_shot/gpt-5/20251115-165550,1082,119.146,gpt-5,Adding Steps,,obstruction_baseline_zero_shot,"The process adds an extra post-form email step and requires completion of many fields, increasing the number of required interactions beyond what is strictly necessary for an access request.",,found,Complete,20251115-165550,2025-11-17T06:50:23.787364Z,Incorrect
+540,1,"1. Evidence #1 incorrect. The email is require for everyone.
+2. Evidence #2,3 is not classify as creating barriers. like #3 should be conflicting information. So classification incorrect",0.72,2025-11-16T05:11:30.685991Z,sterling.ai,"Evidence Items:
+1. Evidence #1
+  • page_url: https://sterling.ai/do-not-sell/
+  • evidence_type: ui_behavior
+  • raw_snippet: Phone
+Please provide your phone number here: // For authorized agents the phone number associated with the data subject that they wish that have deleted or opted-out.
+<input ... aria-label=""Phone number"" required=true />
+  • observed_ui_text: Primary Phone is marked required in addition to a required email, which may exceed necessity for verifying an access request.
+  • action_taken: Inspected the form fields and attributes inside the request form iframe.
+  • dynamic_outcome: Cannot proceed without providing a phone number due to required=true.
+
+2. Evidence #2
+  • page_url: https://sterling.ai/privacy-policy/
+  • evidence_type: policy_text
+  • raw_snippet: Requests to Know: 2 Received, 0 Completed, 2 Rejected
+  • observed_ui_text: Reported metrics show zero completed Requests to Know during the reporting period, suggesting potential friction for access requests.
+  • action_taken: Reviewed the CCPA Metrics Disclosure in the Privacy Policy.
+  • dynamic_outcome: Static disclosure; no dynamic interaction.
+
+3. Evidence #3
+  • page_url: https://sterling.ai/do-not-sell/
+  • evidence_type: ui_behavior
+  • raw_snippet: Request Type
+Please state which request type, you wish to exercise. For those who wish to exercise their
+Opt-out of Sale/Sharing right please select Do Not Sell or Share to Third Party.
+  • observed_ui_text: Form copy emphasizes opt-out language within a unified form, which can add cognitive load when trying to select a Right to Know request.
+  • action_taken: Read the Request Type section in the embedded form.
+  • dynamic_outcome: User must correctly locate an Access/Right to Know option among multiple types.",,Incorrect,../browser_history_output/sterling.ai/obstruction_baseline_zero_shot/gpt-5/20251114-233310,1093,316.021,gpt-5,Creating Barriers,,obstruction_baseline_zero_shot,"The form requires a phone number in addition to email to proceed and mixes multiple request types in one selector with copy focused on opt-out, which can burden or confuse a user exercising the CCPA Right of Access.",,found,Complete,20251114-233310,2025-11-28T07:13:34.858462Z,Incorrect
+844,1,"Claim as service provider, so no need to respond to individual rights requests.",0.85,2025-11-17T06:15:24.904555Z,usadata.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.usadata.com/ccpa
+  • evidence_type: policy_text
+  • raw_snippet: Because it is a service provider, USADATA cannot act upon consumer requests to ""know"" or ""delete"" their personal information. In the event that we receive such requests, we will advise the requestor of this fact.
+  • observed_ui_text: The page states that Right to Know/Delete requests cannot be processed by USADATA, preventing the user from exercising the Right of Access via this site.
+  • action_taken: Reviewed the CCPA page text after navigating from the Privacy Policy.
+  • dynamic_outcome: No methods to submit a Right of Access request were provided; user cannot proceed.
+
+2. Evidence #2
+  • page_url: https://www.usadata.com/ccpa
+  • evidence_type: policy_text
+  • raw_snippet: Submitting Consumer Rights Requests
+Because it is a service provider, USADATA cannot act upon consumer requests to know or delete their personal information.
+  • observed_ui_text: The 'Submitting Consumer Rights Requests' section reiterates that access requests will not be acted upon.
+  • action_taken: Scrolled the CCPA page and captured the submission instructions section.
+  • dynamic_outcome: No actionable submission path for Right of Access is provided.",,Incorrect,../browser_history_output/usadata.com/obstruction_baseline_zero_shot/gpt-5/20251115-175003,1161,12.393,gpt-5,Creating Barriers,,obstruction_baseline_zero_shot,"The interface and policy explicitly prevent the user task (exercising Right of Access) by stating requests will not be acted upon, which complicates or blocks the task and thus fits 'Creating Barriers.'",,found,Complete,20251115-175003,2025-11-17T06:15:24.904579Z,Incorrect
+873,1,,0.7,2025-11-17T06:57:03.472743Z,usadata.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.usadata.com/ccpa
+  • evidence_type: ui_behavior
+  • raw_snippet: None
+  • observed_ui_text: No webform, multi-step flow, or additional UI interactions for Right of Access exist.
+  • action_taken: Searched for any forms or stepwise UI on the CCPA page.
+  • dynamic_outcome: No steps to perform; no unnecessary steps added.
+
+2. Evidence #2
+  • page_url: https://www.usadata.com/donotsellmyinformation
+  • evidence_type: policy_text
+  • raw_snippet: Webform presence and fields:
+- No webform is present on this page; therefore, no fields or required indicators are shown.
+  • observed_ui_text: Do Not Sell page provides static contact methods without multi-step hurdles.
+  • action_taken: Extracted the Do Not Sell page content and looked for forms or multi-step flows.
+  • dynamic_outcome: No added steps observed.",,Correct,../browser_history_output/usadata.com/obstruction_baseline_zero_shot/gpt-5/20251115-175003,1162,11.639,gpt-5,Adding Steps,,obstruction_baseline_zero_shot,There are no flows for Right of Access at all; thus no evidence of unnecessary additional required steps.,,not found,Complete,20251115-175003,2025-11-17T06:57:03.472778Z,Correct
+689,1,Privacy Mazes found due to inconsistent phone numbers.,0.8,2025-11-16T21:43:28.770152Z,statara.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://statara.com/privacy/
+  • evidence_type: policy_text
+  • raw_snippet: Exercising your Consumer Privacy Rights ... Consumers wishing to manage their personal data may choose from the options below.
+  • observed_ui_text: Privacy Center summarizes rights with direct links to corresponding forms, including the consumer request form.
+  • action_taken: Reviewed the Privacy Center sections and followed the link to the form.
+  • dynamic_outcome: Direct navigation to the webform without having to traverse disconnected pages.",,Correct,../browser_history_output/statara.com/obstruction_baseline_zero_shot/gpt-5/20251114-230946,1203,24.221,gpt-5,Privacy Mazes,,obstruction_baseline_zero_shot,"Information architecture provides a clear Privacy Center with direct, labeled links to actions; no fragmented or maze-like navigation required.",,not found,Complete,20251114-230946,2026-02-03T08:16:54.630024Z,Correct
+609,1,,0.85,2025-11-16T08:03:51.463606Z,swoop.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://optout.swoop.com/pii.html
+  • evidence_type: ui_behavior
+  • raw_snippet: You may fill out as many or few fields as you like.
+  • observed_ui_text: No mandatory fields or identity hurdles shown; no CAPTCHA or login required.
+  • action_taken: Inspected the form fields and attributes for requirement status.
+  • dynamic_outcome: Fields accepted input and were optional.
+
+2. Evidence #2
+  • page_url: https://swoop.com/privacy-notice/
+  • evidence_type: policy_text
+  • raw_snippet: Submitting a privacy rights request does not require you to create an account or register with us.
+  • observed_ui_text: Policy explicitly states no account is needed to submit a request.
+  • action_taken: Reviewed policy text under 'Your Privacy Rights and Choices'.
+  • dynamic_outcome: No account gate encountered.",,Correct,../browser_history_output/swoop.com/obstruction_baseline_zero_shot/gpt-5/20251115-001256,1217,18.809,gpt-5,Creating Barriers,,obstruction_baseline_zero_shot,"The site offers multiple channels without requiring account creation, complex verification, or excessive data entry.",,not found,Complete,20251115-001256,2025-11-16T08:03:51.463628Z,Correct
+822,1,"1 Evidence #1: incorrect. Not a dark pattern.
+2. Evidence #2: it evidence should be privacy mazes, a low level of adding steps. Wrong classification.",0.7,2025-11-17T05:15:54.601489Z,t-mobile.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://privacyportal-t-mobile.my.onetrust.com/webform/d4a925f0-4ebf-40ba-817b-bccc309e602f/7831d667-1ebc-4b1e-a941-e545cb0d0523
+  • evidence_type: ui_behavior
+  • raw_snippet: If you want to access and delete your personal data, you’ll need to submit two separate requests.
+  • observed_ui_text: The UI requires two separate submissions for related actions (access and deletion) rather than allowing a combined request.
+  • action_taken: Opened the form, selected 'Access personal data', and reviewed instructional text
+  • dynamic_outcome: User must complete and submit distinct forms for each request type
+
+2. Evidence #2
+  • page_url: https://www.t-mobile.com/privacy-center/personal-data-request.html
+  • evidence_type: policy_text
+  • raw_snippet: Get started (Not a customer)
+  • observed_ui_text: Before reaching the form, the user must choose a relationship tile and then a specific request type link.
+  • action_taken: Clicked 'Get started' for Not a customer, then chose 'Access your data' before reaching 'Start online form'
+  • dynamic_outcome: Additional intermediate steps prior to the actual form",,Incorrect,../browser_history_output/t-mobile.com/obstruction_baseline_zero_shot/gpt-5/20251115-003229,1294,73.999,gpt-5,Adding Steps,,obstruction_baseline_zero_shot,"Users must navigate multiple intermediate choices and are instructed to submit separate requests for access and deletion, introducing extra steps beyond what could be handled in a single combined submission.",,found,Complete,20251115-003229,2026-01-23T07:17:51.558879Z,Incorrect
+860,1,"I agree with the rationale, even not follow my definition or classification.",0.78,2025-11-17T06:37:05.693125Z,ventiveiq.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://privacyportal.privacypillar.com/dsar/form?orgid=0c31c814-ea86-461f-8ccb-294f05bc74c3&propid=cc95835d-7719-4336-b0c4-18146e5d000a&formid=4348f332-6917-4566-8c56-6fc9eb57097f&status=publish
+  • evidence_type: ui_behavior
+  • raw_snippet: To initiate a Opt-out request, please enter your email below, location, and other optional details, and push the “SUBMIT” button to begin your request.
+  • observed_ui_text: The prominent instruction frames the form as opt-out only, even when using it for 'Info Request' (Right to Know/Access), which can mislead users about the appropriate action.
+  • action_taken: Opened the DSAR form and selected 'User' and 'Info Request' as request type.
+  • dynamic_outcome: The opt-out-centric helper text remained, creating confusion for access requests.
+
+2. Evidence #2
+  • page_url: https://privacyportal.privacypillar.com/dsar/form?orgid=0c31c814-ea86-461f-8ccb-294f05bc74c3&propid=cc95835d-7719-4336-b0c4-18146e5d000a&formid=4348f332-6917-4566-8c56-6fc9eb57097f&status=publish
+  • evidence_type: ui_behavior
+  • raw_snippet: Select request type(s
+Data Processing
+Data Portability
+Opt out
+Update Data
+Info Request
+Data Deletion
+  • observed_ui_text: There is no explicit 'Right to Know'/'Right of Access' option; the user must infer that 'Info Request' is the correct choice.
+  • action_taken: Reviewed the request type options after loading the form.
+  • dynamic_outcome: Ambiguity about which option maps to statutory Right to Know/Access.",,Unsure,../browser_history_output/ventiveiq.com/obstruction_baseline_zero_shot/gpt-5/20251115-192101,1297,9.231,gpt-5,Creating Barriers,,obstruction_baseline_zero_shot,Ambiguous labeling and opt-out-centric text complicate the Right of Access task and may deter or misdirect users from exercising that right.,,found,Complete,20251115-192101,2025-11-17T06:37:05.693155Z,Correct
+891,1,Incorrect evidence.,0.7,2025-11-17T07:11:43.010706Z,veraset.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.veraset.com/legal/privacy-policy
+  • evidence_type: policy_text
+  • raw_snippet: “For additional information, see our CCPA/State Specific Rights Privacy Addendum.”
+  • observed_ui_text: Instead of listing rights and submission methods directly on the policy page, the user is required to open a separate addendum.
+  • action_taken: Reviewed Privacy Policy's directions for state-specific rights.
+  • dynamic_outcome: Additional navigation step to an external document was required, which then failed (404), increasing steps without necessity.",,Incorrect,../browser_history_output/veraset.com/obstruction_baseline_zero_shot/gpt-5/20251115-193409,1318,263.765,gpt-5,Adding Steps,,obstruction_baseline_zero_shot,Requiring navigation to a separate addendum for core rights and procedures unnecessarily adds steps to accomplish the Right of Access task.,,found,Complete,20251115-193409,2025-12-01T11:48:32.641528Z,Incorrect
+544,1,"Role prompting version found the dark pattern. Even they are not classify as creating barriers by my annotation, but i agree with they rationale. So should i classify this task as 'correct' or 'incorrect'?",0.65,2025-11-16T05:34:18.838958Z,stirista.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://unsubscribe.stirista.com/
+  • evidence_type: ui_behavior
+  • raw_snippet: “Email (required)” / “Description (required)”
+  • observed_ui_text: The portal requests standard information relevant to handling a data inquiry.
+  • action_taken: Reviewed the Unsubscribe portal form sections and fields.
+  • dynamic_outcome: Required fields were minimal and aligned with processing the request.
+
+2. Evidence #2
+  • page_url: https://www.stirista.com/privacy-policy/
+  • evidence_type: policy_text
+  • raw_snippet: “For security purposes (and as required under California law), we will verify your identity – in part by requesting certain information from you — when you request to exercise your California privacy rights.”
+  • observed_ui_text: Verification is disclosed as required by law; not excessive or unexpected.
+  • action_taken: Reviewed California verification instructions in the policy.
+  • dynamic_outcome: Informational disclosure only; no UI obstacles encountered.",,Correct,../browser_history_output/stirista.com/obstruction_baseline_zero_shot/gpt-5/20251115-000327,1333,295.055,gpt-5,Creating Barriers,,obstruction_baseline_zero_shot,"We did not observe UI behaviors or instructions that complicate or prevent making an access request beyond standard, legally required steps.",,not found,,20251115-000327,2025-11-16T05:34:18.838984Z,Correct
+854,1,,0.8,2025-11-17T06:26:20.476606Z,vendelux.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://vendelux.com/privacy-center/
+  • evidence_type: ui_behavior
+  • raw_snippet: None
+  • observed_ui_text: Form consisted of standard fields (First name, Last name, Email) and a required request-type select; no CAPTCHA or excessive data collection observed for a Right of Access request.
+  • action_taken: Reviewed the Privacy Center form fields and their required status.
+  • dynamic_outcome: Form remained accessible without popups or blocks; UI behaved normally.
+
+2. Evidence #2
+  • page_url: https://vendelux.com/privacy/
+  • evidence_type: policy_text
+  • raw_snippet: Vendelux has a self-service Privacy Center where people can claim and update their Professional Profiles, submit access requests, and opt out of our database.
+  • observed_ui_text: The policy provides a clear route to perform the task via a self-service portal, not adding undue obstacles.
+  • action_taken: Read the policy and navigated to the Privacy Center.
+  • dynamic_outcome: Navigation was straightforward and successful.",,Correct,../browser_history_output/vendelux.com/obstruction_baseline_zero_shot/gpt-5/20251115-185311,1345,6.79,gpt-5,Creating Barriers,,obstruction_baseline_zero_shot,"No behaviors that prevented, abstracted, or complicated the access request beyond standard steps were observed.",,not found,Complete,20251115-185311,2025-11-17T06:26:20.476627Z,Correct
+999,1,"Evidence #2 correct.
+Evidence #3: ""a cell phone number (alongside full address)"" as mandatory will not create barriers.",0.82,2025-12-01T09:39:11.139428Z,unearthcampaigns.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.unearthcampaigns.com/privacy-policy/#ca
+  • evidence_type: policy_text
+  • raw_snippet: For right-to-know requests, we ask you to provide your name, email address, home phone number, cell phone number, address, and LinkedIn profile URL.
+  • observed_ui_text: The policy requires multiple contact points and a LinkedIn profile URL for a Right to Know request, which exceeds commonly necessary identifiers (e.g., name and email).
+  • action_taken: Reviewed the CA section under the Privacy Policy for Right to Know instructions.
+  • dynamic_outcome: Requirements include LinkedIn profile URL and multiple phone numbers as part of identity verification.
+
+2. Evidence #2
+  • page_url: https://www.unearthcampaigns.com/right-to-know
+  • evidence_type: ui_behavior
+  • raw_snippet: LinkedIn Profile (Required)
+  • observed_ui_text: The webform marks 'LinkedIn Profile' as a required field, imposing a non-essential identifier to proceed.
+  • action_taken: Viewed the Right to Know form and inspected labels and required attributes.
+  • dynamic_outcome: The field is required (UI label and HTML required attribute).
+
+3. Evidence #3
+  • page_url: https://www.unearthcampaigns.com/right-to-know
+  • evidence_type: ui_behavior
+  • raw_snippet: Cell Phone (Required)
+  • observed_ui_text: The form requires a cell phone number in addition to email and full address, which can create unnecessary friction.
+  • action_taken: Inspected the form fields and their required status.
+  • dynamic_outcome: Cell phone input has required attribute; user cannot proceed without it.",,Incorrect,../browser_history_output/unearthcampaigns.com/obstruction_few_shot_regulator_role_with_CoT/gpt-5/20251130-224645,2370,131.504,gpt-5,Creating Barriers,,obstruction_few_shot_regulator_role_with_CoT,"Requiring a LinkedIn profile URL and a cell phone number (alongside full address) as mandatory fields to exercise Right to Know adds unnecessary burden beyond essential identity verification, thereby creating barriers.",,found,Complete,20251130-224645,2026-01-23T07:19:12.712413Z,Incorrect
+1026,1,,0.62,2025-12-01T11:06:47.417589Z,spyfly.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.spyfly.com/help-center/privacy-requests
+  • evidence_type: ui_behavior
+  • raw_snippet: None
+  • observed_ui_text: Request Type includes an option 'Request a Copy' and the flow appears as a single consolidated request form rather than splitting access into multiple separate requests.
+  • action_taken: Reviewed Request Type dropdown and form layout.
+  • dynamic_outcome: No requirement to submit multiple separate requests for a single access right observed.",,Correct,../browser_history_output/spyfly.com/obstruction_regulator_role_few_shot_scenarios/gpt-5/20251130-033119,2391,14.97,gpt-5,Adding Steps,,obstruction_regulator_role_few_shot_scenarios,No evidence that a single access right is fragmented into multiple required submissions or device/identifier-specific repeats.,,not found,Complete,20251130-033119,2025-12-01T11:06:47.417658Z,Correct
+1042,1,,0.6,2025-12-01T11:18:33.186289Z,swoop.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://swoop.com/for-california-residents-notice-at-collection/
+  • evidence_type: interaction_obstacle
+  • raw_snippet: link labeled ""here""
+  • observed_ui_text: A single intermediary click from Notice at Collection to the request portal.
+  • action_taken: Followed Notice at Collection to the linked request portal.
+  • dynamic_outcome: Arrived at optout.swoop.com after one intermediate step.",,Correct,../browser_history_output/swoop.com/obstruction_regulator_role_few_shot_scenarios/gpt-5/20251130-051917,2443,5.792,gpt-5,Adding Steps,,obstruction_regulator_role_few_shot_scenarios,The path required minimal intermediate navigation and there was no splitting of a single right into multiple separate mandatory submissions.,,not found,Complete,20251130-051917,2025-12-01T11:18:33.186312Z,Correct
+1068,1,,0.83,2025-12-01T11:43:11.987822Z,ventiveiq.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://privacyportal.privacypillar.com/dsar/form?orgid=0c31c814-ea86-461f-8ccb-294f05bc74c3&propid=cc95835d-7719-4336-b0c4-18146e5d000a&formid=4348f332-6917-4566-8c56-6fc9eb57097f&status=publish
+  • evidence_type: ui_behavior
+  • raw_snippet: If you have multiple e-mails / Mobile Identifiers, please submit the form multiple times to ensure complete opt-out.
+  • observed_ui_text: The form explicitly instructs users to submit multiple separate requests for different identifiers.
+  • action_taken: Opened the DSAR form and read the instruction text displayed near the top of the page.
+  • dynamic_outcome: Users with multiple emails or MAIDs are told to repeat the process, multiplying steps to cover all data.",,Correct,../browser_history_output/ventiveiq.com/obstruction_few_shot_regulator_role_with_CoT/gpt-5/20251201-033821,2487,47.767,gpt-5,Adding Steps,,obstruction_few_shot_regulator_role_with_CoT,"Requiring separate submissions for each identifier increases the number of steps a user must take to exercise their rights fully, matching the 'Adding Steps' pattern.",,found,Complete,20251201-033821,2025-12-01T11:43:11.987844Z,Correct
+1022,1,,0.9,2025-12-01T10:59:16.442143Z,veraset.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.veraset.com/legal/do-not-sell-request
+  • evidence_type: ui_behavior
+  • raw_snippet: Advertising ID
+  • observed_ui_text: The form includes a required field labeled 'Advertising ID'.
+  • action_taken: Scrolled to the form fields on the Do-Not-Sell Request page.
+  • dynamic_outcome: DOM shows required=true for the Advertising ID input.
+
+2. Evidence #2
+  • page_url: https://www.veraset.com/legal/do-not-sell-request
+  • evidence_type: policy_text
+  • raw_snippet: Find your advertising ID
+  • observed_ui_text: The page provides instructions 'Find your advertising ID' with OS-specific steps, implying users must locate a technical identifier.
+  • action_taken: Reviewed the instructional section near the form.
+  • dynamic_outcome: User is directed to retrieve device-level IDs from iOS/Android settings before proceeding.",,Correct,../browser_history_output/veraset.com/obstruction_regulator_role_few_shot_scenarios/gpt-5/20251130-001949,2510,26.22,gpt-5,Creating Barriers,,obstruction_regulator_role_few_shot_scenarios,"Requiring an Advertising ID to submit a privacy request imposes a device-level technical identifier that many users do not know and must retrieve via OS settings, creating unnecessary friction and barriers to exercising rights.",,found,Complete,20251130-001949,2025-12-01T10:59:16.442170Z,Correct
+992,1,,0.6,2025-12-01T08:52:39.750240Z,stirista.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.stirista.com/privacy-policy/
+  • evidence_type: policy_text
+  • raw_snippet: We may in certain cases require that you verify any of the information that you submit, such as through a verified email response or another verified response.
+  • observed_ui_text: Verification describes basic confirmation (e.g., verified email response) without demanding technical identifiers or sensitive uploads.
+  • action_taken: Reviewed extracted policy text for identity verification requirements.
+  • dynamic_outcome: No excessive or burdensome verification requirement observed for Right of Access.
+
+2. Evidence #2
+  • page_url: https://unsubscribe.stirista.com/
+  • evidence_type: ui_behavior
+  • raw_snippet: Residents of Colorado, Connecticut, Delaware, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, Nevada, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee, Texas, Utah, Virginia have privacy rights under state-specific laws. If you are a resident of one of those states, you may use this webform...
+  • observed_ui_text: This webform appears focused on deletion/opt-out for listed states and does not present a Right of Access flow for California.
+  • action_taken: Inspected the unsubscribe portal sections and labels.
+  • dynamic_outcome: No Right of Access form fields or relationship/request-type gates were shown.",,Correct,../browser_history_output/stirista.com/obstruction_few_shot_regulator_role_with_CoT/gpt-5/20251201-062714,2514,11.317,gpt-5,Creating Barriers,,obstruction_few_shot_regulator_role_with_CoT,"We did not observe an access webform imposing technical IDs or single-method limitations; policy verification mentions only standard email confirmation. Thus, creating barriers as defined were not evident for Right of Access.",,not found,Complete,20251201-062714,2025-12-01T08:52:39.750274Z,Correct
+1038,1,,0.55,2025-12-01T11:17:35.949522Z,stirista.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.stirista.com/privacy-policy/
+  • evidence_type: policy_text
+  • raw_snippet: First, you may contact us directly at privacy@stirista.com to have your personal information removed... Or if you prefer, you can contact us directly by mail...
+  • observed_ui_text: Policy lists contact methods but does not describe an access request process that requires multiple separate submissions for different identifiers.
+  • action_taken: Searched policy text for instructions that split the Right of Access into multiple requests or identifiers.
+  • dynamic_outcome: No access-related instruction requiring multiple submissions observed.",,Correct,../browser_history_output/stirista.com/obstruction_few_shot_regulator_role_with_CoT/gpt-5/20251201-062714,2515,15.579,gpt-5,Adding Steps,,obstruction_few_shot_regulator_role_with_CoT,"No Right of Access flow was found that forces multiple identifiers or separate submissions; observed multi-identifier instructions relate to opt-out/deletion, not access.",,not found,Complete,20251201-062714,2025-12-01T11:17:35.949545Z,Correct
+1001,1,,0.85,2025-12-01T09:43:22.683454Z,uplead.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.uplead.com/opt-out/
+  • evidence_type: ui_behavior
+  • raw_snippet: Fields visible: Full Name (required); Contact Email (required); Email; Phone Number; Jurisdiction (required); Request Type (required); optional SMS consent; reCAPTCHA present. Button: ""Submit"".
+  • observed_ui_text: Only standard fields are required; no request for technical identifiers or sensitive documents. reCAPTCHA is present but typical and non-intrusive.
+  • action_taken: Inspected form fields and 'required' attributes in DOM and UI.
+  • dynamic_outcome: Form displays necessary inputs without excessive verification or non-essential mandatory fields.
+
+2. Evidence #2
+  • page_url: https://www.uplead.com/privacy/#california-residents
+  • evidence_type: policy_text
+  • raw_snippet: ""California residents may make such request to us at support@uplead.com.""
+  • observed_ui_text: Provides an alternative submission method (email) in addition to the webform.
+  • action_taken: Reviewed the CA section text for submission channels.
+  • dynamic_outcome: Two methods are available, avoiding a single-method constraint.",,Correct,../browser_history_output/uplead.com/obstruction_few_shot_regulator_role_with_CoT/gpt-5/20251130-231556,2530,14.86,gpt-5,Creating Barriers,,obstruction_few_shot_regulator_role_with_CoT,The site offers two methods (webform and email) and requires only basic identity fields; no evidence of excessive verification or gating requirements.,,not found,Complete,20251130-231556,2025-12-01T09:43:22.683480Z,Correct
+1170,1,Evidence 1 & 2 is due to 'Continue with saved changes?' where i didn't clear the cookies. It is not website issue. ,0.9,2025-12-06T18:13:09.241026Z,sterling.ai,"Evidence Items:
+1. Evidence #1
+  • page_url: https://sterling.ai/do-not-sell/
+  • evidence_type: ui_behavior
+  • raw_snippet: Continue with saved changes?
+You have saved changes on this form submission.
+Don't show again for this form
+Reset
+Confirm
+  • observed_ui_text: A modal overlay appears over the form, dimming the form and requiring user attention to 'Confirm' or close before interacting with fields.
+  • action_taken: Attempted to click 'Confirm' and close buttons and scroll the iframe multiple times.
+  • dynamic_outcome: The overlay persisted/reappeared, blocking interaction with underlying fields and visually drawing attention away from the form.
+
+2. Evidence #2
+  • page_url: https://sterling.ai/do-not-sell/
+  • evidence_type: ui_behavior
+  • raw_snippet: This website utilizes technologies such as cookies to enable essential site functionality, as well as for analytics, personalization, and targeted advertising.
+Accept
+Deny Non-Essential
+  • observed_ui_text: Cookie banner appears and competes for attention near the top of the page when first loading, obscuring part of the UI until dismissed.
+  • action_taken: Dismissed cookie banner via 'Deny Non-Essential'.
+  • dynamic_outcome: Banner disappeared after denial, but initially diverted attention from the primary task.",,Incorrect,../browser_history_output/sterling.ai/interface_interference_baseline_zero_shot/gpt-5/20251201-035439,2545,218.136,gpt-5,Visual Prominence,,interface_interference_baseline_zero_shot,"Modal overlay and cookie banner place distracting UI elements in competition with the goal-oriented form elements, reducing salience of the privacy request process.",,found,Complete,20251201-035439,2025-12-06T18:13:09.241049Z,Incorrect
+1494,1,,0.75,2026-01-05T09:12:01.198628Z,sterling.ai,"Evidence Items:
+1. Evidence #1
+  • page_url: https://sterling.ai/privacy-policy/
+  • evidence_type: policy_text
+  • raw_snippet: - ""How to Submit a Request. … the form listed on our Website at: https://sterling.ai/do-not-sell/.""
+- ""For Shine the Light requests: “email at privacy@sterling.ai” and postal mail address provided above.""
+  • observed_ui_text: Submission methods are explicitly stated in the policy, including form URL and email; the form is also prominently embedded on the Do Not Sell page.
+  • action_taken: Reviewed extracted policy text and navigated to the linked page.
+  • dynamic_outcome: Submission paths were discoverable via clearly labeled links.",,Incorrect,../browser_history_output/sterling.ai/interface_interference_baseline_zero_shot/gpt-5/20251201-035439,2548,2.797,gpt-5,Hidden Information,,interface_interference_baseline_zero_shot,Submission methods are disclosed in the policy and accessible via the Do Not Sell page; no evidence of relevant information being intentionally hidden.,,not found,,20251201-035439,2026-01-05T09:12:01.198648Z,Incorrect
+1225,1,,0.82,2025-12-10T20:06:03.333509Z,sterling.ai,"Evidence Items:
+1. Evidence #1
+  • page_url: https://sterling.ai/do-not-sell/
+  • evidence_type: ui_behavior
+  • raw_snippet: Do Not Sell
+  • observed_ui_text: The page heading says ""Do Not Sell"" but hosts a general ""Data Subject Request Form"" that includes a Request Type selector for multiple rights, not only opt-out.
+  • action_taken: Opened the Do Not Sell page and viewed the embedded form.
+  • dynamic_outcome: User expecting only an opt-out flow may not anticipate that this page also handles Right of Access requests.
+
+2. Evidence #2
+  • page_url: https://sterling.ai/do-not-sell/
+  • evidence_type: ui_behavior
+  • raw_snippet: Request Type
+Please state which request type, you wish to exercise. For those who wish to exercise their Opt-out of Sale/Sharing right please select Do Not Sell or Share to Third Party.
+  • observed_ui_text: Helper text implies multiple request types are supported within a page labeled for 'Do Not Sell'.
+  • action_taken: Inspected helper text under Request Type.
+  • dynamic_outcome: Potential mismatch between page title expectation and multi-purpose form behavior.",,Correct,../browser_history_output/sterling.ai/interface_interference_baseline_zero_shot/gpt-5/20251201-035439,2550,226.329,gpt-5,Feedforward Ambiguity,,interface_interference_baseline_zero_shot,"The page label suggests a specific outcome (opt-out of sale), but the embedded form supports multiple request types including access, creating a discrepancy between user expectation and actual function.",,found,,20251201-035439,2026-01-05T09:06:35.998468Z,Correct
+1804,1,,0.74,2026-01-07T03:42:48.813863Z,vendelux.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://vendelux.com/privacy-center/
+  • evidence_type: ui_behavior
+  • raw_snippet: Privacy Center
+Vendelux cares about your data and privacy.
+Please fill out this form regarding your data.
+  • observed_ui_text: No distracting elements competing for attention with the access request flow.
+  • action_taken: Inspected the form area and surrounding UI.
+  • dynamic_outcome: No popups, banners, or competing CTAs overshadowing the privacy request form.",,Correct,../browser_history_output/vendelux.com/interface_interference_baseline_zero_shot/gpt-5/20251201-004758,2559,3.461,gpt-5,Visual Prominence,,interface_interference_baseline_zero_shot,The page focuses on the form; no competing elements create distraction from the user’s privacy goal.,,not found,,20251201-004758,2026-01-07T03:42:48.813889Z,Correct
+1798,1,,0.73,2026-01-07T03:40:07.933942Z,vendelux.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://vendelux.com/privacy-center/
+  • evidence_type: ui_behavior
+  • raw_snippet: Request Access to Professional Information
+  • observed_ui_text: The option label implies a predictable outcome: initiating an access (Right to Know) request.
+  • action_taken: Selected the 'Request Access to Professional Information' option in the dropdown.
+  • dynamic_outcome: No unexpected navigation or unrelated prompts occurred.",,Incorrect,../browser_history_output/vendelux.com/interface_interference_baseline_zero_shot/gpt-5/20251201-004758,2564,3.887,gpt-5,Feedforward Ambiguity,,interface_interference_baseline_zero_shot,Labels and outcomes match user expectations for initiating an access request.,,not found,,20251201-004758,2026-01-07T03:40:07.933966Z,Incorrect
+1475,1,,0.7,2026-01-05T08:47:01.612768Z,steppingblocks.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.steppingblocks.com/privacy-ccpa
+  • evidence_type: policy_text
+  • raw_snippet: “You may use this personal information request form to request access to your personal information.”
+  • observed_ui_text: The link text appears inline and is not overshadowed by distracting calls-to-action related to other goals.
+  • action_taken: Scrolled and read the section detailing rights and submission links.
+  • dynamic_outcome: Normal link visibility; no competing distracting UI elements observed.",,Correct,../browser_history_output/steppingblocks.com/interface_interference_baseline_zero_shot/gpt-5/20251201-034216,2601,2.852,gpt-5,Visual Prominence,,interface_interference_baseline_zero_shot,No prominent distractions or visually dominant non-privacy elements interfere with finding or using the access link.,,not found,,20251201-034216,2026-01-05T08:47:01.612799Z,Correct
+1172,1,"See step_9.png screenshot. The webform is only for opt out, so 'no Access/Right to Know option is visible on the portal'. I don't think it count as Visual Prominence",0.6,2025-12-06T18:18:52.586209Z,swoop.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://optout.swoop.com/pii.html
+  • evidence_type: ui_behavior
+  • raw_snippet: PII (Personally Identifiable Information) Opt Out
+...
+[Submit]
+  • observed_ui_text: Large header and a bright blue “Submit” button for an opt-out flow, while no Access/Right to Know option is visible on the portal.
+  • action_taken: Inspected the portal UI for access request options.
+  • dynamic_outcome: The UI encourages completion of opt-out; no competing access option is present to fulfill the user’s Right to Know goal.",,Incorrect,../browser_history_output/swoop.com/interface_interference_baseline_zero_shot/gpt-5/20251201-044737,2622,123.872,gpt-5,Visual Prominence,,interface_interference_baseline_zero_shot,"The portal’s design highlights the opt-out flow, drawing attention away from the Right of Access goal, potentially distracting users from their intended action.",,found,Complete,20251201-044737,2025-12-06T18:18:52.586228Z,Incorrect
+1572,1,,0.86,2026-01-06T02:41:55.173944Z,unacast.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.unacast.com/request-your-information
+  • evidence_type: ui_behavior
+  • raw_snippet: “Enter the required information and click ‘Submit’ to have us attempt to verify your identity in order to comply with your request.”
+  • observed_ui_text: The outcome of clicking SUBMIT is explained (identity verification attempt).
+  • action_taken: Read instructions adjacent to the form.
+  • dynamic_outcome: Expected result of the action is consistent with the instructions.",,Correct,../browser_history_output/unacast.com/interface_interference_baseline_zero_shot/gpt-5/20251130-213122,2648,7.166,gpt-5,Feedforward Ambiguity,,interface_interference_baseline_zero_shot,The interface clearly states what SUBMIT will do; no discrepancy between instruction and resulting action was observed.,,not found,,20251130-213122,2026-01-06T02:41:55.174028Z,Correct
+1431,1,,0.78,2026-01-05T08:01:55.600880Z,statara.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://statara.com/consumerdeletion/#gf_16
+  • evidence_type: ui_behavior
+  • raw_snippet: EXERCISING YOUR CONSUMER RIGHTS TO KNOW OR ACCESS, DELETE OR CORRECT ... While this online request is the easiest way to exercise these rights, requests also can be completed by phone at 1-888-207-8743.
+  • observed_ui_text: The page contains the form and the phone number; no competing non-privacy elements attract disproportionate attention.
+  • action_taken: Reviewed the form layout and surrounding text.
+  • dynamic_outcome: No popups or distracting elements; standard two-step form.",,Correct,../browser_history_output/statara.com/interface_interference_baseline_zero_shot/gpt-5/20251201-031537,2685,2.786,gpt-5,Visual Prominence,,interface_interference_baseline_zero_shot,The interface focuses on the rights request workflow without distracting elements that compete with the user’s goal.,,not found,,20251201-031537,2026-01-05T08:01:55.600907Z,Correct
+1666,1,,0.78,2026-01-06T08:31:08.973340Z,upscapital.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://privacyportal.onetrust.com/webform/cff9470e-ab7d-4e8a-8a45-14391b299f19/f3f16aeb-9070-4a81-816c-7b20e5ebd65a
+  • evidence_type: ui_behavior
+  • raw_snippet: None
+  • observed_ui_text: After selecting Country=United States and State=California, the form reveals 'Request Type' including 'Right to Access', matching expectations.
+  • action_taken: Selected United States, then California; observed dynamic field expansion.
+  • dynamic_outcome: UI updates predictably and shows access-related options as expected.",,Correct,../browser_history_output/upscapital.com/interface_interference_zero_shot_regulator_role/gpt-5/20251203-001259,2816,7.983,gpt-5,Feedforward Ambiguity,,interface_interference_zero_shot_regulator_role,The actions (selecting jurisdiction) lead to predictable UI updates that align with user expectations for an access request.,,not found,,20251203-001259,2026-01-06T08:31:08.973363Z,Correct
+1174,1,"{""text"":[""I don't think a 'Book a Meeting' CTA in header cause 'visual competition with the access task'."",""The “Book a Meeting” button is small, in the header, and does not visually overshadow the form.""]}",0.68,2025-12-06T19:10:57.174551Z,unacast.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.unacast.com/request-your-information
+  • evidence_type: ui_behavior
+  • raw_snippet: Book a Meeting
+  • observed_ui_text: A bright, visually prominent ""Book a Meeting"" CTA in the global header competes for attention with the privacy access workflow.
+  • action_taken: Observed the header on the Request Your Information page while evaluating the form.
+  • dynamic_outcome: The CTA could distract users from the privacy access task by drawing attention away from the form.",,Incorrect,../browser_history_output/unacast.com/interface_interference_zero_shot_regulator_role/gpt-5/20251202-224631,2832,20.112,gpt-5,Visual Prominence,,interface_interference_zero_shot_regulator_role,"A highly prominent commercial CTA competes visually with the user's privacy-task goal (exercising Right of Access), potentially distracting from or delaying completion.",,found,Complete,20251202-224631,2025-12-06T19:29:49.054493Z,Incorrect
+1190,1,"{""text"":[""Evidence 1 do not count. \nI'm not sure if Evidence 2 count or not. "",""Correct evidence: Privacy policy: please see our “CCPA PRIVACY NOTICE.”\\\"" (appears without a hyperlink in-view)""]}",0.73,2025-12-10T01:51:16.214408Z,stirista.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://unsubscribe.stirista.com/
+  • evidence_type: ui_behavior
+  • raw_snippet: None
+  • observed_ui_text: The form does not explicitly mention 'Right to Know' or 'Right of Access'; the likely intake is under a generically titled 'Data Inquiry' section.
+  • action_taken: Inspected all section headers and field labels after selecting United States and California.
+  • dynamic_outcome: Users seeking CCPA access must infer that 'Data Inquiry' is the correct path.
+
+2. Evidence #2
+  • page_url: https://www.stirista.com/privacy-policy/
+  • evidence_type: policy_text
+  • raw_snippet: To review the “Addendum” we have created specifically to address disclosures required under the California Consumer Privacy Act, please see our “CCPA PRIVACY NOTICE.”
+  • observed_ui_text: Access information is referenced via an addendum that requires additional navigation/scrolling within a long policy.
+  • action_taken: Scrolled Privacy Policy to the CCPA reference.
+  • dynamic_outcome: Users must locate a separate CCPA notice to see details.",,Incorrect,../browser_history_output/stirista.com/interface_interference_zero_shot_regulator_role/gpt-5/20251202-215331,2856,1061.809,gpt-5,Hidden Information,,interface_interference_zero_shot_regulator_role,"The access path is disguised under generic labeling ('Data Inquiry') and key CCPA details are split into a separate addendum, making access instructions less immediately visible.",,found,,20251202-215331,2026-01-05T09:33:58.610328Z,Correct
+1646,1,,0.72,2026-01-06T08:16:12.555244Z,uplead.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.uplead.com/opt-out/
+  • evidence_type: policy_text
+  • raw_snippet: In accordance with data privacy laws, such as GDPR, CCPA, or others, you have the right to request and receive a detailed report of the personal data UpLead has collected about you by selecting the type of your request to “Request information” from the dropdown in the form.
+  • observed_ui_text: The page explicitly states how to make a Right of Access request via the form.
+  • action_taken: Reviewed the explanatory text on the opt-out page.
+  • dynamic_outcome: Clear instruction on using the form for a detailed report (access) request.",,Correct,../browser_history_output/uplead.com/interface_interference_zero_shot_regulator_role/gpt-5/20251202-234425,2870,4.021,gpt-5,Hidden Information,,interface_interference_zero_shot_regulator_role,Instructions to use 'Request information' for access are presented in-line and not concealed; links to policy and related pages are visible in the footer.,,not found,,20251202-234425,2026-01-06T08:16:12.555274Z,Correct
+1517,1,,0.86,2026-01-05T09:53:09.432700Z,stirista.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://webbula.com/ca-eu-data-request/
+  • evidence_type: ui_behavior
+  • raw_snippet: Hi!  Would you like to get started with a free email hygiene account and 100 free credits?
+  • observed_ui_text: A floating chat/marketing widget remains fixed in the viewport (lower-right), overlapping the page while the user reads access instructions and fills the form, competing for attention with the Right to Access task.
+  • action_taken: Scrolled and reviewed the Data Access Request page while observing persistent overlay iframes and the visible chat opener bubble.
+  • dynamic_outcome: The widget continues to overlay and draw attention during the rights submission process, requiring dismissal or visual workarounds.",,Correct,../browser_history_output/stirista.com/interface_interference_few_shot_regulator_role_with_CoT/gpt-5/20260104-051427,5141,16.099,gpt-5,Visual Prominence,,interface_interference_few_shot_regulator_role_with_CoT,"A persistent floating chat widget competes visually with the access request workflow, distracting from the user's primary task and matching the Visual Prominence pattern.",,found,,20260104-051427,2026-01-05T09:53:09.432726Z,Correct
+1514,1,"{""text"":[""Correct evidence: Privacy policy: please see our “CCPA PRIVACY NOTICE.”\\\"" (appears without a hyperlink in-view)"",""Reason why lead to webbula:  \nIn privacy policy (https:\/\/www.stirista.com\/privacy-policy\/), 'Accessing the Personal Information We Have About You\n\nIndividuals from the EU, UK, Switzerland and certain states may have a right to “access” or “know” about the specific information we hold about you, such as to deliver our Services. If you would like to request access of your personal information, unsubscribe, or limit the use and disclosure of your personal data'. Where 'request access of your personal information' is hyperlink direct user to 'https:\/\/webbula.com\/ca-eu-data-request\/'. "",""And the rationale\/evidence is incorrect. \n'The webform link blends into surrounding text and does not stand out as the primary action to exercise rights.' -- wrong. The webform link is (1) highlight in red color (2) hyperlink""]}",0.63,2026-01-05T09:34:13.358459Z,stirista.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://webbula.com/ca-eu-data-request/
+  • evidence_type: policy_text
+  • raw_snippet: If you would like to request access of your personal information, you may do so by contacting us at 888-993-2285 ext 4 or you may complete this form on this page.
+  • observed_ui_text: The actionable webform pathway is presented as a low-salience inline text link ('this form on this page') within dense paragraph text rather than a distinct button, reducing discoverability for the primary action to exercise access rights.
+  • action_taken: Reviewed the introductory paragraphs above the form and identified the inline hyperlink within normal-weight body text.
+  • dynamic_outcome: The webform link blends into surrounding text and does not stand out as the primary action to exercise rights.",,Incorrect,../browser_history_output/stirista.com/interface_interference_few_shot_regulator_role_with_CoT/gpt-5/20260104-051427,5144,505.754,gpt-5,Hidden Information,,interface_interference_few_shot_regulator_role_with_CoT,"The webform pathway is provided as an inline text link with minimal visual emphasis, making the key action less discoverable and fitting the Hidden Information pattern.",,found,,20260104-051427,2026-01-05T09:42:29.478849Z,Correct
+1365,1,,0.8,2026-01-05T04:05:34.836275Z,spyfly.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.spyfly.com/help-center/privacy-requests
+  • evidence_type: ui_behavior
+  • raw_snippet: Help Center > Privacy Requests; form fields and 'Continue' button; FAQ below.
+  • observed_ui_text: No floating overlays or promotional elements competed with the form; elements are standard and non-obstructive.
+  • action_taken: Scrolled and inspected the page for overlays or attention-grabbing widgets.
+  • dynamic_outcome: No distracting widgets overlapped or dominated the request UI.",,Correct,../browser_history_output/spyfly.com/interface_interference_few_shot_regulator_role_with_CoT/gpt-5/20260104-032504,5169,10.63,gpt-5,Visual Prominence,,interface_interference_few_shot_regulator_role_with_CoT,No elements visually competed with the Right of Access process.,,not found,,20260104-032504,2026-01-05T04:05:34.836306Z,Correct
+1531,1,"Evidence #1: incorrect. All section within a collapsible do not count as hidden information. 
+Evidence #2: here is highlighted in bold and underscored. do not count as visual salience.",0.78,2026-01-06T00:50:54.156311Z,swoop.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://swoop.com/privacy-notice/
+  • evidence_type: ui_behavior
+  • raw_snippet: Your Privacy Rights ... If you are interested in exercising one or more of the rights outlined below, you can do any of the following: Click here Email us at privacyrights@swoop.com ... Contact us by U.S. postal mail ...
+  • observed_ui_text: These instructions appear within a collapsible/accordion section that needed to be expanded ('Your Privacy Rights and Choices'), so they are not shown by default.
+  • action_taken: Expanded the 'Your Privacy Rights and Choices' accordion on the Privacy Statement page.
+  • dynamic_outcome: Instructions and the 'here' link only became visible after expanding.
+
+2. Evidence #2
+  • page_url: https://swoop.com/privacy-notice/
+  • evidence_type: policy_text
+  • raw_snippet: Click here
+  • observed_ui_text: The actionable webform link is a small inline text link labeled 'here' within a paragraph, offering low visual salience.
+  • action_taken: Reviewed the rights paragraph and located the inline 'here' link.
+  • dynamic_outcome: Link is easy to overlook compared to a button.",,Correct,../browser_history_output/swoop.com/interface_interference_regulator_role_few_shot_scenarios/gpt-5/20260104-091352,5333,10344.687999999998,gpt-5,Hidden Information,,interface_interference_regulator_role_few_shot_scenarios,"Key instructions and the action link to exercise rights are not visible by default and are presented as a low-salience inline link, increasing the chance users overlook them.",,found,,20260104-091352,2026-01-06T00:50:54.156345Z,Incorrect
+1668,1,,0.85,2026-01-06T08:34:48.936862Z,upscapital.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://privacyportal.onetrust.com/webform/cff9470e-ab7d-4e8a-8a45-14391b299f19/f3f16aeb-9070-4a81-816c-7b20e5ebd65a
+  • evidence_type: ui_behavior
+  • raw_snippet: Right to Access
+You have the right to ask us for copies of your personal information we have collected.
+  • observed_ui_text: The request type label and supporting text clearly map to the CCPA Right to Access.
+  • action_taken: Viewed the request type description on the webform.
+  • dynamic_outcome: Selection corresponds predictably to an access request workflow.",,Correct,../browser_history_output/upscapital.com/interface_interference_regulator_role_few_shot_scenarios/gpt-5/20260104-112049,5370,51.938,gpt-5,Feedforward Ambiguity,,interface_interference_regulator_role_few_shot_scenarios,Labels and destinations consistently map to the intended Right to Access action with no contradictory titles or redirects.,,not found,,20260104-112049,2026-01-06T08:34:48.936888Z,Correct
+1648,1,I don't think the 'here' is low-salience. It is highlight in light blue and underscored. ,0.85,2026-01-06T08:16:29.020404Z,uplead.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.uplead.com/privacy/
+  • evidence_type: policy_text
+  • raw_snippet: To exercise the rights described above, please submit a verifiable Consumer request to us by clicking
+here
+  • observed_ui_text: The actionable pathway is a low-salience inline 'here' hyperlink embedded in paragraph text rather than a clear button or clearly labeled link.
+  • action_taken: Scrolled to the California section to locate the submission instruction.
+  • dynamic_outcome: Only a small inline link was provided to initiate the request.",,Incorrect,../browser_history_output/uplead.com/interface_interference_regulator_role_few_shot_scenarios/gpt-5/20260104-110309,5424,48.738,gpt-5,Hidden Information,,interface_interference_regulator_role_few_shot_scenarios,"The submission method is conveyed via a generic inline 'here' link within dense text, making the Right of Access pathway easy to overlook.",,found,,20260104-110309,2026-01-06T08:17:09.922199Z,Incorrect
+1924,1,Wrong rationale.  This should classify under bad default. ,0.78,2026-01-12T08:04:15.381800Z,vendelux.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://vendelux.com/privacy-center/
+  • evidence_type: ui_behavior
+  • raw_snippet: |SHADOW(open)|*<select id=right_to_be_forgotten-... name=right_to_be_forgotten ... options=Update or Modify Professional ...|Update or Modify Professional ...|Request Access to Professional...|Request Removal of Professiona... />
+  • observed_ui_text: The selector is internally labeled as 'right_to_be_forgotten' (deletion), yet it includes 'Request Access to Professional Information' (access) as an option.
+  • action_taken: Opened Privacy Center and inspected the request-type dropdown options.
+  • dynamic_outcome: Selecting 'Request Access to Professional Information' did not reveal additional guidance or fields.",,Incorrect,../browser_history_output/vendelux.com/sneaking_zero_shot_regulator_role/gpt-5/20251212-194840,5441,115.676,gpt-5,Conflicting Information,Invisible links,sneaking_zero_shot_regulator_role,"The control's internal labeling suggests deletion while the visible options include access, creating inconsistent cues about the action's purpose.",,found,,20251212-194840,2026-01-12T08:04:15.381823Z,Incorrect
+2041,1,,0.85,2026-01-18T02:15:50.009904Z,stackadapt.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.stackadapt.com/legal-document-centre/platform-and-services-privacy-policy
+  • evidence_type: policy_text
+  • raw_snippet: - Phone: (650) 999-3764 ext. 101
+- Email: privacy@stackadapt.com
+  • observed_ui_text: Policy lists consistent submission methods (email and phone) alongside the web form reference under rights section.
+  • action_taken: Reviewed the Privacy Policy rights section and extracted contact methods.
+  • dynamic_outcome: Submission methods appeared consistent across the policy and form.
+
+2. Evidence #2
+  • page_url: https://www.stackadapt.com/legal-document-centre/consumer-rights-web-form
+  • evidence_type: ui_behavior
+  • raw_snippet: Consumer Rights Web Form
+First Name* ... Email Address* ... Country* ... State* ... Cookie ID* ... IP Address* ...
+  • observed_ui_text: Form content clearly aligns with stated methods; no contradictory instructions about how to exercise access rights.
+  • action_taken: Opened the web form and reviewed visible fields and instructions.
+  • dynamic_outcome: No conflicts between form instructions and policy text were observed.",,Correct,../browser_history_output/stackadapt.com/sneaking_baseline_zero_shot/gpt-5/20251211-231211,5589,7.113,gpt-5,Conflicting Information,,sneaking_baseline_zero_shot,The policy and the web form provide consistent instructions and contact channels; no contradictory statements about access rights or procedures were detected.,,not found,,20251211-231211,2026-01-18T02:15:50.009985Z,Correct
+2183,1,,0.8,2026-01-18T11:58:14.094131Z,stackadapt.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.stackadapt.com/legal-document-centre/consumer-rights-web-form
+  • evidence_type: ui_behavior
+  • raw_snippet: Cookies contain a unique ID ... click on ‘sa-user-id’ ... The Cookie Value is your unique ID.
+Go to your “Wi-Fi Network” ... view your IP address.
+  • observed_ui_text: The form provides contextual guidance on how to find the Cookie ID and IP Address, aiding discoverability.
+  • action_taken: Reviewed helper text next to Cookie ID and IP Address fields.
+  • dynamic_outcome: Helpful inline instructions visible; fields and Submit button are easy to find.
+
+2. Evidence #2
+  • page_url: https://www.stackadapt.com/legal-document-centre/platform-and-services-privacy-policy
+  • evidence_type: policy_text
+  • raw_snippet: ""Exercising Your Rights"" ... web form ... Phone: (650) 999-3764 ext. 101 ... Email: privacy@stackadapt.com
+  • observed_ui_text: The policy includes clear ways to exercise rights and locate the form.
+  • action_taken: Scrolled to 'Exercising Your Rights' and noted listed channels.
+  • dynamic_outcome: Clear navigation path to the web form and contact methods.",,Correct,../browser_history_output/stackadapt.com/sneaking_baseline_zero_shot/gpt-5/20251211-231211,5590,2.518,gpt-5,Information Without Context,,sneaking_baseline_zero_shot,Relevant controls and instructions for the Right of Access are discoverable and include contextual guidance; no obfuscation or hiding of controls was seen.,,not found,,20251211-231211,2026-01-18T11:58:14.094179Z,Correct
+1923,1,Not sure. The judgement depend on the except clause 'AUTHORIZED BY YOU OR OTHERWISE ALLOWED OR REQUIRED BY LAW.' So the question is 'does ccpa allow company sell personal information for business purpose'.,0.76,2026-01-12T07:58:34.146739Z,usmarketinggrp.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://usmarketinggrp.com/privacy-policy/
+  • evidence_type: policy_text
+  • raw_snippet: WE RESPECT YOUR PRIVACY AND WE WILL NOT SELL OR SHARE YOUR INFORMATION EXCEPT AS AUTHORIZED BY YOU OR OTHERWISE ALLOWED OR REQUIRED BY LAW.
+  • observed_ui_text: Intro statement suggests they will not sell or share information (except as authorized or required by law).
+  • action_taken: Reviewed the opening section of the Privacy Policy.
+  • dynamic_outcome: Sets expectation that sale/sharing will not occur except under limited conditions.
+
+2. Evidence #2
+  • page_url: https://usmarketinggrp.com/privacy-policy/
+  • evidence_type: policy_text
+  • raw_snippet: In the last twelve (12) months, we have sold the categories below of personal information for a business purpose: ... personal identifiers, protected classification characteristics, commercial information, biometric information, internet or other electronic network activity information, geolocation, professional or employment information, geolocation information, unique personal identifiers and inferences or conclusions drawn from personal information.
+  • observed_ui_text: Later text explicitly states they have sold categories of personal information in the last 12 months.
+  • action_taken: Scrolled and read the Sharing/Sales sections of the Privacy Policy.
+  • dynamic_outcome: User receives mixed messages about sale/sharing practices.",,Incorrect,../browser_history_output/usmarketinggrp.com/sneaking_baseline_zero_shot/gpt-5/20251212-071851,5607,538.714,gpt-5,Conflicting Information,,sneaking_baseline_zero_shot,"The policy’s opening assurance about not selling or sharing information conflicts with later statements acknowledging personal information sales in the last 12 months, creating uncertainty about actual practices.",,found,,20251212-071851,2026-01-12T07:58:34.146761Z,Incorrect
+1967,1,,0.9,2026-01-14T07:22:34.752864Z,veeva.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.veeva.com/privacy/do-not-sell-share/
+  • evidence_type: policy_text
+  • raw_snippet: ""If you are a consumer, healthcare provider, healthcare professional or related stakeholder and wish to opt out of the use of your personal information as described below, or if you wish to exercise your privacy rights, click here.""
+  • observed_ui_text: The anchor text 'click here' is non-descriptive and does not indicate destination or action scope, reducing discoverability and context.
+  • action_taken: Reviewed the Do Not Sell/Share page text and link labels.
+  • dynamic_outcome: User must click to learn the destination/intent of the link.
+
+2. Evidence #2
+  • page_url: https://www.veeva.com/privacy/do-not-sell-share/
+  • evidence_type: policy_text
+  • raw_snippet: ""Click here to exercise your privacy choices. You may also contact us toll-free at 1 (877) 807-3230.""
+  • observed_ui_text: Repeated use of 'Click here' without descriptive link text.
+  • action_taken: Scrolled and extracted repeated paragraphs containing submission wording.
+  • dynamic_outcome: Ambiguity persists until after clicking.",,Incorrect,../browser_history_output/veeva.com/sneaking_baseline_zero_shot/gpt-5/20251212-074414,5623,36.951,gpt-5,Information Without Context,,sneaking_baseline_zero_shot,"Multiple submission links use vague 'click here' anchor text, which limits discoverability and context of the action, matching 'Information Without Context'.",,found,,20251212-074414,2026-01-20T08:08:10.602206Z,Correct
+2145,1,,0.78,2026-01-18T09:25:30.778583Z,upscapital.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.ups.com/us/en/support/shipping-support/legal-terms-conditions/california-privacy-rights
+  • evidence_type: policy_text
+  • raw_snippet: “You may request to exercise the foregoing rights by:
+- Submitting a request through the UPS Privacy Webform.
+- Calling us toll-free at 888-912-9055.”
+  • observed_ui_text: Submission methods are explicitly identified with direct link and phone number in the rights page.
+  • action_taken: Scrolled and reviewed the CA rights page for instructions.
+  • dynamic_outcome: The webform link was discoverable and functional.
+
+2. Evidence #2
+  • page_url: https://upscapital.com/privacy-notice
+  • evidence_type: policy_text
+  • raw_snippet: Footer links include “Your California Privacy Rights,” “Privacy Notice,” “Cookie Settings,” and “Do Not Sell or Share My Personal Information.”
+  • observed_ui_text: Relevant links are visible and take the user to the detailed rights page.
+  • action_taken: Navigated the UPS Capital Privacy Notice and used footer link to CA rights page.
+  • dynamic_outcome: User can reach methods without hidden or obscured controls.",,Correct,../browser_history_output/upscapital.com/sneaking_baseline_zero_shot/gpt-5/20251212-063806,5692,3.033,gpt-5,Information Without Context,,sneaking_baseline_zero_shot,Links to rights information and the submission portal are visible and lead directly to actionable instructions; no deliberate reduction of discoverability was observed.,,not found,,20251212-063806,2026-01-18T09:25:30.778606Z,Correct
+2196,1,,0.85,2026-01-18T12:16:03.205483Z,unearthcampaigns.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.unearthcampaigns.com/privacy-policy/
+  • evidence_type: policy_text
+  • raw_snippet: You can submit a request to know, correct, and delete your Personal Information through our online form (/right-to-know) or call our toll-free number at 855-456-2646.
+  • observed_ui_text: The policy explicitly lists a webform with a visible link and a toll-free phone method.
+  • action_taken: Reviewed the Additional Notice section of the Privacy Policy and scrolled to find submission instructions.
+  • dynamic_outcome: Link to /right-to-know was clickable and navigable.
+
+2. Evidence #2
+  • page_url: https://www.unearthcampaigns.com/right-to-know/
+  • evidence_type: ui_behavior
+  • raw_snippet: Request to Know, Correct,  Delete and Appeal
+  • observed_ui_text: The form and request-type options are visible in the main content with standard labels and color contrast.
+  • action_taken: Opened the form page and selected the 'Request to Know' radio option.
+  • dynamic_outcome: Form fields remained visible with required markers; no additional hidden sections needed to be expanded.",,Correct,../browser_history_output/unearthcampaigns.com/interface_interference_regulator_role_few_shot_scenarios_only2/gpt-5/20260114-054522,5774,3.067,gpt-5,Hidden Information,,interface_interference_regulator_role_few_shot_scenarios_only2,Instructions and links to exercise the Right to Know are clearly presented and clickable; the form content is visible without hidden or disguised elements.,,not found,,20260114-054522,2026-01-18T12:16:03.205504Z,Correct
+2200,1,,0.86,2026-01-18T12:17:40.047882Z,upscapital.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.ups.com/us/en/support/shipping-support/legal-terms-conditions/california-privacy-rights
+  • evidence_type: policy_text
+  • raw_snippet: ""You may request to exercise the foregoing rights by:""
+  • observed_ui_text: Clear section heading introducing methods to exercise rights.
+  • action_taken: Reviewed the California Privacy Rights page content and scrolled to the 'Requests to Exercise Your Rights' section.
+  • dynamic_outcome: Methods were clearly visible on page without additional interactions.
+
+2. Evidence #2
+  • page_url: https://www.ups.com/us/en/support/shipping-support/legal-terms-conditions/california-privacy-rights
+  • evidence_type: policy_text
+  • raw_snippet: ""Submitting a request through the UPS Privacy Webform"" and ""Calling us toll-free at 888-912-9055.""
+  • observed_ui_text: The webform link is standard inline hyperlink and the phone number is explicitly listed; not visually disguised.
+  • action_taken: Inspected visible link text and surrounding instructions.
+  • dynamic_outcome: Clickable 'UPS Privacy Webform' link navigates to OneTrust form.
+
+3. Evidence #3
+  • page_url: https://www.ups.com/us/en/support/shipping-support/legal-terms-conditions/california-privacy-rights
+  • evidence_type: policy_text
+  • raw_snippet: ""You also may write to us at: UPS Corporate Headquarters Attention: Global Privacy Manager 55 Glenlake Parkway, NE Atlanta, GA 30328 United States""
+  • observed_ui_text: Postal mail method is fully spelled out on the same page.
+  • action_taken: Reviewed the page content where mailing address appears.
+  • dynamic_outcome: No extra clicks needed to reveal address.",,Correct,../browser_history_output/upscapital.com/interface_interference_regulator_role_few_shot_scenarios_only2/gpt-5/20260114-062644,5804,2.527,gpt-5,Hidden Information,,interface_interference_regulator_role_few_shot_scenarios_only2,"Submission methods and actionable links are clearly presented with standard hyperlinks and headings. No evidence of disguised links, hidden collapsible sections, or omission of applicable methods within the rights section.",,not found,,20260114-062644,2026-01-18T12:17:40.047906Z,Correct
+2122,1,,0.7,2026-01-18T05:54:13.260034Z,spyfly.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.spyfly.com/help-center/privacy
+  • evidence_type: policy_text
+  • raw_snippet: How to Submit a Request Under the CCPA
+California residents that wish to exercise any of the above data rights under the CCPA may submit a request that specifies the right(s) they wish to invoke by completing the form here.
+To process your request, We may require that you submit the following information in conjunction with your request: your first name, last name, order number, email address, and a California address.
+  • observed_ui_text: The section is clearly labeled, provides a direct link to the request form, and lists the information that may be required, reducing ambiguity about where to act.
+  • action_taken: Reviewed the California CCPA section and the immediate surrounding instructions and link placement.
+  • dynamic_outcome: Clear linkage and context were present; the only obstacle encountered later was Cloudflare verification, which is not a dark pattern per instructions.",,Correct,../browser_history_output/spyfly.com/sneaking_regulator_role_few_shot_scenarios/gpt-5/20260117-060037,5903,22.552,gpt-5,Information Without Context,Block by reCAPTCHA,sneaking_regulator_role_few_shot_scenarios,"The CCPA submission path is contextually presented with a clear section title and a direct link; although the webform page was blocked by Cloudflare, the instructions themselves are not vague, mislabeled, or out of context.",,not found,,20260117-060037,2026-01-18T05:54:13.260055Z,Correct
+2164,1,,0.7,2026-01-18T11:36:32.409024Z,swoop.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://swoop.com/your-privacy-choices/
+  • evidence_type: ui_behavior
+  • raw_snippet: Your Privacy Rights
+... Access or Request to Know ...
+  • observed_ui_text: Access/Right to Know is clearly labeled among the rights options in the DSAR iframe.
+  • action_taken: Navigated to 'Your Privacy Choices', located the DSAR iframe, and reviewed visible tiles.
+  • dynamic_outcome: The access pathway is discoverable via a clearly labeled tile.
+
+2. Evidence #2
+  • page_url: https://swoop.com/privacy-notice/
+  • evidence_type: policy_text
+  • raw_snippet: privacyrights@swoop.com ... (and a 'here' link directing to Your Privacy Choices) ... 228 Park Ave S PMB 924225, New York, NY 10003, ATTN: PRIVACY OFFICER
+  • observed_ui_text: Privacy Notice provides multiple, plainly labeled submission channels including a link to the webform, email, and postal mail.
+  • action_taken: Reviewed 'Your Privacy Rights and Choices' in the Privacy Notice.
+  • dynamic_outcome: Information was placed where expected under privacy rights and linked appropriately.",,Correct,../browser_history_output/swoop.com/sneaking_regulator_role_few_shot_scenarios/gpt-5/20260117-074224,5906,95.393,gpt-5,Information Without Context,,sneaking_regulator_role_few_shot_scenarios,"Access instructions and pathways were labeled and linked in expected places; no evidence of misleading labels, fragmentation without cross-reference, or omission preventing discovery.",,not found,,20260117-074224,2026-01-18T11:36:32.409054Z,Correct
+2088,1,,0.9,2026-01-18T03:43:06.743033Z,usdatacorporation.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.usdatacorporation.com/opt-out
+  • evidence_type: ui_behavior
+  • raw_snippet: OPT-OUT
+  • observed_ui_text: The page is titled 'OPT-OUT', framing the page as opt-out only.
+  • action_taken: Navigated to the Opt-Out webform from site navigation/footer and inspected the page header.
+  • dynamic_outcome: Despite the 'Opt-Out' title, the same page includes an Access/Right to Know option.
+
+2. Evidence #2
+  • page_url: https://www.usdatacorporation.com/opt-out
+  • evidence_type: ui_behavior
+  • raw_snippet: I request data access to all my personal information
+  • observed_ui_text: This is an Access/Right to Know option present on the 'Opt-Out' page.
+  • action_taken: Reviewed the request-type options within the embedded form.
+  • dynamic_outcome: Access option co-located with opt-out options on a page labeled 'Opt-Out', creating contradictory framing.",,Correct,../browser_history_output/usdatacorporation.com/sneaking_regulator_role_few_shot_scenarios/gpt-5/20260117-094230,5926,23.982,gpt-5,Conflicting Information,,sneaking_regulator_role_few_shot_scenarios,"The interface simultaneously presents the page as exclusively for opting out ('OPT-OUT') while including a specific option to request data access (Right to Know), creating contradictory signals about whether users are in the correct location for an access request.",,found,,20260117-094230,2026-01-18T03:43:06.743058Z,Correct
+2680,1,"Evidence #1: correct. 'Residents of California' do not have submission methods
+Evidence #2: incorrect. There is no 'https://www.veeva.com/veeva-id/' link visitable from homepage. Where agent fount this page is unclear. 
+The correct rationale is 'User cannot find how to submit an access request from the section that appears to cover California rights.' and the 'The actual submission mechanism exists under “Your Controls” There is no cross-reference between the two sections'",0.78,2026-01-20T08:07:38.971353Z,veeva.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.veeva.com/privacy/
+  • evidence_type: interaction_obstacle
+  • raw_snippet: None
+  • observed_ui_text: Within the expanded 'Residents of California' section, only CCPA metrics and disclosures were visible; no explicit instructions or links for how to submit a Right of Access request were surfaced despite searches for 'exercise' and 'submit a request'.
+  • action_taken: Expanded the 'Residents of California' accordion; scrolled repeatedly; used in-page search; attempted content extraction which returned truncated segments.
+  • dynamic_outcome: User cannot find how to submit an access request from the section that appears to cover California rights.
+
+2. Evidence #2
+  • page_url: https://www.veeva.com/veeva-id/
+  • evidence_type: policy_text
+  • raw_snippet: If you wish to exercise your privacy rights, email VeevaID.Support@veeva.com. You may also exercise your rights by calling us (free of charge) at 1 (877) 807-3230.
+  • observed_ui_text: Actionable submission methods are presented on a separate VeevaID Privacy Notice, not surfaced from the main Privacy page’s California section, reducing discoverability for a user starting at the main policy.
+  • action_taken: Opened the VeevaID Privacy Notice via site search; expanded 'Your Controls' and 'Jurisdiction-Specific Disclosures'.
+  • dynamic_outcome: Submission methods only became clear after navigating to a different notice, not from the California section of the main policy.",,Partial,../browser_history_output/veeva.com/sneaking_regulator_role_few_shot_scenarios/gpt-5/20260117-101506,5936,1145.687,gpt-5,Information Without Context,Hallucinations,sneaking_regulator_role_few_shot_scenarios,"The California section of the main Privacy page did not provide submission instructions or links, while the actionable methods appeared only on a separate VeevaID notice; this placement reduces discoverability and context for exercising the Right of Access from the expected California section.",,found,,20260117-101506,2026-01-20T08:07:38.971373Z,Correct
+2092,1,,0.86,2026-01-18T04:05:15.361445Z,usmarketinggrp.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://usmarketinggrp.com/privacy-policy/
+  • evidence_type: policy_text
+  • raw_snippet: Exercising Access, Data Portability, and Deletion Rights
+""To exercise the access, data portability, and deletion rights described above, please submit a verifiable consumer request to us by calling us at 866-581-4810, Ext 102, or by filling out the request in the below email link: privacy@usmarketinggrp.com.""
+  • observed_ui_text: Policy clearly lists consistent phone and email submission methods for access-related rights; no conflicting instructions or differing numbers observed.
+  • action_taken: Reviewed the Privacy Policy and extracted the Exercising Access/Data Portability/Deletion section; searched page for phone/email references.
+  • dynamic_outcome: Consistent single phone number and single email displayed; no alternate or contradictory method statements found.
+
+2. Evidence #2
+  • page_url: https://usmarketinggrp.com/privacy-policy/
+  • evidence_type: ui_behavior
+  • raw_snippet: Sidebar heading: ""Opt-Out Form"" with fields (First Name, Last Name, Full Address, Phone, Email, Message) and submit button labeled ""Submit"".
+  • observed_ui_text: The form is labeled Opt-Out and is not presented in the policy text as a designated method for exercising access rights, avoiding conflict with the listed phone/email methods.
+  • action_taken: Scrolled the Privacy Policy page and inspected the visible sidebar form and its labels.
+  • dynamic_outcome: No instructions suggesting the Opt-Out form is for Access; no contradictions with the policy submission methods.",,Correct,../browser_history_output/usmarketinggrp.com/sneaking_few_shot_regulator_role_with_CoT/gpt-5/20260117-154046,5950,127.765,gpt-5,Conflicting Information,,sneaking_few_shot_regulator_role_with_CoT,"Across the inspected pages, the access submission instructions consistently specify a phone number and an email address. No contradictory numbers, prohibition of email, or webform-only mandates were observed.",,not found,,20260117-154046,2026-01-18T04:05:15.361468Z,Correct
+2053,1,,0.9,2026-01-18T02:35:35.989604Z,statsocial.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.statsocial.com/privacy-policy
+  • evidence_type: policy_text
+  • raw_snippet: California residents have the right to request that we disclose what categories of your personal information that we collect, use, or sell. You may exercise this right on our website [here](https://www.statsocial.com/datarequest) or by contacting us toll-free at 1 (800) 793-6855. You may also request the specific pieces of personal information that we have collected from you.
+  • observed_ui_text: Policy clearly lists webform and phone methods for the Right to Access/Know.
+  • action_taken: Scrolled to California section and extracted submission sentences.
+  • dynamic_outcome: Submission paths listed matched the DSAR form capabilities.
+
+2. Evidence #2
+  • page_url: https://www.statsocial.com/datarequest
+  • evidence_type: ui_behavior
+  • raw_snippet: Please provide me with a list of categories of the personal information you have collected about me in the last 12 months.
+Please provide me with the specific pieces of personal information you have collected about me in the last 12 months.
+  • observed_ui_text: Form includes explicit options for categories and specific pieces, consistent with Right to Know/Access.
+  • action_taken: Opened the DSAR form and reviewed available request-type checkboxes.
+  • dynamic_outcome: Options align with policy-stated access rights.",,Incorrect,../browser_history_output/statsocial.com/sneaking_few_shot_regulator_role_with_CoT/gpt-5/20260117-125052,5974,3.692,gpt-5,Conflicting Information,,sneaking_few_shot_regulator_role_with_CoT,"The Privacy Policy directs users to a DSAR webform and phone number for exercising access rights, and the DSAR form provides matching options for categories and specific pieces, indicating no contradiction between instruction and UI.",,not found,,20260117-125052,2026-01-18T02:35:35.989631Z,Incorrect
+2117,1,,0.65,2026-01-18T05:45:22.248719Z,ventiveiq.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://ventiveiq.com/privacy-policy/
+  • evidence_type: policy_text
+  • raw_snippet: Right to Know ... Residents of the USA may submit such requests via this webform or email to privacy@ventiveiq.com.
+  • observed_ui_text: Policy clearly lists both a webform and an email as methods to exercise Right to Know/Access.
+  • action_taken: Reviewed the 'Your Privacy Rights and Choices' section and captured the submission instruction lines.
+  • dynamic_outcome: Submission methods appear consistent across listed rights.
+
+2. Evidence #2
+  • page_url: https://privacyportal.privacypillar.com/dsar/form?orgid=0c31c814-ea86-461f-...fe939be
+  • evidence_type: ui_behavior
+  • raw_snippet: Select request type(s): Data Processing; Data Portability; Opt out; Update Data; Info Request; Data Deletion
+  • observed_ui_text: The form presents multiple request-type options; while ambiguous, no explicit contradiction with policy text was observed.
+  • action_taken: Opened the DSAR webform from the policy and inspected available request-type options.
+  • dynamic_outcome: Form allows selecting a request type and filling fields without indicating that Access is disallowed.",,Incorrect,../browser_history_output/ventiveiq.com/sneaking_few_shot_regulator_role_with_CoT/gpt-5/20260117-171957,5992,13.084,gpt-5,Conflicting Information,,sneaking_few_shot_regulator_role_with_CoT,"The policy points to a webform and email for exercising Right to Know/Access, and the DSAR form provides a general mechanism to submit a privacy request. Although labels are ambiguous, we did not observe a direct contradiction between instructions and the interface.",,not found,,20260117-171957,2026-01-18T05:45:22.248741Z,Incorrect
+2089,1,,0.78,2026-01-18T03:43:19.149254Z,usdatacorporation.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://www.usdatacorporation.com/opt-out
+  • evidence_type: ui_behavior
+  • raw_snippet: OPT-OUT (page title)
+...
+I request data access to all my personal information
+  • observed_ui_text: The page is prominently titled 'OPT-OUT', but within the same form it offers an option 'I request data access to all my personal information' for a Right to Access/Know request.
+  • action_taken: Navigated to the Opt-Out page via site navigation and inspected the visible request options on the form.
+  • dynamic_outcome: Contradictory framing between page title ('Opt-Out') and the availability of an Access request option created uncertainty about whether this is the correct interface for a Right of Access request.",,Correct,../browser_history_output/usdatacorporation.com/sneaking_few_shot_regulator_role_with_CoT/gpt-5/20260117-152644,5998,9.535,gpt-5,Conflicting Information,,sneaking_few_shot_regulator_role_with_CoT,The same page is labeled 'Opt-Out' while offering a Right to Access request option. This contradiction between page framing and available action can make users unsure whether they are in the correct place to exercise an access request.,,found,,20260117-152644,2026-01-18T03:43:19.149276Z,Correct
+2133,1,,0.86,2026-01-18T07:06:48.233429Z,vendelux.com,"Evidence Items:
+1. Evidence #1
+  • page_url: https://vendelux.com/privacy/
+  • evidence_type: policy_text
+  • raw_snippet: XII. California Privacy Rights
+California residents can request details about any sharing of their personal information by Vendelux with third parties for direct marketing purposes. To submit a request, please contact us by mail or email at the address listed under “Contact Us” below.
+  • observed_ui_text: California-specific section focuses on 'sharing for direct marketing' and instructs only mail or email, omitting the Privacy Center webform and broader CCPA access exercise context.
+  • action_taken: Scrolled to the 'California Privacy Rights' section and reviewed submission instructions.
+  • dynamic_outcome: From this section alone, a user would not discover the DSAR webform for access requests; they must search elsewhere in the policy or site.
+
+2. Evidence #2
+  • page_url: https://vendelux.com/privacy/
+  • evidence_type: policy_text
+  • raw_snippet: XVI. Contact Us
+For questions or concerns regarding this Privacy Policy or our privacy practices, please contact us at:
+Vendelux, Inc.
+Attn: Privacy
+115 West 30th Street, Suite 600
+New York, NY 10001
+Email: privacy@vendelux.com
+  • observed_ui_text: Submission methods (mail/email) appear in Contact Us rather than within a dedicated California rights exercise section; no cross-reference here to the Privacy Center webform that handles access requests.
+  • action_taken: Reviewed the Contact Us section for submission methods referenced earlier.
+  • dynamic_outcome: Users relying on the California section are led to generic mail/email contact, not the DSAR webform.
+
+3. Evidence #3
+  • page_url: https://vendelux.com/privacy-center/
+  • evidence_type: ui_behavior
+  • raw_snippet: None
+  • observed_ui_text: Privacy Center presents a DSAR form with a request-type option explicitly labeled 'Request Access to Professional Information'.
+  • action_taken: Navigated from Privacy Policy to Privacy Center via the visible 'Privacy Center' link.
+  • dynamic_outcome: The actual interactive method to submit Access is located on a separate page not referenced in the 'California Privacy Rights' section’s instructions.",,Correct,../browser_history_output/vendelux.com/sneaking_few_shot_regulator_role_with_CoT/gpt-5/20260117-162448,6008,342.019,gpt-5,Information Without Context,,sneaking_few_shot_regulator_role_with_CoT,"The 'California Privacy Rights' section provides incomplete guidance limited to mail/email for direct-marketing sharing requests and does not mention the Privacy Center webform that actually supports Access requests, placing critical submission information out of context and reducing discoverability for exercising the Right of Access.",,found,,20260117-162448,2026-01-18T07:06:48.233451Z,Correct

@@ -1,0 +1,47 @@
+{
+    "taxonomy": [
+        {
+            "name": "Dead Ends",
+            "definition": "Prevent users from finding information through inactive links or redirections that limit or completely prevent the display of relevant information. As a result, the user may seek to find relevant information or action possibilities but instead be left unable to achieve their goal.",
+            "examples":[
+                "When attempting to access privacy information or submit a CCPA request, the user follows the company’s instructions and clicks the relevant links, but the links are inactive, return error pages (e.g., 404), or redirect to unrelated pages like generic FAQs or the homepage. Because these links fail to lead to the intended destination, the user cannot reach the information or interface required to exercise their rights.",                
+                "When a company directs users to a specific privacy rights submission pathway, such as a link, page section, phone number, email address, or web form, but the referenced pathway is missing, nonfunctional, replaced with a placeholder, or otherwise impossible or unreasonably difficult to locate, users are unable to access the legally required information or submission mechanism needed to exercise their privacy rights."
+            ]
+        },
+        {
+            "name": "Creating Barriers",
+            "definition": "Subverts the user’s expectation that relevant user tasks will be supported by the interface, instead preventing, abstracting, or otherwise complicating a user task to disincentive user action.",
+            "examples":[
+                "When attempting to submit a CCPA request, the user finds that the company offers only a single submission method, with no alternative channels provided. The lack of multiple distinct methods limits accessibility and creates avoidable barriers to completing the task. This pattern DOES NOT apply when the company explicitly and transparently identifies itself as a service provider under the CCPA and clearly explains that it cannot directly respond to individual rights requests",
+                "When the user begins the CCPA request process, they encounter an identity-verification step that requires or encourages them to provide highly sensitive or hard-to-obtain information, such as a government-issued ID, SSN, biometric (facial) verification, device-level identifiers, or verification by physical mail. In some cases, the interface labels these fields as “optional,” but the design introduces uncertainty about whether providing the information is necessary for verification, request processing, or successful completion. This pattern applies even when the field is technically optional, if the design imposes a disproportionate burden or creates psychological pressure that discourages the user from completing the request.",
+                "When beginning a CCPA request, the user encounters a field asking them to select their relationship to the company from a rigid predefined list (e.g., 'customer,' 'visitor,' 'employee'). Users who are unsure of their role, hold multiple roles, or don't see an applicable category cannot proceed smoothly. This design risks misrouting the user, forcing them to guess incorrectly, submit multiple requests, or discouraging them from completing the request altogether. This pattern applies whether the field is required or optional.", 
+                "When attempting to submit a CCPA request, the user must first manually search for and locate their own specific data (e.g., a profile URL) within the company’s system. When the lookup process is burdensome or the system returns multiple outdated, ambiguous, or incorrect results, the user becomes confused or blocked, creating a barrier that obstructs them from successfully exercising their rights.",
+                "When beginning a CCPA request, the user is instructed that they need to download and install a separate application, often a third-party app, in order to obtain a required identifier. This extra installation step introduces unnecessary friction, technical complexity, and additional privacy concerns, preventing the user from completing the request.",                
+                "When attempting to submit a CCPA request, the company requires or encourages the user to provide a device-level technical identifier (e.g., cookie ID, MAID/GAID/IDFA). In some cases, the interface labels these fields as “optional,” but the design introduces uncertainty about whether providing the identifier is necessary for verification, request processing, or successful completion. Because this type of identifier is difficult for users to locate and often lacks clear instructions, the interface creates unnecessary friction that obstructs users from confidently completing a valid request.",
+                "When completing a CCPA request webform, the user is required to complete a non-essential field (e.g., a file upload, cookie ID, or account number) in order to submit the request. In some cases, the field is labeled or phrased as optional, but the form cannot be submitted unless the filed is complete. This creates a barrier for users who cannot provide the information, preventing them from completing an valid request. However, fields commonly accepted for identity verification (such as name, email, or full mailing or postal address) are considered as essential fields."
+                ]    
+        },
+        {
+            "name": "Adding Steps",
+            "definition": "Subverts the user’s expectation that a task will take as few steps as technologically needed, instead creating additional points of unnecessary but required user interaction to perform a task.",
+            "examples":[
+                "When submitting a CCPA request, the user finds that a single privacy right (e.g., right to access) is split into multiple separate request types (e.g., 'access categories of data' vs. 'access specific pieces of data', or 'right to access' vs. 'right to know'). As a result, users must submit multiple separate requests or select all relevant options to obtain what could have been provided in a single comprehensive response, increasing the burden of exercising their rights",
+                "The company structures the CCPA request process so that each submission is scoped to a single identifier (e.g., email address, IP address, cookie ID, or MAID). Even when identifier fields are labeled as “optional,” the interface design implies or enforces that a single request cannot cover all data associated with the consumer. As a result, users must anticipate all identifiers linked to their data and submit multiple separate requests to obtain a complete response, forcing them to repeat the same process multiple times and adding unnecessary steps beyond what is technically required.",
+                "When completing a CCPA request webform, the user is presented with a field for a 'Mobile Device ID' or 'MAID.' Even if the field is optional, its presence implies that the current request is limited to a single device. This forces the user to repeat the entire submission process for every unique device they own to ensure a complete exercise of their rights, creating unnecessary and repetitive steps."                
+            ]
+        },
+        {
+            "name": "Privacy Mazes",
+            "definition": "Require a user to navigate through multiple pages or disconnected sections within the same page to obtain relevant information or control without a comprehensive and exhaustive overview. As a result, the user is prevented from easily discovering relevant information or action possibilities, leaving them unable to make informed decisions regarding their privacy.",
+            "examples": [
+                "When attempting to access CCPA right to access information, the user finds that CCPA submission methods provide by company (e.g., phone, email, and mailing address) are scattered and inconsistent across multiple policy pages. In other words, there is no single page provides a unified overview of all submission methods, users must navigate between pages to understand all available options. This pattern does not apply when one page clearly serves as a centralized overview that lists all submission options and simply links to a separate page that hosts the webform or submission tool.",
+                "When reviewing the privacy policy to understand how to submit a CCPA right-to-access request, the user finds that the relevant instructions and submission methods are not presented in one place. Instead, the information is spread across multiple disconnected sections without cross-references. As a result, the user must read through the entire policy to piece together the required information, creating unnecessary effort and confusion.",
+                "After arriving on the company's main page or homepage, the user must navigate through at least three intermediary pages before reaching the actual data request form or the page explaining the CCPA right-to-access submission mechanism. This means a minimum of 4 total clicks (homepage → intermediary 1 → intermediary 2 → intermediary 3 → form page). The initial main page or homepage does not count as an intermediary step."
+            ]
+        }
+    ]
+}
+
+
+
+

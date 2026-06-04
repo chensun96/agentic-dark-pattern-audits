@@ -1,0 +1,254 @@
+{
+    "taxonomy": [
+        {
+            "name": "Dead Ends",
+            "definition": "Prevent users from finding information through inactive links or redirections that limit or completely prevent the display of relevant information. As a result, the user may seek to find relevant information or action possibilities but instead be left unable to achieve their goal.",
+            "examples":[
+                {
+                "example_definition": "When attempting to access privacy information or submit a CCPA request, the user follows the company’s instructions and clicks the relevant links, but the links are inactive, return error pages (e.g., 404), or redirect to unrelated pages like generic FAQs or the homepage. Because these links fail to lead to the intended destination, the user cannot reach the information or interface required to exercise their rights.",
+                "evidence_with_reasoning": [
+                    {
+                    "evidence_type": "policy_text",
+                    "raw_snippet": "To exercise your right to access or delete your personal information, you may submit a request via email at [privacy@wealthfeed.com] or through our online form [https://www.wealthfeed.com/do-not-sell-my-data/].",
+                    "observed_ui_text": "1) The Privacy Policy lists two submission methods: email and an online form. 2) When the user clicks the form link, it leads to a 404 error page ('Page not found – WealthFeed'). 3) The broken link prevents users from accessing the stated method to submit privacy requests, leaving them without a functioning path to exercise their rights.",
+                    "action_taken": "Visited the Privacy Policy and clicked the hyperlink labeled 'online form' directing to https://www.wealthfeed.com/do-not-sell-my-data/ to verify its functionality.",
+                    "dynamic_outcome": "The linked page displayed a 404 error message ('Page not found – WealthFeed' and 'Whoops, that page is gone'), confirming that the submission page is inactive.",
+                    "short_rationale": "Step 1: The Privacy Policy promises an online submission form. Step 2: The link to that form leads to a 404 error page, blocking users from accessing it. Step 3: Because the stated method is nonfunctional, users cannot complete their request, making this a clear example of a 'Dead End' that obstructs the exercise of privacy rights."
+                    }
+                    ]
+                },
+                {
+                "example_definition": "When a company directs users to a specific privacy rights submission pathway, such as a link, page section, phone number, email address, or web form, but the referenced pathway is missing, nonfunctional, replaced with a placeholder, or otherwise impossible or unreasonably difficult to locate, users are unable to access the legally required information or submission mechanism needed to exercise their privacy rights.",
+                "evidence_with_reasoning": [
+                    {
+                    "evidence_type": "policy_text",
+                    "raw_snippet": "“To review the ‘Addendum’ we have created specifically to address disclosures required under the California Consumer Privacy Act, please see our ‘CCPA PRIVACY NOTICE.’”",
+                    "observed_ui_text": "1) The text 'CCPA PRIVACY NOTICE' appears as plain, non-clickable text without any hyperlink, button, or navigation affordance. 2) The page contains no section labeled 'CCPA Privacy Notice', in other words searching or scrolling through the privacy policy produces no destination matching the referenced notice.",
+                    "action_taken": "Reviewed the privacy policy page, inspected the ‘CCPA PRIVACY NOTICE’ text for hyperlink functionality, and scanned the page structure to verify whether a matching section or addendum exists.",
+                    "dynamic_outcome": "No link was provided, and no 'CCPA PRIVACY NOTICE' section existed on the page, leaving the user without any accessible path to the referenced CCPA disclosures.",
+                    "short_rationale": "Step 1: The policy states that users should consult a 'CCPA PRIVACY NOTICE' to review legally required disclosures. Step 2: The referenced notice is neither linked nor present anywhere on the page. Step 3: Because the destination does not exist, users reach a dead end, preventing them from accessing required CCPA information."
+                    }
+                ]
+                }
+            ]
+        },
+        {
+            "name": "Creating Barriers",
+            "definition": "Subverts the user’s expectation that relevant user tasks will be supported by the interface, instead preventing, abstracting, or otherwise complicating a user task to disincentive user action.",
+            "examples": [
+                {
+                "example_definition": "When beginning a CCPA request, the user encounters a field asking them to select their relationship to the company from a rigid predefined list (e.g., 'customer,' 'visitor,' 'employee'). Users who are unsure of their role, hold multiple roles, or don't see an applicable category cannot proceed smoothly. This design risks misrouting the user, forcing them to guess incorrectly, submit multiple requests, or discouraging them from completing the request altogether. This pattern applies whether the field is required or optional.", 
+                "evidence_with_reasoning": [
+                    {
+                    "evidence_type": "ui_behavior",
+                    "raw_snippet": "I am a (an): Healthcare Professional, Study Participant, Market Research Participant, Contractor, Client, Student, Job Applicant,...",
+                    "observed_ui_text": "1) The field offers only predefined categories 2) The user is asked to select one of these relationship categories 3) The UI does not explain what to do if the user has multiple roles or is unsure which role applies.",
+                    "action_taken": "Read the webform fields and check whether a relationship to company field is present.",
+                    "dynamic_outcome": "The request asking users to select their relationship with the company from a rigid list. Users who are unsure or misclassified may be discouraged from completing the request or may obtain incorrect or incomplete data in response.",
+                    "short_rationale": "First, the user’s goal is to submit a CCPA Right of Access request. Second, the interface asking the user to choose a predefined relationship category ('I am a (an): ...'). Third, there is no clear option for users with multiple or uncertain relationships. This field can confuse or misroute users and deter them from completing the request, so it creates a barrier to exercising the right of access."
+                    }
+                    ]
+                },
+                {
+                "example_definition":  "When attempting to submit a CCPA request, the user finds that the company offers only a single submission method, with no alternative channels provided. The lack of multiple distinct methods limits accessibility and creates avoidable barriers to completing the task. This pattern DOES NOT apply when the company explicitly and transparently identifies itself as a service provider under the CCPA and clearly explains that it cannot directly respond to individual rights requests",
+                "evidence_with_reasoning": [
+                    {
+                    "evidence_type": "policy_text",
+                    "raw_snippet": "You may exercise these rights by filling out the form below.",
+                    "observed_ui_text": "1) The privacy page contains only one statement instructing users to exercise their CCPA rights through a single embedded web form ('fill out the form below'). 2) No alternative methods—such as an email address, toll-free number, or mailing address—are provided on the page. 3) The limitation to one method introduces accessibility barriers and may reduce the likelihood of successful requests.",
+                    "action_taken": "Reviewed the entire data broker privacy policy related pages, searched for keywords such as 'email', 'phone', and 'mail', and verified that no additional submission methods or contact options were available beyond the single web form.",
+                    "dynamic_outcome": "The site presented only one interactive submission form and did not reveal any other communication channel upon interaction or scrolling. Users must rely solely on the web form to submit requests.",
+                    "short_rationale": "Step 1: The page explicitly lists only a web form as the submission method for CCPA rights requests. Step 2: According to CCPA requirements, businesses must provide at least two distinct methods (e.g., a toll-free number and an online form). Step 3: By offering just one, the company restricts user choice and accessibility. Step 4: This constraint can deter or exclude certain users from exercising their rights, making it an example of creating barriers."
+                    }
+                    ]
+                },
+                {
+                    "example_definition": "When the user begins the CCPA request process, they encounter an identity-verification step that requires or encourages them to provide highly sensitive or hard-to-obtain information, such as a government-issued ID, SSN, biometric (facial) verification, device-level identifiers, or verification by physical mail. In some cases, the interface labels these fields as “optional,” but the design introduces uncertainty about whether providing the information is necessary for verification, request processing, or successful completion. This pattern applies even when the field is technically optional, if the design imposes a disproportionate burden or creates psychological pressure that discourages the user from completing the request.",
+                    "evidence_with_reasoning": [
+                    {
+                    "evidence_type": "policy_text",
+                    "raw_snippet": "Authentication of the Information Provided: In order to make sure that we are only providing personal data to the correct person, we also will need to take reasonable steps to authenticate your request. We request that you provide screen shots of any cookies and mobile Advertising Identifiers for which you are submitting a request.",
+                    "observed_ui_text": "1) The company requires users to submit screenshots of all browser cookies and mobile Advertising IDs (MAIDs) as part of the identity verification step. 2) These identifiers are technical and device-specific, meaning most ordinary users would not know how to locate or capture them. 3) Collecting such information also introduces privacy and security risks because these identifiers can be sensitive or linked to tracking. 4) This verification step goes beyond what is reasonably necessary to confirm identity and therefore imposes an excessive burden on consumers attempting to exercise their privacy rights.",
+                    "action_taken": "Read through the 'Data Request Instructions' section of the privacy policy, followed all visible hyperlinks, and verified that the page explicitly requests screenshots of cookies and advertising IDs as required materials for verification. Attempted to find alternative verification options and confirmed none were provided.",
+                    "dynamic_outcome": "No other identity verification channels (e.g., email confirmation, two-step authentication, or self-declaration) were offered. The request flow could not proceed without submitting the screenshots, effectively blocking users who cannot or do not wish to provide them.",
+                    "short_rationale": "Step 1: The site requires users to upload screenshots of cookies and mobile Advertising IDs to verify identity. Step 2: These identifiers are highly technical and sensitive, making the verification process difficult and privacy-intrusive. Step 3: Because no simpler alternative is offered, users face an unnecessary technical barrier before exercising their rights. Step 4: The requirement is therefore demands excessive personal data and effort, creating a disproportionate obstacle to privacy-rights requests."
+                    },
+                    {
+                    "evidence_type": "ui_behavior",
+                    "raw_snippet": "Please Upload a Picture of Your License Front and Back",
+                    "observed_ui_text": "The CCPA request webform includes a file upload field instructing users to upload a picture of their government-issued license, including both the front and back.",
+                    "action_taken": "Inspected the form fields and surrounding text; the license upload is presented as part of the CCPA access right request process",
+                    "dynamic_outcome": "Because uploading a government-issued ID is highly sensitive and burdensome, users are left uncertain whether failing to upload the license will prevent successful verification or processing of the request.",
+                    "short_rationale": "Requesting front-and-back images of a government-issued license introduces a disproportionate identity-verification burden and psychological pressure, discouraging users from confidently completing a valid CCPA request."
+                    }
+                    ]
+                },
+                {
+                    "example_definition": "When attempting to submit a CCPA request, the company requires or encourages the user to provide a device-level technical identifier (e.g., cookie ID, MAID/GAID/IDFA). In some cases, the interface labels these fields as “optional,” but the design introduces uncertainty about whether providing the identifier is necessary for verification, request processing, or successful completion. Because this type of identifier is difficult for users to locate and often lacks clear instructions, the interface creates unnecessary friction that obstructs users from confidently completing a valid request.",
+                    "evidence_with_reasoning": [
+                    {
+                    "evidence_type": "policy_text",
+                    "raw_snippet": "Authentication of the Information Provided: In order to make sure that we are only providing personal data to the correct person, we also will need to take reasonable steps to authenticate your request. We request that you provide screen shots of any cookies and mobile Advertising Identifiers for which you are submitting a request.",
+                    "observed_ui_text": "1) The page directs users to upload screenshots of browser cookies and mobile Advertising IDs as part of authentication. 2) These identifiers are highly technical and not easily visible or retrievable by most users. 3) This design shifts the technical burden of locating such data onto the requester, making the process confusing and exclusionary.",
+                    "action_taken": "Read through the instructions on the privacy page and confirmed that providing screenshots of cookies and advertising identifiers were necessary. Checked for any simpler or alternative method and found none.",
+                    "dynamic_outcome": "The form could not be submitted without providing screenshots of the technical identifiers, preventing users who cannot locate them from continuing.",
+                    "short_rationale": "Step 1: The request flow demands technical identifiers (cookies and advertising IDs) that ordinary users rarely know how to find. Step 2: Because no easier alternative is offered, the burden of technical knowledge and effort is placed on the consumer. Step 3: This unnecessary complexity acts as a barrier to exercising privacy rights."
+                    },
+                    {
+                    "evidence_type": "policy_text",
+                    "raw_snippet": "Mobile Device ID ; Looking for your mobile advertiser ID (\"MAID\")? … Download any of these apps.",
+                    "observed_ui_text": "The page asks for a Mobile Device ID and tells users to download apps to find it, something most people won’t know how to do.",
+                    "action_taken": "Read the privacy choices page and checked the form instructions.",
+                    "dynamic_outcome": "Users are instructed to provide a MAID.",
+                    "short_rationale": "Step 1: The form instructs users to provide a Mobile Device ID for submitting a Right to Know request. Step 2: Retrieving this ID requires downloading apps or searching technical settings. Step 3: This imposes unnecessary technical burden and discourages participation."
+                    }
+                    ]   
+                },
+                {
+                "example_definition": "When completing a CCPA request webform, the user is required to complete a non-essential field (e.g., a file upload, cookie ID, or account number) in order to submit the request. In some cases, the field is labeled or phrased as optional, but the form cannot be submitted unless the filed is complete. This creates a barrier for users who cannot provide the information, preventing them from completing an valid request. However, fields commonly accepted for identity verification (such as name, email, or full mailing or postal address) are considered as essential fields.",
+                "evidence_with_reasoning": [
+                    {
+                    "evidence_type": "ui_behavior",
+                    "raw_snippet": "If you have any documentation supporting your request, please attach it…",
+                    "observed_ui_text": "1) The form displays a field inviting users to attach supporting documents, phrased as if it were optional ('If you have any documentation...'). 2) However, the system marks this field as required and blocks submission unless a file is uploaded. 3) This design contradicts user expectations and forces users to provide unnecessary input to proceed.",
+                    "action_taken": "Opened the webform and attempted to submit without uploading any file. Observed a validation error indicating the field must be filled before submission.",
+                    "dynamic_outcome": "The form did not proceed until a file was attached, even though the text suggested the field was optional.",
+                    "short_rationale": "Step 1: The attachment field is presented as optional but functions as mandatory. Step 2: This mismatch misleads users and forces them to provide irrelevant input. Step 3: By requiring unnecessary uploads, the design introduces friction and delays completion of the privacy request."
+                    },
+                    {
+                    "evidence_type": "ui_behavior",
+                    "raw_snippet": "Authorized Agents only: If you’re an Authorized Agent submitting a request on behalf of a consumer, you must attach written authorization from the consumer indicating you’ve been authorized to submit a request on the consumer’s behalf.",
+                    "observed_ui_text": "1) The form presents an upload field labeled for 'Authorized Agents' to attach written authorization from the consumer. 2) The field’s text suggests that it applies only when acting as an authorized agent, but the system treats it as a required field for all users. 3) As a result, even consumers making personal requests are blocked unless a document is uploaded.",
+                    "action_taken": "Opened the webform and attempted to submit a right to access request without uploading any document. Observed a validation error indicating that the authorization attachment was required.",
+                    "dynamic_outcome": "The form could not be submitted until a file was uploaded, effectively forcing all users—authorized or not—to provide a document.",
+                    "short_rationale": "Step 1: The upload field is presented as applying only to authorized agents but is enforced for all users. Step 2: This inconsistency misleads requesters and forces them to provide irrelevant files. Step 3: By turning a conditional field into a hard requirement, the design introduces avoidable friction and prevents smooth request submission."
+                    }
+                    ]
+                },
+                {
+                "example_definition": "When beginning a CCPA request, the user is instructed that they need to download and install a separate application, often a third-party app, in order to obtain a required identifier. This extra installation step introduces unnecessary friction, technical complexity, and additional privacy concerns, preventing the user from completing the request.",                
+                "evidence_with_reasoning": [
+                    {
+                    "evidence_type": "policy_text",
+                    "raw_snippet": "Mobile Device ID ; Looking for your mobile advertiser ID (\"MAID\")? … Download any of these apps.",
+                    "observed_ui_text": "1) The page instructs users to obtain their Mobile Device ID (MAID) by downloading third-party apps. 2) This requirement introduces extra effort, privacy risk, and dependency on third-party tools unrelated to the request itself.",
+                    "action_taken": "Read the privacy choices page and verified that the instructions explicitly direct users to download apps in order to retrieve the MAID needed for form submission.",
+                    "dynamic_outcome": "In order to obtain the MAID, users are instructed to install one of the listed apps.",
+                    "short_rationale": "Step 1: The Right to Know process demands a Mobile Device ID. Step 2: The only way to obtain this ID is by downloading third-party apps. Step 3: This app-installation requirement creates unnecessary effort and potential security concerns, obstructing users from exercising their privacy rights."
+                    }
+                ]
+                },
+                {
+                "example_definition": "When attempting to submit a CCPA request, the user must first manually search for and locate their own specific data (e.g., a profile URL) within the company’s system. When the lookup process is burdensome or the system returns multiple outdated, ambiguous, or incorrect results, the user becomes confused or blocked, creating a barrier that obstructs them from successfully exercising their rights.",
+                "evidence_with_reasoning": []    
+                } 
+            ]  
+        },
+        {
+            "name": "Adding Steps",
+            "definition": "Subverts the user’s expectation that a task will take as few steps as technologically needed, instead creating additional points of unnecessary but required user interaction to perform a task.", 
+            "examples":[
+                {
+                "example_definition": "The company structures the CCPA request process so that each submission is scoped to a single identifier (e.g., email address, IP address, cookie ID, or MAID). Even when identifier fields are labeled as “optional,” the interface design implies or enforces that a single request cannot cover all data associated with the consumer. As a result, users must anticipate all identifiers linked to their data and submit multiple separate requests to obtain a complete response, forcing them to repeat the same process multiple times and adding unnecessary steps beyond what is technically required.",
+                "evidence_with_reasoning":[
+                    {
+                    "evidence_type": "ui_behavior",
+                    "raw_snippet": "Mobile Device ID",
+                    "observed_ui_text": "1) This webform have a field name 'Mobile Device ID' 2) No 'Add Another' or 'Apply to all devices' option is present. 3) Users with more than one device must submit separate requests for each ID to cover all their data.",
+                    "action_taken": "Reviewed the inspected the form fields; only one MAID field present.",
+                    "dynamic_outcome": "No mechanism is provided to handle multiple identifiers in one request. Users are left to manually repeat the request steps for every browser or cookie set they have used.",
+                    "short_rationale": "One webform have one single 'Mobile Device ID' field. Since technical IDs are device-specific, the presence of a single-entry field (regardless of its 'Required' or 'Optional' status) implies the request is scoped only to that ID. A user wishing to exercise full CCPA rights across multiple devices is forced to restart and resubmit the entire form for each device."
+                    },
+                    {
+                    "evidence_type": "policy_text",
+                    "raw_snippet": "\"The Data Access Request will apply only to the information as submitted on this request. Prior addresses or nicknames will not be recognized by the Data Access Request process. Webbula recommends submitting multiple Data Access Requests for past information.\"",
+                    "observed_ui_text": "1) The page states that each Data Access Request applies only to the identifiers entered in the current submission. 2) Users with multiple identifiers (such as old email addresses, nicknames, or past addresses) must file separate requests for each. 3) This design artificially multiplies the number of required submissions for the same legal right, increasing workload and discouraging completion.",
+                    "action_taken": "Read the Data Access Request page and reviewed the policy text surrounding the webform to confirm that multiple submissions were explicitly recommended for different identifiers.",
+                    "dynamic_outcome": "No mechanism was provided to include multiple identifiers in a single request. Users must repeat the process individually for each, effectively adding redundant steps.",
+                    "short_rationale": "Step 1: The form limits each access request to one identifier at a time. Step 2: Users are told to submit multiple requests for prior identifiers. Step 3: This repetition adds unnecessary procedural steps, turning a single-task action into several submissions."
+                    },
+                    {
+                    "evidence_type": "policy_text",
+                    "raw_snippet": "“Please keep in mind that different cookies are placed on each browser that you use to access the Internet. As a result, if you use multiple browsers (for example, Google Chrome and Mozilla Firefox), you will need to locate our cookies for each browser.”",
+                    "observed_ui_text": "1) The page tells users that each browser uses a different set of cookies. 2) It instructs them to locate and provide these cookies separately for each browser. 3) This means that users must repeat the identification or submission process across browsers to obtain full access to their data.",
+                    "action_taken": "Reviewed the 'Data Request Instructions' page and confirmed that it explicitly asks users to repeat the process for each browser they have used.",
+                    "dynamic_outcome": "No mechanism is provided to handle multiple identifiers in one request. Users are left to manually repeat the request steps for every browser or cookie set they have used.",
+                    "short_rationale": "Step 1: The policy explains that cookies differ by browser. Step 2: Users are told to retrieve and submit these cookies separately. Step 3: This requirement forces repeated, browser-specific actions to complete one access request."
+                    },
+                    {
+                    "evidence_type": "policy_text",
+                    "raw_snippet": "We have two types of databases—one organized around email addresses and one organized around cookie IDs. Because these databases are separate and not all data is linked between them, we have two different mechanisms for you to exercise your rights, one for each database. To cover all data that may be in our systems, please use both mechanisms linked below.",
+                    "observed_ui_text": "1) The privacy page explains that user data is stored in two distinct systems: one tied to email addresses and another to cookie IDs. 2) Users must exercise their rights separately through two different mechanisms—one per database. 3) To access all their personal data, users are required to repeat the submission process for each identifier type.",
+                    "action_taken": "Reviewed the privacy choices page and confirmed the explicit instruction directing users to use two separate forms, one for email-based data and another for cookie-based data.",
+                    "dynamic_outcome": "Users cannot obtain complete access with a single request; they must submit two distinct requests, duplicating their effort and interaction steps.",
+                    "short_rationale": "Step 1: The company maintains two separate databases—email-based and cookie-based. Step 2: Users must submit separate requests for each to ensure full coverage. Step 3: This duplicates the user’s work and adds redundant steps to a single privacy right."
+                    }
+                ]
+                },
+                {
+                "example_definition": "When submitting a CCPA request, the user finds that a single privacy right (e.g., right to access) is split into multiple separate request types (e.g., 'access categories of data' vs. 'access specific pieces of data', or 'right to access' vs. 'right to know'). As a result, users must submit multiple separate requests or select all relevant options to obtain what could have been provided in a single comprehensive response, increasing the burden of exercising their rights",
+                "evidence_with_reasoning":[
+                    {
+                    "evidence_type": "ui_behavior",
+                    "raw_snippet": "Separate checkboxes: \"Request to Access (i.e., specific pieces of personal information)\" and \"Request to Know (i.e., categories of personal information)\".",
+                    "observed_ui_text": "1) The webform presents two separate checkboxes—one for 'Request to Access' and another for 'Request to Know'. 2) Each option corresponds to a portion of the broader CCPA Right to Access, but the form treats them as distinct actions. 3) To receive both categories and specific pieces of information, a user would need to make multiple selections or submissions.",
+                    "action_taken": "Viewed the top section of the Do Not Sell/Share form and confirmed that the two checkboxes represent distinct request types rather than a unified access option.",
+                    "dynamic_outcome": "Users must check or submit both options to obtain full data access coverage. If only one is selected, the response may cover only part of the right, effectively doubling the required effort.",
+                    "short_rationale": "Step 1: The form splits the Right to Access into two labeled request types—'Access' and 'Know'. Step 2: Each option covers only part of the user’s legal right. Step 3: Users must complete both to achieve full access, adding redundant steps and effort."
+                    },
+                    {
+                    "evidence_type": "ui_behavior",
+                    "raw_snippet": "Separate checkboxes: \"the category of personal information\" and \"the specific pieces of personal information\".",
+                    "observed_ui_text": "1) After selecting 'Request to Access', the webform asks the user to choose which type of information they wish to receive. 2) Each checkbox represents a partial scope of the Right to Access. 3) To receive a complete response, the user must select both or submit multiple requests.",
+                    "action_taken": "Reviewed the conditional fields shown after choosing 'Right to Access'; confirmed two checkboxes under the information type section.",
+                    "dynamic_outcome": "If only one checkbox is selected, the resulting disclosure covers only part of the user's data; the user must repeat or mutle-select to obtain a full response.",
+                    "short_rationale": "Step 1: After selecting 'Request to Access', the form partitions the Right to Access into 'categories' and 'specific pieces' of information. Step 2: Each option covers only part of the access right. Step 3: Forcing multiple steps to complete a single legal request."
+                    }
+                ]
+                }
+            ]
+        },
+        {
+            "name": "Privacy Mazes",
+            "definition": "Require a user to navigate through multiple pages or disconnected sections within the same page to obtain relevant information or control without a comprehensive and exhaustive overview. As a result, the user is prevented from easily discovering relevant information or action possibilities, leaving them unable to make informed decisions regarding their privacy.",
+            "examples":[
+                {
+                    "example_definition": "When reviewing the privacy policy to understand how to submit a CCPA right-to-access request, the user finds that the relevant instructions and submission methods are not presented in one place. Instead, the information is spread across multiple disconnected sections without cross-references. As a result, the user must read through the entire policy to piece together the required information, creating unnecessary effort and confusion.",
+                    "evidence_with_reasoning":[
+                    {
+                    "evidence_type": "policy_text",
+                    "observed_ui_text": "Under section 'WEBSITE PRIVACY POLICY', company directs users seeking to manage their website-related personal data to one link ('Privacy Choices page'). In another section ‘GENERAL SERVICES PRIVACY POLICY’, company provides user to exercise right through email and phone. **Critically, none of these sections reference each other or indicate that users may need to check other sections for different types of data.**",
+                    "action_taken": "Reviewed the full privacy policy page and find right of access is split across multiple sections.",
+                    "dynamic_outcome": "Users attempting to exercise the Right to Know or Right to Access must navigate between multiple sections and submission points across the same policy page, each referring to different identifiers and links. No single entry point consolidates all rights requests.",
+                    "short_rationale": "Step 1: A user exercising their CCPA Right to Know would reasonably expect all their personal data to be accessible through a single request mechanism. Step 2: Instead, this policy fragments the process by data type (website data, email-based data, cookie data), each requiring separate submissions. Step 3: The sections do not cross-reference each other, meaning users must read the entire policy to discover all pathways. Step 4: This creates a Privacy Maze by requiring multiple navigations and submissions to exercise what should be a unified right."
+                    } 
+                    ]
+                },
+                {
+                    "example_definition": "When attempting to access CCPA right to access information, the user finds that CCPA submission methods provide by company (e.g., phone, email, and mailing address) are scattered and inconsistent across multiple policy pages. In other words, there is no single page provides a unified overview of all submission methods, users must navigate between pages to understand all available options.",
+                    "exclusions": "This pattern does not apply when one page clearly serves as a centralized overview that lists all submission options (e.g., lists the phone number and provides a direct Link to the webform) and simply links to a separate page that hosts the webform or submission tool. And it does not apply if the destination webform page simply omits redundant contact info (like the phone number) that was already clearly disclosed on the preceding overview page.",
+                    "evidence_with_reasoning":[
+                    {
+                    "evidence_type": "policy_text",
+                    "observed_ui_text": "1) The company provides separate CCPA submission channels for user to exercise their rights: phone and email appear on one page, while mailing instructions appear on another. 2) Each page presents partial information rather than a consolidated list of all available options. 3) As a result, users must switch between pages to discover all possible submission methods.",
+                    "action_taken": "Reviewed both the Data Request Instructions page and the main Privacy Policy page, comparing the listed submission channels and noting which methods appeared on each.",
+                    "dynamic_outcome": "Neither page independently provides a full list of submission options. Users seeking to exercise their rights must navigate between pages to locate all available methods (phone, email, and mailing address).",
+                    "short_rationale": "Step 1: Different pages present different subsets of privacy right submission options. Step 2: Users must manually cross-navigate to piece together all available methods. Step 3: This fragmented presentation forces extra searching and confusion, creates a 'Privacy Maze'."
+                    }
+                    ]
+                },
+                {
+                    "example_definition": "After arriving on the company's main page or homepage, the user must navigate through at least three intermediary pages before reaching the actual data request form or the page explaining the CCPA right-to-access submission mechanism. This means a minimum of 4 total clicks (homepage → intermediary 1 → intermediary 2 → intermediary 3 → form page). The initial main page or homepage does not count as an intermediary step.",
+                    "evidence_with_reasoning":[
+                        {
+                        "observed_ui_text": "1) The website’s footer links lead users through a chain of privacy-related pages. 2) The Right to Know or Access form is not directly accessible from the homepage or the primary Privacy Policy. 3) The user must click through several intermediate pages before finding the final submission form.",
+                        "action_taken": "Followed the privacy-related footer links in sequence: start with the home page → Privacy Policy (intermediary page 1) → CA Privacy Notice (intermediary 2) → General Privacy Policy (intermediary 3) → Online Webform.",
+                        "dynamic_outcome": "Reaching the actual webform required at least three intermediary page transitions after the initial home page. No single intermediate page offers a complete overview or direct path to the request form.",
+                        "short_rationale": "Step 1: The Right to Know form is buried behind multiple nested policy pages. Step 2: Users must perform several sequential clicks through intermediate privacy pages before reaching the actionable form (3 intermediary pages, 4 total clicks). Step 3: This excessive navigation adds unnecessary effort, exemplifying a 'Privacy Maze'."
+                        }
+                    ]
+                }
+            ]            
+        }
+    ]
+}

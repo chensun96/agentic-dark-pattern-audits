@@ -1,0 +1,31 @@
+data_broker,prompting_strategy,status,pattern_name,Y_classification_2,Y_explanation_2,C_classification_2,C_explanation_2
+start.io,obstruction_few_shot_regulator_role_with_CoT,found,Privacy Mazes,Correct,Correct,Correct,Correct
+start.io,obstruction_regulator_role_few_shot_scenarios,found,Privacy Mazes,Correct,Correct,Correct,Correct
+statara.com,obstruction_regulator_role_few_shot_scenarios,not found,Privacy Mazes,Correct,Correct,Incorrect,Incorrect
+statara.com,obstruction_zero_shot_regulator_role,found,Privacy Mazes,Correct,Incorrect,Correct,Correct
+statara.com,obstruction_few_shot_regulator_role_with_CoT,not found,Privacy Mazes,Correct,Correct,Incorrect,Incorrect
+statsocial.com,obstruction_regulator_role_few_shot_scenarios,not found,Privacy Mazes,Correct,Correct,Correct,Correct
+statsocial.com,obstruction_consumer_role_few_shot_scenaiors,found,Privacy Mazes,Incorrect,Correct,Incorrect,Incorrect
+statsocial.com,obstruction_few_shot_regulator_role_with_CoT,not found,Privacy Mazes,Correct,Correct,Correct,Correct
+stirista.com,obstruction_regulator_role_few_shot_scenarios,found,Privacy Mazes,Incorrect,Incorrect,Incorrect,Incorrect
+stirista.com,obstruction_few_shot_regulator_role_with_CoT,found,Privacy Mazes,Incorrect,Incorrect,Incorrect,Incorrect
+stirista.com,obstruction_baseline_zero_shot,found,Privacy Mazes,Incorrect,Incorrect,Incorrect,Incorrect
+stirista.com,obstruction_consumer_role_few_shot_scenaiors,not found,Privacy Mazes,Correct,Correct,Correct,Correct
+stirista.com,obstruction_few_shot_consumer_role_with_CoT,not found,Privacy Mazes,Correct,Correct,Correct,Incorrect
+swoop.com,obstruction_regulator_role_few_shot_scenarios,found,Privacy Mazes,Incorrect,Incorrect,Incorrect,Incorrect
+swoop.com,obstruction_few_shot_regulator_role_with_CoT,not found,Privacy Mazes,Correct,Correct,Correct,Correct
+swoop.com,obstruction_zero_shot_regulator_role,found,Privacy Mazes,Incorrect,Incorrect,Incorrect,Incorrect
+swoop.com,obstruction_baseline_zero_shot,not found,Privacy Mazes,Correct,Correct,Correct,Correct
+unacast.com,obstruction_baseline_zero_shot,not found,Privacy Mazes,Correct,Correct,Correct,Correct
+unacast.com,obstruction_regulator_role_few_shot_scenarios,not found,Privacy Mazes,Correct,Correct,Correct,Correct
+uplead.com,obstruction_few_shot_regulator_role_with_CoT,not found,Privacy Mazes,Correct,Correct,Correct,Correct
+uplead.com,obstruction_regulator_role_few_shot_scenarios,found,Privacy Mazes,Correct,Incorrect,Incorrect,Incorrect
+upscapital.com,obstruction_few_shot_regulator_role_with_CoT,found,Privacy Mazes,Incorrect,Incorrect,Incorrect,Incorrect
+upscapital.com,obstruction_regulator_role_few_shot_scenarios,found,Privacy Mazes,Incorrect,Incorrect,Incorrect,Incorrect
+veeva.com,obstruction_regulator_role_few_shot_scenarios,not found,Privacy Mazes,Correct,Correct,Correct,Correct
+veeva.com,obstruction_few_shot_regulator_role_with_CoT,found,Privacy Mazes,Incorrect,Incorrect,Incorrect,Incorrect
+veeva.com,obstruction_zero_shot_regulator_role,found,Privacy Mazes,Incorrect,Incorrect,Incorrect,Incorrect
+ventiveiq.com,obstruction_few_shot_regulator_role_with_CoT,not found,Privacy Mazes,Correct,Correct,Correct,Correct
+ventiveiq.com,obstruction_regulator_role_few_shot_scenarios,found,Privacy Mazes,Incorrect,Correct,Incorrect,Incorrect
+veraset.com,obstruction_few_shot_regulator_role_with_CoT,found,Privacy Mazes,Correct,Correct,Correct,Correct
+veraset.com,obstruction_regulator_role_few_shot_scenarios,found,Privacy Mazes,Correct,Correct,Correct,Correct
