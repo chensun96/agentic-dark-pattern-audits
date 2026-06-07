@@ -59,16 +59,16 @@ Main codebase: https://github.com/chensun96/CCPA_dark_pattern
 
 ### Set up the environment (Required for Functional and Reproduced badges)
 
+```bash
 git clone https://github.com/chensun96/CCPA_dark_pattern.git
 cd CCPA_dark_pattern
 python3.13 -m venv env
 source env/bin/activate
 pip install -r requirements.txt
-playwright install chromium
 
 #### Create a .env file with your OpenAI API key
 echo "OPENAI_API_KEY=your_key_here" > .env
-
+```bash
 
 ### Testing the Environment (Required for Functional and Reproduced badges)
 
