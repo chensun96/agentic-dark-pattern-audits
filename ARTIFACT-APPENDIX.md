@@ -33,14 +33,14 @@ The experiments reported in the paper were conducted on a macOS laptop located i
 
 We runned all the code in the following software environments:
 
-OS: macOS 14+ (Sonoma). 
-OS packages: Chromium (installed via Playwright), Python 3.13                                      
-Python packages: See requirements.txt.                                             
-ML Models: GPT-5 via OpenAI API 
-Datasets: All datasets to run the artifacts are included in the repo:                                                   
-    - broker_dataset/100_annotated_brokers.csv — ground truth broker URLs (Phase 2)                     
+- OS: macOS 14+ (Sonoma). 
+- Programming Language: Python 3.13                                      
+- Python packages: See requirements.txt.                                             
+- ML Models: GPT-5 via OpenAI API 
+- Datasets: All datasets to run the artifacts are included in the repo:                                                   
+    - broker_dataset/100_annotated_brokers.csv - ground truth broker URLs (Phase 2)                     
     - broker_dataset/left_test_brokers.csv — deployment broker URLs (Phase 3)                           
-    - ground_truth/ — annotation agreement CSVs                                                         
+    - ground_truth/ — annotation_agreement.CSVs                                                         
     - results/ — pre-computed agent outputs (prompt_ablation, workflow_execution, deployment)
 
 ### Estimated Time and Storage Consumption (Required for Functional and Reproduced badges)
