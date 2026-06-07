@@ -68,33 +68,17 @@ pip install -r requirements.txt
 
 #### Create a .env file with your OpenAI API key
 echo "OPENAI_API_KEY=your_key_here" > .env
-```bash
+```
 
 ### Testing the Environment (Required for Functional and Reproduced badges)
-
-Replace the following by a description of the basic functionality tests to check
-if the environment is set up correctly. These tests could be unit tests,
-training an ML model on very low training data, etc. If these tests succeed, all
-required software should be functioning correctly. Use code segments to simplify
-the workflow, e.g.,
-
-Launch the Docker container, attach the current working directory (i.e., run
-from the root of the cloned git repository) as a volume, set the context to be
-that volume, and provide an interactive bash terminal:
+Run a quick sanity check to verify all notebooks can be opened and key imports work:  
 
 ```bash
-docker run --rm -it -v ${PWD}:/workspaces/example-docker-python-pip \
-    -w /workspaces/example-docker-python-pip \
-    --entrypoint bash example-docker-python-pip:main
-```
-
-Then within the Docker container, run:
-
-```bash
-./test.sh
-```
-
-Include the expected output.
+  source env/bin/activate                                                                             
+  jupyter nbconvert --to notebook --execute evaluation/section3_dataset.ipynb --output                  
+  /tmp/test_section3.ipynb 
+```                                                                           
+  Expected: notebook executes without errors, printing Cohen's Kappa: 0.737.
 
 ## Artifact Evaluation (Required for Functional and Reproduced badges)
 
