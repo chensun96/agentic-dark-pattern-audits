@@ -26,7 +26,6 @@ evaluation/
 ├── RQ1.ipynb                               # Prompting strategy evaluation
 └── RQ2.ipynb                               # Workflow execution analysis
 
-agent_output/                               # Generated screenshots, logs, and outputs
 ```
 
 ## Requirements
@@ -101,6 +100,7 @@ By default, the agent processes URLs listed in:
 ```text
 broker_dataset/100_annotated_brokers.csv
 ```
+To run the agent on a different dataset, edit the df = pd.read_csv(...) line in the corresponding prompts/<prompting_strategy>/run_openai.py file and replace it with the desired input CSV.
 
 Outputs are stored under:
 

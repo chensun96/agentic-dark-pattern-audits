@@ -129,6 +129,6 @@ External dependencies. Agent execution depends on live websites and LLM services
 
 - The prompting framework and agent framework (in prompts/) can be adapted to audit dark patterns  beyond CCPA data brokers — e.g., opt-out or deletion portals or subscription cancellation flows.  
 
-- The released annotation guidelines, ground-truth dataset (in ground_truth/), and agent outputs (in agent_output/) can support future research on dark patterns. In particular, it provide concrete examples of how different dark pattern categories manifest in real websites.
+- The released annotation guidelines can support future research on dark patterns. It provide examples of how different dark pattern categories manifest in real websites.
 
 
