@@ -60,6 +60,7 @@ isoduration==20.11.0
 jedi==0.20.0
 Jinja2==3.1.6
 jiter==0.15.0
+joblib==1.5.3
 joserfc==1.7.0
 json5==0.14.0
 jsonpointer==3.1.1
@@ -86,6 +87,7 @@ mcp==1.27.2
 mdurl==0.1.2
 mistune==3.2.1
 multidict==6.7.1
+narwhals==2.22.1
 nbclient==0.11.0
 nbconvert==7.17.1
 nbformat==5.10.4
@@ -142,6 +144,8 @@ rfc3986-validator==0.1.1
 rfc3987-syntax==1.1.0
 rich==15.0.0
 rpds-py==2026.5.1
+scikit-learn==1.9.0
+scipy==1.17.1
 screeninfo==0.8.1
 Send2Trash==2.1.0
 setuptools==82.0.1
@@ -153,6 +157,7 @@ stack-data==0.6.3
 starlette==1.2.1
 tenacity==9.1.4
 terminado==0.18.1
+threadpoolctl==3.6.0
 tinycss2==1.5.1
 tornado==6.5.6
 tqdm==4.68.1
