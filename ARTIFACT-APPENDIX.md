@@ -62,7 +62,7 @@ Run a quick sanity check to verify all notebooks can be opened and key imports w
 
 ```bash
 source env/bin/activate                                                                             
-jupyter nbconvert --to notebook --execute \ evaluation/section3_dataset.ipynb \ --stdout | grep "Cohen" 
+jupyter nbconvert --to notebook --execute evaluation/section3_dataset.ipynb --stdout | grep "Cohen"
 ```                                                                           
 Expected: notebook executes without errors, printing Cohen's Kappa: 0.519 and Cohen's Kappa: 0.737. These values correspond to the inter-annotator agreement scores reported in the paper.
 

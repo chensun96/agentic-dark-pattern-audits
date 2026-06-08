@@ -129,9 +129,7 @@ jupyter notebook evaluation/RQ2.ipynb
 Run the following command:
 
 ```bash
-jupyter nbconvert --to notebook --execute \
-evaluation/section3_dataset.ipynb \
---stdout | grep "Cohen"
+jupyter nbconvert --to notebook --execute evaluation/section3_dataset.ipynb --stdout | grep "Cohen"
 ```
 
 Expected output:
