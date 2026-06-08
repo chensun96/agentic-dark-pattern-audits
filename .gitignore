@@ -6,12 +6,3 @@ OPENAI_API_KEY
 GOOGLE_API_KEY
 agent_output
 .env
-# agent_output/**/detect_dark_pattern
-# agent_output/**/detect_both
-# agent_output/**/detect_problematic_behavior
-# agent_output/**/dp_prompting_role_meso+low
-# agent_output/**/dp_prompting_role_meso+low_pos_neg
-# agent_output/**/dp_privacy_policy
-# agent_output/**/gpt-5-mini
-# agent_output/**/gpt-5-mini
-# agent_output/**/videos
