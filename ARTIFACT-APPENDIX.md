@@ -33,7 +33,7 @@ We ran all the code in the following software environments:
 - Datasets: All datasets to run the artifacts are included in the repo:                                                   
     - broker_dataset/100_annotated_brokers.csv - ground truth broker URLs (Phase 2)                     
     - broker_dataset/left_test_brokers.csv — deployment broker URLs (Phase 3)                           
-    - ground_truth/ — annotation_agreement.CSVs                                                         
+    - ground_truth/ — annotation_agreement.csv                                                        
     - results/ — pre-computed agent outputs (prompt_ablation, workflow_execution, deployment)
 
 ### Estimated Time and Storage Consumption (Required for Functional and Reproduced badges)
@@ -45,7 +45,6 @@ Evaluation notebooks only run a few minutes and require no additional storage.
 ### Accessibility (Required for all badges)
 
 Main codebase: https://github.com/chensun96/CCPA_dark_pattern
-
 
 ### Set up the environment (Required for Functional and Reproduced badges)
 

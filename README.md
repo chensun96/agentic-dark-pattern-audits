@@ -61,10 +61,9 @@ By default, the agent processes URLs listed in:
 ```text
 broker_dataset/100_annotated_brokers.csv
 ```
-To run the agent on a different dataset, edit the df = pd.read_csv(...) line in the corresponding prompts/<prompting_strategy>/run_openai.py file and replace it with the desired input CSV.
+To run the agent on a different dataset, modify the `df = pd.read_csv(...)` statement in `prompts/<prompting_strategy>/run_openai.py` to point to the desired input CSV.
 
 Outputs are stored under:
-
 ```text
 agent_output/<domain>/<taxonomy_type>/<model>/<timestamp>/
 ```
