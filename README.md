@@ -38,8 +38,8 @@ evaluation/
 ## Setup
 
 ```bash
-git clone https://github.com/chensun96/CCPA_dark_pattern.git
-cd CCPA_dark_pattern
+git clone https://github.com/chensun96/agentic-dark-pattern-audits.git
+cd agentic-dark-pattern-audits
 
 python3.13 -m venv env
 source env/bin/activate
