@@ -5,7 +5,7 @@ Paper title: On the Suitability of LLM-Driven Agents for Dark Pattern Audits
 Requested Badge(s): Available, Functional
 
 ## Description (Required for all badges)
-This artifact contains the implementation code, dataset, and results of our paper. It includes: (a) the agent source code with four prompting strategies, (b) a human-annotated ground truth dataset of 100 data brokers, (c) results for all experimental phases, and (d) Jupyter notebooks that reproduce all quantitative results reported in the paper. 
+This artifact contains the implementation code, dataset, and results used to evaluate LLM-driven agents for auditing CCPA right-to-access workflows. It includes: (a) the agent source code with four prompting strategies, (b) a human-annotated ground truth dataset of 100 data brokers, (c) results for all experimental phases, and (d) Jupyter notebooks that reproduce all quantitative results reported in the paper. 
 
 For artifact evaluation, reviewers can verify that analysis pipeline (evaluation notebooks) generates results consistent with those reported in the paper. To reproduce the full experiments (live auditing agent) as described in the paper, please refer to the main README.       
 
