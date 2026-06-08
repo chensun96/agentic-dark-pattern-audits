@@ -26,7 +26,7 @@ The experiments reported in the paper were conducted on a macOS laptop located i
 
 We ran all the code in the following software environments:
 
-- OS: macOS 14+ (Sonoma). 
+- OS: macOS 14+. 
 - Programming Language: Python 3.13                                      
 - Python packages: See requirements.txt.                                             
 - ML Models: GPT-5 via OpenAI API (optional)

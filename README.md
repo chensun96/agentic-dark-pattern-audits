@@ -50,45 +50,6 @@ pip install -r requirements.txt
 echo "OPENAI_API_KEY=your_key_here" > .env
 ```
 
-## Reproducing Paper Results
-
-The `results/` directory contains the pre-computed outputs used in the paper. All reported tables and statistics can be reproduced directly from these artifacts without re-running the agent.
-
-```bash
-source env/bin/activate
-
-jupyter notebook evaluation/section3_dataset.ipynb
-jupyter notebook evaluation/RQ1.ipynb
-jupyter notebook evaluation/RQ2.ipynb
-```
-
-### Notebook Outputs
-
-| Notebook                 | Paper Content                              |
-| ------------------------ | ------------------------------------------ |
-| `section3_dataset.ipynb` | Annotation agreement (Cohen's κ)           |
-| `RQ1.ipynb`              | Prompting strategy evaluation (Tables 2–4) |
-| `RQ2.ipynb`              | Workflow execution and failure analysis    |
-
-### Environment Sanity Check
-
-Run the following command:
-
-```bash
-jupyter nbconvert --to notebook --execute \
-evaluation/section3_dataset.ipynb \
---stdout | grep "Cohen"
-```
-
-Expected output:
-
-```text
-Cohen's Kappa: 0.519
-Cohen's Kappa: 0.737
-```
-
-These values correspond to the inter-annotator agreement scores reported in the paper for the initial 20-broker calibration set and the second 20-broker calibration set, respectively.
-
 ## Running the Agent 
 
 The repository includes the agent implementation used in the study. Re-running the agent requires an OpenAI API key and access to live websites.
@@ -144,3 +105,41 @@ Adds chain-of-thought reasoning on top of few-shot examples and role framing. Th
 source env/bin/activate
 python prompts/few_shot_role_prompting_with_CoT/run_openai.py
 ```
+## Reproducing Paper Results
+
+The `results/` directory contains the pre-computed outputs used in the paper. All reported tables and statistics can be reproduced directly from these artifacts without re-running the agent.
+
+```bash
+source env/bin/activate
+
+jupyter notebook evaluation/section3_dataset.ipynb
+jupyter notebook evaluation/RQ1.ipynb
+jupyter notebook evaluation/RQ2.ipynb
+```
+
+### Notebook Outputs
+
+| Notebook                 | Paper Content                              |
+| ------------------------ | ------------------------------------------ |
+| `section3_dataset.ipynb` | Annotation agreement (Cohen's κ)           |
+| `RQ1.ipynb`              | Prompting strategy evaluation (Tables 2–4) |
+| `RQ2.ipynb`              | Workflow execution and failure analysis    |
+
+### Environment Sanity Check
+
+Run the following command:
+
+```bash
+jupyter nbconvert --to notebook --execute \
+evaluation/section3_dataset.ipynb \
+--stdout | grep "Cohen"
+```
+
+Expected output:
+
+```text
+Cohen's Kappa: 0.519
+Cohen's Kappa: 0.737
+```
+
+These values correspond to the inter-annotator agreement scores reported in the paper for the initial 20-broker calibration set and the second 20-broker calibration set, respectively.
