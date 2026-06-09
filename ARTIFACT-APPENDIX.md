@@ -81,7 +81,7 @@ The paper claims that Few-shot + Role + CoT achieves the highest classification 
 
 The paper claims that under the selected configuration (Few-shot + Role + CoT), agent performs better on detecting the structurally localized patterns than on interaction-dependent patterns.  Supported by: Experiment 1 (RQ1.ipynb, Table 3 section)                                             
 
-####   Main Result 3: Dark pattern prevalence (Table 4)
+####   Main Result 3: Dark pattern prevalence (RQ1, Table 4)
 
 The paper claims that structural barriers are the most prevalent dark pattern in completed CCPA right-to-access workflows, while ambiguity- and fragmentation-based patterns also appear frequently. Supported by: Experiment 1 (RQ1.ipynb, Table 4 sections)
 
