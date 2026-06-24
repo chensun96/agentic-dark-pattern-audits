@@ -87,7 +87,7 @@ where:
 
 For example:
 ```text
-agent_output/example.com/interface_interference_few_shot_role_prompting_with_CoT/gpt-5/20260212-075956/
+agent_output/example.com/sneaking_zero_shot_regulator_role/gpt-5/20260212-075956/
 ```
 
 
