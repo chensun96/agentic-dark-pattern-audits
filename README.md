@@ -10,14 +10,16 @@ This repository contains the code, datasets, and evaluation artifacts for our PE
 prompts/
 ├── baseline_zero_shot/                     # L1: Zero-shot
 ├── zero_shot_role_prompting/               # L2: Zero-shot + Role
-├── few_shot_scenaiors_only/                # L3: Few-shot + Role
+├── few_shot_scenarios_only/                # L3: Few-shot + Role
 └── few_shot_role_prompting_with_CoT/       # L4: Few-shot + Role + CoT
 
 broker_dataset/
 ├── 100_annotated_brokers.csv               # 100 ground-truth brokers (Phase 2)
 └── left_test_brokers.csv                   # Remaining brokers (Phase 3 deployment)
 
-ground_truth/                               # Human annotation files
+ground_truth/
+├── annotation_guide.pdf                    # Annotation guidelines and dark pattern definitions
+└── annotation_agreement/                   # Inter-annotator agreement files
 
 results/                                    # Pre-computed outputs used in the paper
 
@@ -27,11 +29,19 @@ evaluation/
 └── RQ2.ipynb                               # Workflow execution analysis
 
 ```
+### Annotation Guide
+
+The annotation guide used during ground truth construction is available at:
+
+ground_truth/annotation_guide.pdf
+
+This document defines the dark pattern taxonomy used in the study, provides annotation instructions, and includes examples of each category.
+
 
 ## Requirements
 
 * macOS 14+ or a compatible Linux environment
-* Python 3.13
+* Python 3.13 (required; earlier Python versions are not supported)
 * Google Chrome
 * OpenAI API key (required only for agent execution)
 
@@ -67,7 +77,17 @@ Outputs are stored under:
 ```text
 agent_output/<domain>/<taxonomy_type>/<model>/<timestamp>/
 ```
+where:
 
+- `<domain>` is the audited website.
+- `<taxonomy_type>` identifies the taxonomy subset and prompting strategy used during the audit.
+- `<model>` is the LLM used for the audit.
+- `<timestamp>` records when the run was executed.
+
+For detailed definitions of the dark pattern taxonomy and annotation categories, see:
+```text
+ground_truth/annotation_guide.pdf
+```
 
 ### L1: Zero-shot (Baseline)
 
@@ -93,7 +113,7 @@ Adds few-shot examples together with role framing.
 
 ```bash
 source env/bin/activate
-python prompts/few_shot_scenaiors_only/run_openai.py
+python prompts/few_shot_scenarios_only/run_openai.py
 ```
 
 ### L4: Few-shot + Role + CoT

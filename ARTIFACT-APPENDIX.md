@@ -33,7 +33,9 @@ We ran all the code in the following software environments:
 - Datasets: All datasets to run the artifacts are included in the repo:                                                   
     - broker_dataset/100_annotated_brokers.csv - ground truth broker URLs (Phase 2)                     
     - broker_dataset/left_test_brokers.csv — deployment broker URLs (Phase 3)                           
-    - ground_truth/ — annotation_agreement.csv                                                        
+    - ground_truth/
+        - annotation_guide.pdf
+        - annotation_agreement/                                                       
     - results/ — pre-computed agent outputs (prompt_ablation, workflow_execution, deployment)
 
 ### Estimated Time and Storage Consumption (Required for Functional and Reproduced badges)

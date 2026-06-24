@@ -31,8 +31,8 @@ ROOT_OUT_DIR = "agent_output"
 MODEL = "gpt-5" 
 TEMPERATURE = 0
                      
-DP_PROMPT_USER_PATH = "prompts/few_shot_scenaiors_only/prompt_regulator_role.txt"
-#DP_TAXONOMY_JSON   = "prompts/few_shot_scenaiors_only/sneaking.json"
+DP_PROMPT_USER_PATH = "prompts/few_shot_scenarios_only/prompt_regulator_role.txt"
+#DP_TAXONOMY_JSON   = "prompts/few_shot_scenarios_only/sneaking.json"
 # --------------------------
 
 def extract_domain(url: str) -> str:
@@ -366,18 +366,18 @@ async def main(type: str, model: str):
 if __name__ == "__main__":
 
     DP_TAXONOMY_JSONS = [
-        "prompts/few_shot_scenaiors_only/sneaking.json",
-        "prompts/few_shot_scenaiors_only/interface_interference.json",
-        "prompts/few_shot_scenaiors_only/obstruction.json",
+        "prompts/few_shot_scenarios_only/sneaking.json",
+        "prompts/few_shot_scenarios_only/interface_interference.json",
+        "prompts/few_shot_scenarios_only/obstruction.json",
     ]
     taxonomy_to_type = {
-        "prompts/few_shot_scenaiors_only/sneaking.json":
+        "prompts/few_shot_scenarios_only/sneaking.json":
             "sneaking_regulator_role_few_shot_scenarios",
 
-        "prompts/few_shot_scenaiors_only/interface_interference.json":
+        "prompts/few_shot_scenarios_only/interface_interference.json":
             "interface_interference_regulator_role_few_shot_scenarios",
 
-        "prompts/few_shot_scenaiors_only/obstruction.json":
+        "prompts/few_shot_scenarios_only/obstruction.json":
             "obstruction_regulator_role_few_shot_scenarios",
     }
 
