@@ -107,7 +107,7 @@ jupyter notebook evaluation/RQ1.ipynb
 # Run all cells 
 ```
 
-For Table 2, the upper section reports the performance metrics for each prompting strategy. The lower section reports the difference (Δ) between consecutive strategies. For example, the classification accuracy delta for L1→L2 (+Role) is computed as: 63.6 − 70.8 = −7.1 using the classification accuracies reported in the upper section of the table. The corresponding 95% CI are derived from the `ci_95_lower` and `ci_95_upper` values reported by the notebook. A superscript `*` in Table 2 indicates a statistically significant difference (`p < 0.05`).
+For Table 2, the upper section reports the performance metrics for each prompting strategy. The lower section reports the difference (Δ) between consecutive strategies. For example, the classification accuracy delta for L1→L2 (+Role) is computed as: 63.6 − 70.8 = −7.1 using the classification accuracies reported in the upper section of Table 2 (L2: Zero-shot + Role minus L1: Zero-shot). The corresponding 95% CI are derived from the `ci_95_lower` and `ci_95_upper` values reported by the notebook. A superscript `*` in Table 2 indicates a statistically significant difference (`p < 0.05`).
 
 #### Experiment 2: Reproduce RQ2 workflow execution statistics
 
