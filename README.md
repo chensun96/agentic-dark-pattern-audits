@@ -35,7 +35,7 @@ The annotation guide used during ground truth construction is available at:
 
 ground_truth/annotation_guide.pdf
 
-This document defines the dark pattern taxonomy used in the study, provides annotation instructions, and includes examples of each category.
+This document defines the dark pattern taxonomy used in the study, provides annotation instructions, and includes examples of each dark pattern category.
 
 
 ## Requirements
@@ -75,16 +75,21 @@ To run the agent on a different dataset, modify the `df = pd.read_csv(...)` stat
 
 Outputs are stored under:
 ```text
-agent_output/<domain>/<taxonomy_type>/<model>/<timestamp>/
+agent_output/<domain>/<prompt_configuration>/<model>/<timestamp>/
 ```
 where:
 
 - `<domain>` is the audited website.
-- `<taxonomy_type>` identifies the taxonomy subset and prompting strategy used during the audit.
+- `<prompt_configuration>` specifies both the dark pattern taxonomy and prompting strategy used for the audit.
 - `<model>` is the LLM used for the audit.
 - `<timestamp>` records when the run was executed.
 
-For detailed definitions of the dark pattern taxonomy and annotation categories, see: ground_truth/annotation_guide.pdf
+
+For example:
+```text
+agent_output/example.com/interface_interference_few_shot_role_prompting_with_CoT/gpt-5/20260212-075956/
+```
+
 
 ### L1: Zero-shot (Baseline)
 
