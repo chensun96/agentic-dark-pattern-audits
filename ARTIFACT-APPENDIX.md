@@ -27,7 +27,7 @@ The experiments reported in the paper were conducted on a macOS laptop located i
 We ran all the code in the following software environments:
 
 - OS: macOS 14+. 
-- Programming Language: Python 3.13                                      
+- Programming Language: Python 3.13 (required; earlier Python versions are not supported)                                   
 - Python packages: See requirements.txt.                                             
 - ML Models: GPT-5 via OpenAI API (optional)
 - Datasets: All datasets to run the artifacts are included in the repo:                                                   

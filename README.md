@@ -41,7 +41,7 @@ This document defines the dark pattern taxonomy used in the study, provides anno
 ## Requirements
 
 * macOS 14+ or a compatible Linux environment
-* Python 3.13 (required; earlier Python versions are not supported)
+* Python 3.13 
 * Google Chrome
 * OpenAI API key (required only for agent execution)
 
@@ -84,10 +84,7 @@ where:
 - `<model>` is the LLM used for the audit.
 - `<timestamp>` records when the run was executed.
 
-For detailed definitions of the dark pattern taxonomy and annotation categories, see:
-```text
-ground_truth/annotation_guide.pdf
-```
+For detailed definitions of the dark pattern taxonomy and annotation categories, see: ground_truth/annotation_guide.pdf
 
 ### L1: Zero-shot (Baseline)
 
